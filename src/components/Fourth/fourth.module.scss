@@ -31,9 +31,25 @@
       font-weight: 500;
 
       span {
+        img {
+          width: 8px;
+          height: auto;
+          position: relative;
+          bottom: 1.5px;
+        }
         font-size: 10px;
-        color:white;
+        color: white;
+        margin-left: 3px;
       }
+
+      // .sirenSpan{
+      //   display:flex;
+      //   align-items: center;
+      //   img{
+      //     width:8px;
+      //     height:auto;
+      //   }
+      // }
     }
 
     .passDiv {
@@ -78,7 +94,7 @@
             position: sticky;
             top: 0;
             color: white;
-            background:black;
+            background: black;
             font-size: 11px;
             text-align: center;
 
@@ -94,8 +110,8 @@
     .viewAllPara {
       text-align: center;
       color: red;
-      font-size: 15px;
-      font-weight: 500;
+      font-size: 13px;
+      font-weight: 700;
       margin-bottom: 2px;
     }
   }

@@ -1,6 +1,7 @@
 import style from "./fourth.module.scss";
 import ticket from "../../assets/ticket.svg";
 import Tbody from "./Tbody/Tbody";
+import siren from "../../assets/siren.svg";
 
 const tbodyArray = [
   {
@@ -180,10 +181,10 @@ const Fourth = () => {
             Drafts <span> 12</span>
           </p>
           <p className={style.darkParas}>
-            needs Attention <span> 19</span>
+            needs Attention <span className={style.sirenSpan}><img src={siren} alt="siren"/> 19</span>
           </p>
           <p className={style.darkParas}>
-            Needs Approval <span> 03</span>
+            Needs Approval <span className={style.sirenSpan}><img src={siren} alt="siren"/> 03</span>
           </p>
           <p className={style.darkParas}>Completed</p>
 
