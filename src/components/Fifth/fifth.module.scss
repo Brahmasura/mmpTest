@@ -47,6 +47,7 @@
         width: 10px;
         margin-right: 30px;
         filter: invert(0.5);
+         cursor:pointer;
       }
 
       .rightArrow {
@@ -54,6 +55,7 @@
         width: 10px;
         margin-left: 30px;
         filter: invert(0.5);
+         cursor:pointer;
       }
     }
 
@@ -61,6 +63,7 @@
       border-top: 1px solid grey;
       padding-top:5px;
       @include x-center-center;
+      cursor:pointer;
       img {
         width: 18px;
         margin-right: 2px;

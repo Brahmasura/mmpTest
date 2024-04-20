@@ -57,6 +57,7 @@
       height: 45px;
       border-radius: 30px;
       @include x-center-center;
+      cursor:pointer;
       img {
         width: 20px;
         filter: invert(1);

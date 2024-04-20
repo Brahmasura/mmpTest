@@ -3,6 +3,7 @@
 .moreDiv {
   border-radius: 30px;
   @include x-center-center;
+  cursor:pointer;
 
   img {
     transform: rotate(-90deg);
