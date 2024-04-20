@@ -63,21 +63,28 @@
     padding: 0 5px;
     background: black;
     max-height: 100%;
-    overflow-y: auto;
+    // overflow-y: auto;
 
-    table {
-      width: 100%;
-      // border-collapse: collapse;
+    .tableWrapper {
+      overflow-y: auto;
+      max-height: 242px;
+      table {
+        width: 100%;
+        // border-collapse: collapse;
 
-      thead {
-        th {
-          color: white;
-          font-size: 11px;
-          text-align: center;
+        thead {
+          th {
+            position: sticky;
+            top: 0;
+            color: white;
+            background:black;
+            font-size: 11px;
+            text-align: center;
 
-          &:nth-child(1) {
-            text-align: start;
-            width: 30px;
+            &:nth-child(1) {
+              text-align: start;
+              width: 30px;
+            }
           }
         }
       }

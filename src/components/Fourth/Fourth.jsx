@@ -193,24 +193,27 @@ const Fourth = () => {
           </div>
         </div>
         <div className={style.fourthRight}>
-          <table>
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Brand</th>
-                <th>Project</th>
-                <th>Nickname</th>
-                <th>Type</th>
-                <th>Department</th>
-                <th>Progress</th>
-              </tr>
-            </thead>
-            <tbody>
-              {tbodyArray.map((item, index) => (
-                <Tbody key={index} item={item} />
-              ))}
-            </tbody>
-          </table>
+          {/* table wrapper  */}
+          <div className={style.tableWrapper}>
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Brand</th>
+                  <th>Project</th>
+                  <th>Nickname</th>
+                  <th>Type</th>
+                  <th>Department</th>
+                  <th>Progress</th>
+                </tr>
+              </thead>
+              <tbody>
+                {tbodyArray.map((item, index) => (
+                  <Tbody key={index} item={item} />
+                ))}
+              </tbody>
+            </table>
+          </div>
 
           <p className={style.viewAllPara}>VIEW ALL</p>
         </div>
