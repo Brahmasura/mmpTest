@@ -1,5 +1,5 @@
 tr {
-  height: 30px;
+  height: 34px;
   border-bottom: 1.5px solid grey !important;
 
   td {
@@ -8,13 +8,22 @@ tr {
     font-size: 10px;
 
     .projectDiv {
+      display:inline-block;
       width: auto;
-      //   background-color: red;
+      padding:1px 10px;
+   
       border-radius: 30px;
       p {
         margin-bottom: 0;
       }
     }
+
+    // .projectPara {
+    //   display:inline-block;
+    //   width: auto;
+    //   border-radius: 30px;
+    //   margin-bottom: 0;
+    // }
 
     .progressMain {
       background: white;

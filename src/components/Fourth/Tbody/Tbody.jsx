@@ -11,7 +11,7 @@ const Tbody = ({ item }) => {
             className={style.projectDiv}
             style={{ backgroundColor: item.projectColor }}
           >
-            <p>{item.projectContent}</p>
+          <p className={style.projectPara}>{item.projectContent}</p>
           </div>
         </td>
         <td>{item.nickname}</td>
