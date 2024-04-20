@@ -1,0 +1,54 @@
+@import "../../mixins.module.scss";
+
+.mainContainer {
+  height: 80vh;
+  position: relative;
+  z-index: 2;
+  margin: 20px 0;
+  // height:80vh;
+  // border: 1px solid blue;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 200px auto;
+  grid-gap: 20px;
+
+  .first {
+    grid-column: span 2;
+    @include grid-box-style;
+    background-color: whitesmoke;
+  }
+
+  .second {
+    border: 2px solid white;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.4);
+    @include grid-box-style;
+  }
+
+  .third {
+    border: 2px solid white;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.4);
+    @include grid-box-style;
+  }
+
+  .fourth {
+    border: 2px solid white;
+
+    grid-column: span 3;
+    @include grid-box-style;
+    padding: 0;
+    height:275px;
+
+    overflow: hidden;
+  }
+
+  .fifth {
+    border-radius: 30px;
+    padding: 4px 0 0 0;
+    border: 2px solid white;
+    background-color: grey;
+    overflow: hidden;
+    height:275px;
+  }
+}

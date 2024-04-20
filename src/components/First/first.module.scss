@@ -1,0 +1,66 @@
+@import "../../mixins.module.scss";
+
+.mainDiv {
+    position:relative;
+  h2,
+  h3 {
+    font-family: "Barlow", sans-serif;
+  }
+
+  h2 {
+    font-weight: 700;
+    margin-bottom:2px;
+    font-size: 40px;
+    display: inline-block;
+  }
+
+  h3 {
+    font-size: 28px;
+    margin-bottom:8px;
+    display: inline-block;
+  }
+
+  .secondDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    & img:first-child {
+      width: 58px;
+    }
+
+    .thirdDiv {
+      p {
+        font-size: 13px;
+        margin-bottom: 2px;
+      }
+
+      input {
+        width: 370px;
+        height: 40px;
+        border-radius: 30px;
+        background: lightgray;
+        border: none;
+        padding: 10px;
+
+        &::placeholder{
+            font-size:14px;
+           
+        }
+      }
+    }
+
+    .fourthDiv {
+      background-color: red;
+
+      width: 45px;
+      height: 45px;
+      border-radius: 30px;
+      @include x-center-center;
+      img {
+        width: 20px;
+        filter: invert(1);
+      }
+    }
+  }
+}

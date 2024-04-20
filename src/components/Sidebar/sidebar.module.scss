@@ -1,0 +1,32 @@
+@import "../../mixins.module.scss";
+
+.mainDiv {
+  @include y-start-center;
+  height: 100%;
+  
+
+  .faceDiv {
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    @include x-center-center;
+    border-radius: 12px;
+
+    img{
+        width:35px;
+    }
+  }
+
+  .ticket{
+    width:35px;
+    filter:invert(1);
+    margin:8px 0;
+  }
+
+  .bottom{
+    margin-top:auto;
+   margin-bottom:20px;
+  }
+
+
+}

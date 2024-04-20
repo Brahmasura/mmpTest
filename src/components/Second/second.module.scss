@@ -1,0 +1,12 @@
+.mainDiv {
+  width: 100%;
+
+  .brandsContainer {
+    height: 130px;
+    overflow-y: auto;
+
+        &::-webkit-scrollbar{
+            display:none;
+        }
+  }
+}

@@ -1,0 +1,12 @@
+@import "../../mixins.module.scss";
+
+.moreDiv {
+  border-radius: 30px;
+  @include x-center-center;
+
+  img {
+    transform: rotate(-90deg);
+    width: 10px;
+    filter: invert(1);
+  }
+}

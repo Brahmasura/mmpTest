@@ -1,0 +1,14 @@
+.mainDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom:3px solid white;
+  padding-bottom:2px;
+
+  p {
+    color: white;
+    margin-bottom: 0;
+    font-size: 23px;
+    font-weight: 700;
+  }
+}
