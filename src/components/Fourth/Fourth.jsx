@@ -181,7 +181,7 @@ const Fourth = () => {
             Drafts <span> 12</span>
           </p>
           <p className={style.darkParas}>
-            needs Attention <span className={style.sirenSpan}><img src={siren} alt="siren"/> 19</span>
+            Needs Attention <span className={style.sirenSpan}><img src={siren} alt="siren"/> 19</span>
           </p>
           <p className={style.darkParas}>
             Needs Approval <span className={style.sirenSpan}><img src={siren} alt="siren"/> 03</span>
