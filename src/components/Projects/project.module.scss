@@ -1,6 +1,7 @@
 .mainDiv {
   border-bottom: 2px solid grey;
-  height:70px;
+  // height:70px;
+  padding:5px 0;
 
   .title {
     margin-bottom: 0;
@@ -9,7 +10,7 @@
   }
 
   .text {
-    margin-top:10px;
+   
     margin-bottom: 0;
     color: white;
     font-size: 12px;
