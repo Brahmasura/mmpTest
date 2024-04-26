@@ -1,6 +1,6 @@
 .navbar {
-  position:relative;
-  z-index:2;
+  position: relative;
+  z-index: 2;
   height: 10vh;
   // border: 1px solid red;
   display: flex;
@@ -12,10 +12,10 @@
     font-family: "Barlow", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color:whitesmoke;
+    color: whitesmoke;
 
-    &:nth-child(1){
-      cursor:pointer;
+    &:nth-child(1) {
+      cursor: pointer;
     }
   }
 
@@ -23,43 +23,43 @@
     font-family: "Barlow", sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 20px;
+    font-size: 1.8vw;
   }
 
   .navRight {
-    min-width: 463px;
+    min-width: 36vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     .navMap {
-      width: 30px;
+      width: 2.35vw;
       height: auto;
-      filter:invert(1);
-      cursor:pointer;
+      filter: invert(1);
+      cursor: pointer;
     }
 
     .inputBox {
       position: relative;
 
       input {
-        border:none;
-        width: 285px;
-        height: 28px;
+        border: none;
+        width: 22.3vw;
+        height: 2.35vw;
         border-radius: 20px;
         padding-inline: 10px;
 
         &::placeholder {
           font-weight: 400;
+          font-family: 6vw;
         }
       }
 
       img {
-        width: 13px;
+        width: 1vw;
         position: absolute;
-        top: 8px;
-        right: 10px;
-      
+        top: 0.7vw;
+        right: 0.8vw;
       }
     }
 
@@ -68,28 +68,27 @@
       justify-content: space-between;
       align-items: center;
       border-radius: 23px;
-      // border: 1px solid red;
-      //   height:28px;
       padding: 3px 6px 3px 3px;
-      width: 126px;
-      position:relative;
-      cursor:pointer;
+      width: 9.9vw;
+      height: 2.35vw;
+      position: relative;
+      cursor: pointer;
 
       .ashley {
         width: auto;
-        height: 24px;
+        height: 1.9vw;
         border-radius: 23px;
       }
 
       p {
-        font-size: 14px;
+        font-size: 1.1vw;
         font-weight: 500;
       }
 
       .downArrow {
-        height: 10px;
+        height: 0.8vw;
         width: auto;
-        filter:invert(1);
+        filter: invert(1);
       }
     }
 
@@ -102,7 +101,7 @@
       height: 100%;
       background-color: rgba(256, 256, 256, 0.14); /* 50% opacity black */
       z-index: -1; /* Make sure the overlay is behind the content */
-      border-radius:23px;
-  }
+      border-radius: 23px;
+    }
   }
 }
