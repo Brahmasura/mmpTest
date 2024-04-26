@@ -7,8 +7,8 @@ const More = ({ backgroundColor, width, height, position, top, right}) => {
     top: top,
     right: right,
     backgroundColor: backgroundColor,
-    width: `${width}px`,
-    height: `${height}px`,
+    width: `${width}vh`,
+    height: `${height}vh`,
   };
   return (
     <>

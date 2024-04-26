@@ -3,11 +3,11 @@
 .moreDiv {
   border-radius: 30px;
   @include x-center-center;
-  cursor:pointer;
+  cursor: pointer;
 
   img {
     transform: rotate(-90deg);
-    width: 10px;
+    width: 1.7vh;
     filter: invert(1);
   }
 }

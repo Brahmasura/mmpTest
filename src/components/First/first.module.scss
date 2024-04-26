@@ -1,7 +1,7 @@
 @import "../../mixins.module.scss";
 
 .mainDiv {
-    position:relative;
+  position: relative;
   h2,
   h3 {
     font-family: "Barlow", sans-serif;
@@ -9,14 +9,14 @@
 
   h2 {
     font-weight: 700;
-    margin-bottom:2px;
-    font-size: 40px;
+    margin-bottom: 2px;
+    font-size: 6.6vh;
     display: inline-block;
   }
 
   h3 {
-    font-size: 28px;
-    margin-bottom:8px;
+    font-size: 4.6vh;
+    margin-bottom: 1.4vh;
     display: inline-block;
   }
 
@@ -26,40 +26,40 @@
     align-items: end;
 
     & img:first-child {
-      width: 58px;
+      width: 9.5vh;
     }
 
     .thirdDiv {
       p {
-        font-size: 13px;
+        font-size: 2.1vh;
         margin-bottom: 2px;
       }
 
       input {
         width: 29vw;
-        height: 40px;
-        border-radius: 30px;
+        height: 6.6vh;
+        border-radius: 100px;
         background: lightgray;
         border: none;
         padding: 10px;
 
-        &::placeholder{
-            font-size:14px;
-           
+        &::placeholder {
+          font-size: 2vh;
         }
       }
     }
 
     .fourthDiv {
       background-color: red;
-
-      width: 45px;
-      height: 45px;
-      border-radius: 30px;
-      @include x-center-center;
-      cursor:pointer;
+      width: 7.4vh;
+      height: 7.4vh;
+      border-radius: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
       img {
-        width: 20px;
+        width: 3.3vh;
         filter: invert(1);
       }
     }
