@@ -1,7 +1,8 @@
 @import "../../mixins.module.scss";
 
+
+
 .mainDiv {
- 
   p {
     margin-bottom: 0;
   }
@@ -9,27 +10,28 @@
   .title {
     text-align: center;
     color: white;
-    margin-bottom: 0;
-    font-size: 12px;
+    font-size: 1vw;
+    margin-bottom: 0.62vh;
+    font-weight: 500;
   }
 
   .secondDiv {
     padding: 10px;
     border-radius: 30px 30px 0 0;
     background-color: whitesmoke;
-    height: 250px;
+    height: 45vh;
 
     .paraOne {
-      font-size: 20px;
+      font-size: 1.6vw;
       font-weight: 600;
     }
 
     .paraTwo {
-      font-size: 14px;
+      font-size: 1.3vw;
     }
 
     .eventsContainer {
-      height: 98px;
+      height: 16.1vh;
       overflow-y: auto;
 
       &::-webkit-scrollbar {
@@ -47,7 +49,7 @@
         width: 10px;
         margin-right: 30px;
         filter: invert(0.5);
-         cursor:pointer;
+        cursor: pointer;
       }
 
       .rightArrow {
@@ -55,15 +57,15 @@
         width: 10px;
         margin-left: 30px;
         filter: invert(0.5);
-         cursor:pointer;
+        cursor: pointer;
       }
     }
 
     .calendarDiv {
       border-top: 1px solid grey;
-      padding-top:5px;
+      padding-top: 5px;
       @include x-center-center;
-      cursor:pointer;
+      cursor: pointer;
       img {
         width: 18px;
         margin-right: 2px;
@@ -78,3 +80,15 @@
     }
   }
 }
+
+// for larger screens 
+@media (min-width: 1300px) and (orientation: landscape) {
+  .mainDiv{
+   .secondDiv{
+     .eventsContainer{
+       height: 24.1vh;
+       overflow-y: auto;
+     }
+   }
+  }
+ }

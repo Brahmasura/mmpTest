@@ -31,6 +31,33 @@ const eventArray = [
   {
     date: "JAN 30",
   },
+  {
+    date: "JAN 25",
+  },
+
+  {
+    date: "JAN 27",
+  },
+  {
+    date: "JAN 28",
+  },
+  {
+    date: "JAN 30",
+  },
+
+  {
+    date: "JAN 25",
+  },
+
+  {
+    date: "JAN 27",
+  },
+  {
+    date: "JAN 28",
+  },
+  {
+    date: "JAN 30",
+  },
 ];
 
 const Fifth = () => {

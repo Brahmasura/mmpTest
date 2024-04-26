@@ -36,7 +36,7 @@
     grid-column: span 3;
     @include grid-box-style;
     padding: 0;
-    height: 275px;
+    height: auto;
 
     overflow: hidden;
   }
@@ -47,6 +47,6 @@
     border: 2px solid white;
     background-color: grey;
     overflow: hidden;
-    height: 275px;
+    height: auto;
   }
 }
