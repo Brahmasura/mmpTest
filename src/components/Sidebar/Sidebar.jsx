@@ -1,6 +1,36 @@
 import style from "./sidebar.module.scss";
 import face from "../../assets/SalesGuy.svg";
-import ticket from "../../assets/ticket.svg";
+import ticket from "../../assets/sidebar_icons/ticketSidebar.svg";
+import boat from "../../assets/sidebar_icons/boat.svg";
+import box from "../../assets/sidebar_icons/box.svg";
+import flag from "../../assets/sidebar_icons/flag.svg";
+import fort from "../../assets/sidebar_icons/fort.svg";
+import tool from "../../assets/sidebar_icons/tool.svg";
+import wheel from "../../assets/sidebar_icons/wheel.svg";
+
+const iconsArray = [
+  {
+    icon: ticket ,
+  },
+  {
+    icon: boat,
+  },
+  {
+    icon: box ,
+  },
+  {
+    icon: flag ,
+  },
+  {
+    icon: fort,
+  },
+  {
+    icon: tool ,
+  },
+  {
+    icon: wheel ,
+  },
+]
 
 const Sidebar = () => {
   return (
@@ -10,13 +40,13 @@ const Sidebar = () => {
           <img src={face} alt="face guy" />
         </div>
 
-        <img className={style.ticket}  src={ticket} alt="the ticket logo" />
-        <img className={style.ticket}  src={ticket} alt="the ticket logo" />
-        <img className={style.ticket}  src={ticket} alt="the ticket logo" />
-        <img className={style.ticket}  src={ticket} alt="the ticket logo" />
-        <img className={style.ticket}  src={ticket} alt="the ticket logo" />
-        <img className={style.ticket}  src={ticket} alt="the ticket logo" />
-        <img className={style.ticket}  src={ticket} alt="the ticket logo" />
+        {
+          iconsArray.map((item, index) => (
+            <img key={index} className={style.ticket}  src={item.icon} alt="the ticket logo" />
+          ))
+        }
+
+      
         <img className={`${style.ticket} ${style.bottom}`}  src={ticket} alt="the ticket logo" />
 
       </div>
@@ -25,3 +55,12 @@ const Sidebar = () => {
 };
 
 export default Sidebar;
+
+
+  {/* <img className={style.ticket}  src={ticket} alt="the ticket logo" />
+        <img className={style.ticket}  src={ticket} alt="the ticket logo" />
+        <img className={style.ticket}  src={ticket} alt="the ticket logo" />
+        <img className={style.ticket}  src={ticket} alt="the ticket logo" />
+        <img className={style.ticket}  src={ticket} alt="the ticket logo" />
+        <img className={style.ticket}  src={ticket} alt="the ticket logo" />
+        <img className={style.ticket}  src={ticket} alt="the ticket logo" /> */}
