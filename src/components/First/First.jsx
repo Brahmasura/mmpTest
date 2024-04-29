@@ -29,7 +29,7 @@ const First = () => {
         </div>
 
         
-        <More position="absolute" top={0} right={0} backgroundColor="grey" width={5} height={5} />
+        <More position="absolute" top={0} right={0} backgroundColor="grey" text="CHAT MENU" width={5} height={5} />
        </div>
     </>
   )

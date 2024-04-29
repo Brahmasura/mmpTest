@@ -4,10 +4,37 @@
   border-radius: 30px;
   @include x-center-center;
   cursor: pointer;
+  transition: width 0.5s ease;
 
-  img {
-    transform: rotate(-90deg);
-    width: 1.7vh;
-    filter: invert(1);
+  .contentDiv {
+    @include x-center-center;
+    position: relative;
+
+    .unHoveredP {
+      position: absolute;
+      transform: translateX(100%);
+      font-size: 0.9vw;
+      margin-bottom: 0;
+      color: white;
+      white-space: nowrap;
+      opacity: 0;
+    }
+
+    .hoveredP {
+      opacity: 1;
+      transform: translateX(0);
+      margin-bottom: 0;
+      font-size: 0.9vw;
+      margin-right: 0.2vw;
+      color: white;
+      white-space: nowrap;
+      transition: transform 0.5s ease, opacity 1.5s ease;
+    }
+
+    img {
+      transform: rotate(-90deg);
+      width: 1.7vh;
+      filter: invert(1);
+    }
   }
 }

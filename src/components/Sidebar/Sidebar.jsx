@@ -7,6 +7,7 @@ import flag from "../../assets/sidebar_icons/flag.svg";
 import fort from "../../assets/sidebar_icons/fort.svg";
 import tool from "../../assets/sidebar_icons/tool.svg";
 import wheel from "../../assets/sidebar_icons/wheel.svg";
+import { useState } from "react";
 
 const iconsArray = [
   {
@@ -33,11 +34,19 @@ const iconsArray = [
 ]
 
 const Sidebar = () => {
+ 
+   const [isHovered, setIsHovered] = useState(false);
+
+   const handleIconHover = () => {
+    setIsHovered(!isHovered);
+   }
+
   return (
     <>
       <div className={style.mainDiv}>
         <div className={style.faceDiv}>
           <img src={face} alt="face guy" />
+          {/* <img src={} alt="the mmp logo"/> */}
         </div>
 
         {
@@ -57,10 +66,3 @@ const Sidebar = () => {
 export default Sidebar;
 
 
-  {/* <img className={style.ticket}  src={ticket} alt="the ticket logo" />
-        <img className={style.ticket}  src={ticket} alt="the ticket logo" />
-        <img className={style.ticket}  src={ticket} alt="the ticket logo" />
-        <img className={style.ticket}  src={ticket} alt="the ticket logo" />
-        <img className={style.ticket}  src={ticket} alt="the ticket logo" />
-        <img className={style.ticket}  src={ticket} alt="the ticket logo" />
-        <img className={style.ticket}  src={ticket} alt="the ticket logo" /> */}
