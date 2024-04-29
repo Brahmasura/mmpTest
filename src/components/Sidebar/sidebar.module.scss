@@ -82,8 +82,34 @@
       color: white;
       font-size: 1.3vw;
       font-weight: 600;
+      cursor:pointer;
     }
   }
+}
+
+
+.redSidebar{
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 18.9vw;
+  height: 100vh;
+  min-width: 15vw;
+  background-color: red;
+  padding-top: 26.2px;
+  z-index: 2;
+
+  .menuDiv{
+    p{
+      color:white;
+      margin-left:2vw;
+      font-size: 1.3vw;
+      cursor:pointer;
+    }
+  }
+
+
+
 }
 
 @media (min-width: 1300px) and (orientation: landscape){
@@ -97,4 +123,11 @@
   .detailedSidebar{
     left:6.7vw;
   }
+
+  .redSidebar{
+    left:22vw;
+  }
 }
+
+
+

@@ -14,31 +14,51 @@ const iconsArray = [
   {
     icon: ticket,
     text: "MarketingPasses",
+    menu: ["New Pass", "View Passes", "Needs Response", "Complete Passes"],
   },
   {
     icon: flag,
     text: "MyBrands",
+    menu: ["Projects", "Brand Manager", "Map"],
   },
   {
     icon: boat,
     text: "LeadStream",
+    menu: ["one", "two", "three"],
   },
 
   {
     icon: fort,
     text: "MyMarketinCRM",
+    menu: [
+      "Contacts",
+      "Pipeline",
+      "Communication",
+      "Marketing",
+      "New Lead",
+      "New Sales Call",
+    ],
   },
   {
     icon: tool,
     text: "Tools",
+    menu: ["Calendars", "Courses", "Websites", "Funnels", "Payments", "Forms"],
   },
   {
     icon: box,
     text: "Data",
+    menu: [
+      "Reporting",
+      "Reputation",
+      "App Marketplace",
+      "Guides",
+      "MyMarketingDrive",
+    ],
   },
   {
     icon: wheel,
     text: "Settings",
+    menu: ["Chat Manager", "MyMarketingPartner", "Account Setting"],
   },
 ];
 
@@ -84,10 +104,9 @@ const Sidebar = () => {
         />
       </div>
 
-      {hoveredIcon !== null ? (
+      {hoveredIcon !== null && (
         <div className={style.detailedSidebar}>
           <img src={mmpLogo} alt="mmp logo" />
-
           {iconsArray.map((item, index) => (
             <>
               <div
@@ -103,10 +122,22 @@ const Sidebar = () => {
             </>
           ))}
         </div>
-      ) : (
-        ""
-      )
-      }
+      )}
+
+      {/* the red div */}
+      {hoveredIcon !== null && (
+        <div
+          className={style.redSidebar}
+          onMouseEnter={() => handleIconHover(hoveredIcon)}
+          onMouseLeave={() => handleIconHover(null)}
+        >
+          {iconsArray[hoveredIcon].menu.map((option, index) => (
+            <div key={index} className={style.menuDiv}>
+              <p>{option}</p>
+            </div>
+          ))}
+        </div>
+      )}
     </>
   );
 };
