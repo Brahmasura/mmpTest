@@ -7,62 +7,108 @@ import flag from "../../assets/sidebar_icons/flag.svg";
 import fort from "../../assets/sidebar_icons/fort.svg";
 import tool from "../../assets/sidebar_icons/tool.svg";
 import wheel from "../../assets/sidebar_icons/wheel.svg";
+import mmpLogo from "../../assets/sidebar_icons/mmpLogo.svg";
 import { useState } from "react";
 
 const iconsArray = [
   {
-    icon: ticket ,
+    icon: ticket,
+    text: "MarketingPasses",
+  },
+  {
+    icon: flag,
+    text: "MyBrands",
   },
   {
     icon: boat,
+    text: "LeadStream",
   },
-  {
-    icon: box ,
-  },
-  {
-    icon: flag ,
-  },
+
   {
     icon: fort,
+    text: "MyMarketinCRM",
   },
   {
-    icon: tool ,
+    icon: tool,
+    text: "Tools",
   },
   {
-    icon: wheel ,
+    icon: box,
+    text: "Data",
   },
-]
+  {
+    icon: wheel,
+    text: "Settings",
+  },
+];
 
 const Sidebar = () => {
- 
-   const [isHovered, setIsHovered] = useState(false);
+  const [hoveredIcon, setHoveredIcon] = useState(null);
 
-   const handleIconHover = () => {
-    setIsHovered(!isHovered);
-   }
+  const handleIconHover = (index) => {
+    setHoveredIcon(index);
+  };
 
   return (
     <>
       <div className={style.mainDiv}>
         <div className={style.faceDiv}>
           <img src={face} alt="face guy" />
-          {/* <img src={} alt="the mmp logo"/> */}
         </div>
 
-        {
-          iconsArray.map((item, index) => (
-            <img key={index} className={style.ticket}  src={item.icon} alt="the ticket logo" />
-          ))
-        }
+        {iconsArray.map((item, index) => (
+          <>
+            <div
+              key={index}
+              className={`${style.sideIconDiv} ${
+                hoveredIcon === index ? style.hoveredSideIcon : ""
+              }`}
+              onMouseEnter={() => handleIconHover(index)}
+              onMouseLeave={() => handleIconHover(null)}
+            >
+              <img
+                className={`${style.ticket} ${
+                  hoveredIcon ? style.iconHovered : ""
+                }`}
+                src={item.icon}
+                alt="the ticket logo"
+              />
+            </div>
+          </>
+        ))}
 
-      
-        <img className={`${style.ticket} ${style.bottom}`}  src={ticket} alt="the ticket logo" />
-
+        <img
+          className={`${style.ticket} ${style.bottom}`}
+          src={ticket}
+          alt="the ticket logo"
+        />
       </div>
+
+      {hoveredIcon !== null ? (
+        <div className={style.detailedSidebar}>
+          <img src={mmpLogo} alt="mmp logo" />
+
+          {iconsArray.map((item, index) => (
+            <>
+              <div
+                key={index}
+                className={`${style.secondSideIconDiv} ${
+                  hoveredIcon === index ? style.hoveredSideIcon : ""
+                }`}
+                onMouseEnter={() => handleIconHover(index)}
+                onMouseLeave={() => handleIconHover(null)}
+              >
+                <p>{item.text}</p>
+              </div>
+            </>
+          ))}
+        </div>
+      ) : (
+        ""
+      )
+      }
     </>
   );
 };
 
 export default Sidebar;
-
-

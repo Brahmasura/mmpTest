@@ -6,11 +6,24 @@
   align-items: center;
 }
 
+@mixin x-start-center {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
 @mixin y-start-center {
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
+}
+
+@mixin y-start-start {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
 }
 
 @mixin grid-box-style{

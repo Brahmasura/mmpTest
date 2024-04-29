@@ -3,7 +3,7 @@
 .mainDiv {
   @include y-start-center;
   height: 100%;
-  
+  position: relative;
 
   .faceDiv {
     margin-bottom: 1vh;
@@ -19,14 +19,82 @@
     }
   }
 
-  .ticket {
-    width: 4.5vh;
-    margin: 2.6vh 0;
-    cursor: pointer;
+  .sideIconDiv {
+    height: 8.5vh;
+    width: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.hoveredSideIcon {
+      background-color: red;
+    }
+
+    .ticket {
+      width: 4.5vh;
+      margin: 2.6vh 0;
+      cursor: pointer;
+    }
   }
 
   .bottom {
     margin-top: auto;
     margin-bottom: 20px;
+  }
+}
+
+.detailedSidebar {
+  border:none;
+  position: absolute;
+  top: 0;
+  left: 6.2vw;
+  height: 100vh;
+  // width: 20vw;
+  // @include y-start-center;
+  background-color: black;
+  padding-top: 15.2px;
+  z-index: 2;
+
+  img {
+    height: 8vh;
+    width: auto;
+    margin-bottom: 1.1vh;
+  }
+
+  // p {
+  //   color: white;
+  // }
+
+  .secondSideIconDiv {
+    height: 8.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include x-start-center;
+
+    &.hoveredSideIcon {
+      background-color: red;
+    }
+
+    p {
+      margin-bottom: 0;
+      color: white;
+      font-size: 1.3vw;
+      font-weight: 600;
+    }
+  }
+}
+
+@media (min-width: 1300px) and (orientation: landscape){
+  .mainDiv{
+    margin-bottom:1vh;
+    .sideIconDiv{
+      width:5vw;
+    }
+  }
+
+  .detailedSidebar{
+    left:6.7vw;
   }
 }
