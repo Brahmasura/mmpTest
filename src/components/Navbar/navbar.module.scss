@@ -9,10 +9,12 @@
 
   p {
     margin-bottom: 0;
-    font-family: "Barlow", sans-serif;
-    font-weight: 400;
+    color: var(--text-text-invert, #fffdfc);
+    font-family: "Rajdhani", sans-serif;
+    font-size: 32px;
     font-style: normal;
-    color: whitesmoke;
+    font-weight: 700;
+    line-height: normal;
 
     &:nth-child(1) {
       cursor: pointer;
@@ -27,39 +29,46 @@
   }
 
   .navRight {
-    min-width: 36vw;
+    // min-width: 36vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     .navMap {
-      width: 2.35vw;
-      height: auto;
+      width: 2.25vw;
+      height: 2.28vw;
       filter: invert(1);
       cursor: pointer;
     }
 
     .inputBox {
       position: relative;
+      
 
       input {
+        margin-left: 1.05vw;
+      margin-right: 0.83vw;
         border: none;
-        width: 22.3vw;
-        height: 2.35vw;
-        border-radius: 20px;
-        padding-inline: 10px;
+        width: 23.476vw;
+        height: 2.5vw;
+        border-radius: 100px;
+        padding-inline: 1.45vw;
 
         &::placeholder {
-          font-weight: 400;
-          font-family: 6vw;
+          color: var(--text-text-complementary, #b2b2b2);
+          font-family: Rajdhani;
+          font-size: 1.2vw;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
         }
       }
 
       img {
-        width: 1vw;
+        width: 1.09vw;
         position: absolute;
         top: 0.7vw;
-        right: 0.8vw;
+        right: 1.22vw;
       }
     }
 
@@ -67,22 +76,29 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-radius: 23px;
-      padding: 3px 6px 3px 3px;
-      width: 9.9vw;
-      height: 2.35vw;
+      border-radius: 100px;
+      // padding: 3px 6px 3px 3px;
+      padding: 0.22vw 0.84vw 0.22vw 0.333vw;
+      width: 11.727vw;
+      height: 2.979vw;
       position: relative;
       cursor: pointer;
 
       .ashley {
-        width: auto;
-        height: 1.9vw;
+        width: 2.5vw;
+        height: auto;
         border-radius: 23px;
       }
 
       p {
-        font-size: 1.1vw;
-        font-weight: 500;
+        // font-size: 1.1vw;
+        // font-weight: 500;
+        color: var(--text-text-white, #fffdfc);
+        font-family: "Rajdhani", sans-serif;
+        font-size: 1.2vw;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
       }
 
       .downArrow {
@@ -111,7 +127,7 @@
       height: 100%;
       background-color: rgba(256, 256, 256, 0.14); /* 50% opacity black */
       z-index: -1; /* Make sure the overlay is behind the content */
-      border-radius: 23px;
+      border-radius: 100px;
     }
 
     .profileDiv {
