@@ -20,7 +20,7 @@ function App() {
             <Navbar />
 
             {/* now the main container */}
-            <Container/>
+            {/* <Container/> */}
           </div>
         </div>
       </div>

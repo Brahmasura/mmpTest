@@ -71,11 +71,16 @@ const Sidebar = () => {
 
   return (
     <>
+    {/* this is the initial sidebar */}
       <div className={style.mainDiv}>
+
+      {/* this is main logo */}
         <div className={style.faceDiv}>
           <img src={face} alt="face guy" />
         </div>
 
+
+        {/* these are the icons in the initial sidebar  */}
         {iconsArray.map((item, index) => (
           <>
             <div
