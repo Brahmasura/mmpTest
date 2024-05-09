@@ -104,6 +104,7 @@
       font-size: 13px;
       font-weight: 700;
       margin-bottom: 2px;
+      // margin-top:5px;
       cursor: pointer;
     }
   }
@@ -112,14 +113,37 @@
 // for larger screens
 @media (min-width: 1300px) and (orientation: landscape) {
   .mainDiv {
-    .fourthLeft{
+    .fourthLeft {
       p {
         margin-bottom: 2vh;
       }
     }
     .fourthRight {
       .tableWrapper {
-        max-height: 42.1vh;
+        // max-height: 42.1vh;
+        max-height: 40.8vh;
+
+        table {
+          tr {
+            height: 5vh;
+          }
+
+          thead {
+            th {
+              font-size: 1rem;
+            }
+          }
+
+          tbody {
+           td{
+             font-size: 0.9rem;
+          }
+        }
+        }
+      }
+
+      .viewAllPara{
+        font-size:1.2rem;
       }
     }
   }

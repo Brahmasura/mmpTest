@@ -41,3 +41,14 @@ tr {
     }
   }
 }
+
+// for larger screens
+@media (min-width: 1300px) and (orientation: landscape) {
+  tr{
+    td{
+      .projectDiv{
+        padding: 1.5px 10px;
+      }
+    }
+  }
+}
