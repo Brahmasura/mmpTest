@@ -2,10 +2,14 @@
 
 .mainDiv {
   position: relative;
+  height:100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
 
   h2,
   h3 {
-    font-family: "Barlow", sans-serif;
+    font-family: "Rajdhani", sans-serif;
   }
 
   h2 {
@@ -17,7 +21,7 @@
 
   h3 {
     font-size: 4.1vh;
-    margin-bottom: 1.4vh;
+    // margin-bottom: 1.4vh;
     display: inline-block;
   }
 
@@ -28,11 +32,12 @@
 
     & img:first-child {
       // width: 9.2vh;
-      width: 7.2vh;
+      width: 7.3vh;
     }
 
     .thirdDiv {
       p {
+        font-family: "Rajdhani", sans-serif;
         font-size: 2.1vh;
         margin-bottom: 2px;
       }
@@ -41,22 +46,23 @@
         // width: 29vw;
         width: 24vw;
 
-        height: 6.6vh;
+        height: 5.6vh;
         border-radius: 100px;
         background: lightgray;
         border: none;
         padding: 10px;
 
         &::placeholder {
+          font-family: "Rajdhani", sans-serif;
           font-size: 2vh;
         }
       }
     }
 
-    .fourthDiv {
+    .sendDiv {
       background-color: red;
-      width: 6.7vh;
-      height: 6.7vh;
+      width: 5.6vh;
+      height: 5.6vh;
       border-radius: 100px;
       display: flex;
       justify-content: center;

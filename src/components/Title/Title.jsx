@@ -6,7 +6,7 @@ const Title = ({text}) => {
     <>
      <div className={style.mainDiv}>
         <p>{text}</p>
-        <More backgroundColor="red" text="SEE ALL" width={5} height={5}/>
+        <More backgroundColor="red" text="SEE ALL" width={4} height={4}/>
      </div>
     </>
   )

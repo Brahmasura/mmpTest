@@ -4,9 +4,12 @@
   .brandsContainer {
     height: 21.4vh;
     overflow-y: auto;
+    // scrollbar-color: red rgba(0,0,0,0.3);
+    scrollbar-width:none;
+  
 
-        &::-webkit-scrollbar{
-            display:none;
-        }
+        // &::-webkit-scrollbar{
+        //     display:none;
+        // }
   }
 }

@@ -8,6 +8,7 @@ import fort from "../../assets/sidebar_icons/fort.svg";
 import tool from "../../assets/sidebar_icons/tool.svg";
 import wheel from "../../assets/sidebar_icons/wheel.svg";
 import mmpLogo from "../../assets/sidebar_icons/mmpLogo.svg";
+import earth from "../../assets/sidebar_icons/Light Dark.svg";
 import { useState } from "react";
 
 const iconsArray = [
@@ -104,7 +105,7 @@ const Sidebar = () => {
 
         <img
           className={`${style.ticket} ${style.bottom}`}
-          src={ticket}
+          src={earth}
           alt="the ticket logo"
         />
       </div>
