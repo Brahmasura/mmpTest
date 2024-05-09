@@ -10,18 +10,18 @@ const First = () => {
         <h2>Welcome, Ashley</h2><br/>
         <h3>Let's make something amazing!</h3>
 
-        {/* second div */}
+        
         <div className={style.secondDiv}>
           
           <img src={face} alt="sales guy" />
           
-          {/* third div */}
+      
           <div className={style.thirdDiv}>
             <p>How can i help today?</p>
             <input type="text" placeholder="Ask away! Lucky is here to help" />
           </div>
 
-          {/* fourthDiv */}
+         
           <div className={style.fourthDiv}>
             <img src={send} alt="the send icon"/>
           </div>

@@ -2,6 +2,7 @@
 
 .mainDiv {
   position: relative;
+
   h2,
   h3 {
     font-family: "Barlow", sans-serif;
@@ -10,12 +11,12 @@
   h2 {
     font-weight: 700;
     margin-bottom: 2px;
-    font-size: 6.6vh;
+    font-size: 5.7vh;
     display: inline-block;
   }
 
   h3 {
-    font-size: 4.6vh;
+    font-size: 4.1vh;
     margin-bottom: 1.4vh;
     display: inline-block;
   }
@@ -26,7 +27,8 @@
     align-items: end;
 
     & img:first-child {
-      width: 9.5vh;
+      // width: 9.2vh;
+      width: 7.2vh;
     }
 
     .thirdDiv {
@@ -36,7 +38,9 @@
       }
 
       input {
-        width: 29vw;
+        // width: 29vw;
+        width: 24vw;
+
         height: 6.6vh;
         border-radius: 100px;
         background: lightgray;
@@ -51,8 +55,8 @@
 
     .fourthDiv {
       background-color: red;
-      width: 7.4vh;
-      height: 7.4vh;
+      width: 6.7vh;
+      height: 6.7vh;
       border-radius: 100px;
       display: flex;
       justify-content: center;

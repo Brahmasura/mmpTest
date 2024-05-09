@@ -6,47 +6,67 @@
   // z-index: 1;
   margin: 20px 0;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  // grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 31.6vh auto;
-  grid-gap: 20px;
+  grid-gap: 35px;
+ 
 
-  .first {
-    grid-column: span 2;
-    @include grid-box-style;
-    background-color: whitesmoke;
+  .rowOne {
+    display: grid;
+    grid-template-columns: 45% 23% auto;
+    column-gap: 1.2vw;
+    height:31.6vh;
+
+    .first {
+      // grid-column: span 2;
+      height:31.6vh;
+      @include grid-box-style;
+     
+      background-color: whitesmoke;
+    }
+
+    .second {
+      // height:31.6vh;
+      border: 2px solid white;
+      padding: 15px;
+      background-color: rgba(0, 0, 0, 0.4);
+      @include grid-box-style;
+    }
+
+    .third {
+      // height:31.6vh;
+      border: 2px solid white;
+      padding: 15px;
+      background-color: rgba(0, 0, 0, 0.4);
+      @include grid-box-style;
+    }
   }
 
-  .second {
-    border: 2px solid white;
-    padding: 15px;
-    background-color: rgba(0, 0, 0, 0.4);
-    @include grid-box-style;
-  }
+  .rowTwo {
+    display: grid;
+    grid-template-columns: 74% auto;
+    column-gap: 1.2vw;
+    height:45vh;
 
-  .third {
-    border: 2px solid white;
-    padding: 15px;
-    background-color: rgba(0, 0, 0, 0.4);
-    @include grid-box-style;
-  }
+    .fourth {
+     
+      border: 2px solid white;
+      // height:45vh;
+      // grid-column: span 3;
+      @include grid-box-style;
+      padding: 0;
+      height: auto;
+      overflow: hidden;
+    }
 
-  .fourth {
-    border: 2px solid white;
-
-    grid-column: span 3;
-    @include grid-box-style;
-    padding: 0;
-    height: auto;
-
-    overflow: hidden;
-  }
-
-  .fifth {
-    border-radius: 30px;
-    padding: 4px 0 0 0;
-    border: 2px solid white;
-    background-color: grey;
-    overflow: hidden;
-    height: auto;
+    .fifth {
+      // height:45vh;
+      border-radius: 30px;
+      padding: 4px 0 0 0;
+      border: 2px solid white;
+      background-color: grey;
+      overflow: hidden;
+      height: auto;
+    }
   }
 }
