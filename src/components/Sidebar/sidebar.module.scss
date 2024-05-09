@@ -40,6 +40,7 @@
   .bottom {
     margin-top: auto;
     margin-bottom: 20px;
+    width:4vw;
   }
 }
 
@@ -52,13 +53,13 @@
   // width: 20vw;
   // @include y-start-center;
   background-color: black;
-  padding-top: 15.2px;
+  padding-top: 15px;
   z-index: 2;
 
   img {
     height: 8vh;
     width: auto;
-    margin-bottom: 1.1vh;
+    margin-bottom: 1vh;
   }
 
   // p {

@@ -106,7 +106,7 @@ const Sidebar = () => {
         <img
           className={`${style.ticket} ${style.bottom}`}
           src={earth}
-          alt="the ticket logo"
+          alt="the earth logo"
         />
       </div>
 
