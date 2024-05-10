@@ -31,21 +31,26 @@
     }
 
     .ticket {
-      width: 4.5vh;
+      width: 4.3vh;
       margin: 2.6vh 0;
       cursor: pointer;
     }
+
+    &:last-child {
+      margin-top: auto;
+      margin-bottom: 20px;
+    }
   }
 
-  .bottom {
-    margin-top: auto;
-    margin-bottom: 20px;
-    width:4vw;
-  }
+  // .bottom {
+  //   margin-top: auto;
+  //   margin-bottom: 20px;
+  //   width: 4vw;
+  // }
 }
 
 .detailedSidebar {
-  border:none;
+  border: none;
   position: absolute;
   top: 0;
   left: 6.2vw;
@@ -55,6 +60,7 @@
   background-color: black;
   padding-top: 15px;
   z-index: 2;
+  @include y-start-start;
 
   img {
     height: 8vh;
@@ -68,9 +74,10 @@
 
   .secondSideIconDiv {
     height: 8.5vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width:100%;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
 
     @include x-start-center;
 
@@ -81,54 +88,59 @@
     p {
       margin-bottom: 0;
       color: white;
-      font-size: 1.3vw;
+      font-size: 1.5vw;
       font-weight: 600;
-      cursor:pointer;
+      cursor: pointer;
+    }
+
+    &:last-child {
+      margin-top: auto;
+      margin-bottom: 20px;
     }
   }
 }
 
-
-.redSidebar{
+.redSidebar {
   border: none;
   position: absolute;
   top: 0;
   left: 18.9vw;
   height: 100vh;
-  min-width: 15vw;
+  min-width: 20vw;
   background-color: red;
   padding-top: 26.2px;
+  padding-left: 40px;
   z-index: 2;
 
-  .menuDiv{
-    p{
-      color:white;
-      margin-left:2vw;
+  .menuDiv {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 10px;
+
+    p {
+      margin-bottom: 0;
+      color: white;
+      margin-left: 1vw;
       font-size: 1.3vw;
-      cursor:pointer;
+      cursor: pointer;
     }
-  }
-
-
-
-}
-
-@media (min-width: 1300px) and (orientation: landscape){
-  .mainDiv{
-    margin-bottom:1vh;
-    .sideIconDiv{
-      width:5vw;
-    }
-  }
-
-  .detailedSidebar{
-    left:6.7vw;
-  }
-
-  .redSidebar{
-    left:22vw;
   }
 }
 
+@media (min-width: 1300px) and (orientation: landscape) {
+  .mainDiv {
+    margin-bottom: 1vh;
+    .sideIconDiv {
+      width: 5vw;
+    }
+  }
 
+  .detailedSidebar {
+    left: 6.7vw;
+  }
 
+  .redSidebar {
+    left: 22vw;
+  }
+}
