@@ -182,7 +182,7 @@ const SidebarNew = () => {
               hoveredIcon === null && style.rsbUnhovered
             }`}
             onMouseEnter={() => handleIconHover(hoveredIcon)}
-            // onMouseLeave={() => handleIconHover(null)}
+            onMouseLeave={() => handleIconHover(null)}
           >
             {iconsArray[hoveredIcon].menu.map((option, index) => (
               <div key={index} className={style.menuDiv}>
