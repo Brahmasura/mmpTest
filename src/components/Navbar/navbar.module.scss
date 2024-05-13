@@ -1,17 +1,14 @@
 .navbar {
   position: relative;
-  // z-index: 1;
-  // height: 10vh;
-  // border: 1px solid red;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   p {
     margin-bottom: 0;
-    color: var(--text-text-invert, #fffdfc);
+    color: #fffdfc;
     font-family: "Rajdhani", sans-serif;
-    font-size: 32px;
+    font-size: 1.6666666vw;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -35,8 +32,10 @@
     align-items: center;
 
     .navMap {
-      width: 2.25vw;
-      height: 2.28vw;
+      // width: 2.25vw;
+      // height: 2.28vw;
+      width: 1.588541666vw;
+      height: auto;
       filter: invert(1);
       cursor: pointer;
     }
@@ -45,18 +44,18 @@
       position: relative;
 
       input {
-        margin-left: 1.05vw;
-        margin-right: 0.83vw;
+        margin-left: 2.396875vw;
+        margin-right: 00.78125vw;
         border: none;
-        width: 23.476vw;
-        height: 2.5vw;
+        width: 22.0833333vw;
+        height: 4.1666666vh;
         border-radius: 100px;
         padding-inline: 1.45vw;
 
         &::placeholder {
           color: var(--text-text-complementary, #b2b2b2);
           font-family: Rajdhani;
-          font-size: 1.2vw;
+          font-size: 1.0416666vw;
           font-style: normal;
           font-weight: 700;
           line-height: normal;
@@ -64,7 +63,7 @@
       }
 
       img {
-        width: 1.09vw;
+        width: 1.02135416vw;
         position: absolute;
         top: 0.7vw;
         right: 1.62vw;
@@ -77,25 +76,23 @@
       align-items: center;
       border-radius: 100px;
       background: linear-gradient(rgba(256, 256, 256, 0.14) 100%, transparent);
-      // padding: 3px 6px 3px 3px;
-      padding: 0.22vw 0.84vw 0.22vw 0.333vw;
-      width: 11.727vw;
-      height: 2.979vw;
+      padding: 0.37037vh 0.78125vw 0.37037vh 0.3125vw ;
+      width: 10.520833333vw;
+      height:4.9074074vh;
+      // height: 2.979vw;
       position: relative;
       cursor: pointer;
 
       .ashley {
-        width: 2.5vw;
+        width: 2.34375vw ;
         height: auto;
         border-radius: 23px;
       }
 
       p {
-        // font-size: 1.1vw;
-        // font-weight: 500;
-        color: var(--text-text-white, #fffdfc);
+        color: #fffdfc;
         font-family: "Rajdhani", sans-serif;
-        font-size: 1.2vw;
+        font-size: 1.0416666vw;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -131,7 +128,7 @@
       border-radius: 34px;
 
       p {
-        font-family:"Rajdhani", sans-serif;
+        font-family: "Rajdhani", sans-serif;
         color: white;
         // font-size: 1.1vw;
         // margin-bottom: 0.5vh;
@@ -149,22 +146,9 @@
         p {
           color: red;
           text-align: start;
-          margin-bottom:0;
+          margin-bottom: 0;
         }
       }
     }
-
-    // .profileDiv::before {
-    //   content: "";
-    //   position: absolute;
-    //   top: 0;
-    //   left: 0;
-    //   width: 100%;
-    //   height: 100%;
-    //   backdrop-filter: blur(3.4px);
-    //   background-color: rgba(255, 255, 255, 0.1);
-    //   z-index: -1; /* Make sure the overlay is behind the content */
-    //   border-radius: 17px;
-    // }
   }
 }
