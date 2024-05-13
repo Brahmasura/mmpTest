@@ -1,0 +1,97 @@
+@import "../../mixins.module.scss";
+
+.sideBarMainDiv {
+  display: flex;
+  height: 100vh;
+  background: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  .blackSidebar {
+    height: 100%;
+    padding-top: 30px;
+    padding-left: 40px;
+    @include y-start-center;
+    transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    .sidebarLogoDiv {
+      @include x-center-center;
+      margin-bottom: 30px;
+    }
+
+    .sideIconDiv {
+      width: 100%;
+      height: 85px;
+      display: flex;
+      padding-left: 20px;
+      justify-content: start;
+      align-items: center;
+      margin-bottom: 10px;
+
+      &.hoveredSideIcon {
+        background-color: #f40009;
+        transition: background-color 400ms ease-in;
+      }
+
+      .sideIcon {
+        width: 41px;
+        height: auto;
+        cursor: pointer;
+      }
+
+      p {
+        font-family: Rajdhani;
+        margin-left: 40px;
+        margin-bottom: 0;
+        color: white;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+
+      &:last-child {
+        margin-top: auto;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .bsbUnhovered {
+    padding-left: 20px;
+    width: 125px;
+    @include y-start-start;
+    transition: all 1s ease-in;
+  }
+
+  //   red sidebar styling begins
+  .redSidebar {
+    height: 100%;
+    background-color: #f40009;
+    padding-top: 30px;
+    padding-left: 40px;
+    width: 420px;
+
+    .menuDiv {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      padding: 10px 0 10px 20px;
+      margin-bottom: 20px;
+
+      p {
+        margin-bottom: 0;
+        color: white;
+        margin-left: 20px;
+        font-family: Rajdhani;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        cursor: pointer;
+      }
+    }
+  }
+}

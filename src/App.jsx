@@ -1,27 +1,26 @@
-
 import style from "./App.module.scss";
 import Container from "./components/Container/Container";
 import Navbar from "./components/Navbar/Navbar";
-import Sidebar from "./components/Sidebar/Sidebar";
+// import Sidebar from "./components/Sidebar/Sidebar";
+import SidebarNew from "./components/SidebarNew/SidebarNew";
 
 function App() {
   return (
     <>
-      <div className={`container-fluid ${style.mainDiv}`}>
-        <div className="row">
-          {/* for sidebar */}
-          <div className={`col-1 ${style.sidebar}`}>
-            <Sidebar />
-          </div>
+      <div className={style.mainDiv}>
+        {/* for sidebar */}
+        <div className={style.sidebar}>
+          {/* <Sidebar /> */}
+          <SidebarNew />
+        </div>
 
-          {/* for the main content */}
-          <div className={`col-11 ${style.contentDiv}`}>
-            {/* navbar */}
-            <Navbar />
+        {/* for the main content */}
+        <div className={style.contentDiv}>
+          {/* navbar */}
+          <Navbar />
 
-            {/* now the main container */}
-            <Container/>
-          </div>
+          {/* now the main container */}
+          <Container />
         </div>
       </div>
     </>

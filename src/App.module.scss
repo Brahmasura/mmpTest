@@ -1,12 +1,15 @@
 .mainDiv {
-  .sidebar {
+  position:relative;
+  // .sidebar {
     
-    height: 100vh;
-    padding-top:15px;
-    background-color: black;
-  }
+  //   height: 100vh;
+  //   padding-top:15px;
+  //   background-color: black;
+  // }
 
   .contentDiv {
+    height:100vh;
+    margin-left:121px;
     // padding-right:160px;
     // padding-top:39px;
     padding-right: 8.893vw;
