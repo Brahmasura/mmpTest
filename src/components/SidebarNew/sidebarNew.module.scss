@@ -14,7 +14,8 @@
     padding-top: 30px;
     padding-left: 40px;
     @include y-start-center;
-    transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    width:auto;
+    transition: all 500ms ease-in-out;
 
     .sidebarLogoDiv {
       @include x-center-center;
@@ -29,6 +30,7 @@
       justify-content: start;
       align-items: center;
       margin-bottom: 10px;
+      cursor: pointer;
 
       &.hoveredSideIcon {
         background-color: #f40009;
@@ -38,7 +40,7 @@
       .sideIcon {
         width: 41px;
         height: auto;
-        cursor: pointer;
+       
       }
 
       p {
@@ -63,7 +65,7 @@
     padding-left: 20px;
     width: 125px;
     @include y-start-start;
-    transition: all 1s ease-in;
+    // transition: all 1s ease-in;
   }
 
   //   red sidebar styling begins
@@ -91,6 +93,12 @@
         font-weight: 600;
         line-height: normal;
         cursor: pointer;
+      }
+
+      &:hover{
+        background:linear-gradient(to right,rgba(0,0,0,0.5), transparent);
+        padding-left:40px;
+        transition:padding-left 500ms ease-out;
       }
     }
   }
