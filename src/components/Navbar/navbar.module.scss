@@ -76,15 +76,15 @@
       align-items: center;
       border-radius: 100px;
       background: linear-gradient(rgba(256, 256, 256, 0.14) 100%, transparent);
-      padding: 0.37037vh 0.78125vw 0.37037vh 0.3125vw ;
+      padding: 0.37037vh 0.78125vw 0.37037vh 0.3125vw;
       width: 10.520833333vw;
-      height:4.9074074vh;
+      height: 4.9074074vh;
       // height: 2.979vw;
       position: relative;
       cursor: pointer;
 
       .ashley {
-        width: 2.34375vw ;
+        width: 2.34375vw;
         height: auto;
         border-radius: 23px;
       }
@@ -118,33 +118,47 @@
     .profileDiv {
       background: linear-gradient(rgba(256, 256, 256, 0.1) 100%, transparent);
       backdrop-filter: blur(3.4px);
-      width: 11.727vw;
+      // width: 11.727vw;
+      width: 10.52083333vw;
       position: absolute;
       // top: 8.2vh;
-      top: 5.8vh;
+      // top: 5.8vh;
+      top: 5.6481481481vh;
       right: 0;
       z-index: 2;
-      padding-top: 1vw;
-      border-radius: 34px;
+      // padding-top: 1vw;
+      padding-top:1.66666666666vh;
+      border-radius: 24px;
 
       p {
         font-family: "Rajdhani", sans-serif;
-        color: white;
+      
         // font-size: 1.1vw;
         // margin-bottom: 0.5vh;
-        font-size: 1.2vw;
-        margin-bottom: 1vh;
-        margin-left: 1vw;
+        
+        // margin-bottom: 1vh;
+        // margin-left: 1vw;
+        margin-left:1.1458333333vw;
+        margin-bottom:2.037037037vh;
+        
+
+        color:  #fffdfc;
+      
+        font-size: 1.0416666666vw;
+        font-style: normal;
         font-weight: 500;
+        line-height: normal;
       }
 
       button {
         border: none;
         width: 100%;
         border-radius: 100px;
-        height: 4.5vh;
+        height: 4.81481481vh;
+        margin-top:0.5555555555vh;
+        background-color: #fffdfc;
         p {
-          color: red;
+          color:#F40009;
           text-align: start;
           margin-bottom: 0;
         }
