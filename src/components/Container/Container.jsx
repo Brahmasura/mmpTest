@@ -10,24 +10,29 @@ const Container = () => {
     <>
       <div className={style.mainContainer}>
         <div className={style.rowOne}>
-          <div className={style.first}>
+          {/* <div className={style.first}> */}
             <First />
-          </div>
-          <div className={style.second}>
+          {/* </div> */}
+
+
+          {/* <div className={style.second}>
             <Second />
           </div>
+
+
           <div className={style.third}>
             <Third />
-          </div>
+          </div> */}
+          
         </div>
-        <div className={style.rowTwo}>
+        {/* <div className={style.rowTwo}>
           <div className={style.fourth}>
             <Fourth />
           </div>
           <div className={style.fifth}>
             <Fifth />
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

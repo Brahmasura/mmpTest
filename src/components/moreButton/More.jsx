@@ -19,12 +19,12 @@ const More = ({
 
   const divStyle = {
     position: position,
-    top: top,
-    right: right,
+    top: `${top}vh`,
+    right: `${right}vw`,
     text: text,
     backgroundColor: backgroundColor,
-    width:   `${isHovered ? width * 2.5 : width}vh`,
-    height: `${height}vh`,
+    width:   `${isHovered ? width * 4 : width}vw`,
+    height: `${height}vw`,
   };
 
   return (
@@ -32,7 +32,9 @@ const More = ({
       <div className={style.moreDiv} style={divStyle}
       onMouseEnter={handleHover} onMouseLeave={handleHover}>
         <div className={style.contentDiv}>
-          <p className={`${isHovered ? style.hoveredP : style.unHoveredP}`}>
+          {/* <p className={`${isHovered ? style.hoveredP : style.unHoveredP}`}> */}
+          <p className={isHovered ? style.hoveredP : style.unHoveredP}>
+
             {text}
           </p>
           <img src={more} alt="the more button" />

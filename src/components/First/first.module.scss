@@ -2,25 +2,39 @@
 
 .mainDiv {
   position: relative;
-  height:100%;
-  display:flex;
+  width: 39.58333333vw;
+  height: 29.72222222vh;
+  display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
+  @include grid-box-style;
+  border:none;
+ padding-left:2.6041666666vw;
+ padding-top:2.9629629629vh;
+ padding-bottom:3.0555555555vh;
+ padding-right:1.97916666666vw;
+  background-color: #fffdfc;
 
   h2,
   h3 {
     font-family: "Rajdhani", sans-serif;
+    line-height: normal;
+    font-style: normal;
   }
 
   h2 {
-    font-weight: 700;
-    margin-bottom: 2px;
-    font-size: 5.7vh;
     display: inline-block;
+    margin-bottom: 0;
+    font-size: 3.333333333vw;
+    font-weight: 700;
+    color: #333;
+    margin-bottom:-0.7407407407vh;
   }
 
   h3 {
-    font-size: 4.1vh;
+    font-size: 2.083333333vw;
+    font-weight: 500;
+    margin-bottom:0;
     // margin-bottom: 1.4vh;
     display: inline-block;
   }
@@ -31,47 +45,47 @@
     align-items: end;
 
     & img:first-child {
-      // width: 9.2vh;
-      width: 7.3vh;
+      width: 4.1953125vw;
     }
 
     .thirdDiv {
       p {
         font-family: "Rajdhani", sans-serif;
-        font-size: 2.1vh;
-        margin-bottom: 2px;
+        font-size: 0.92593749999vw;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 0.648148148vh;
       }
 
       input {
         // width: 29vw;
-        width: 24vw;
+        // width: 24vw;
+        width: 26.9791666666vw;
+        height: 5.8333333333vh;
 
-        height: 5.6vh;
-        border-radius: 100px;
-        background: lightgray;
+        // height: 5.6vh;
+        // border-radius: 100px;
+        border-radius: 2.6041666666vw;
+        background: rgba(178, 178, 178, 0.20);
         border: none;
         padding: 10px;
+        padding-left:1.145833333vw;
 
         &::placeholder {
           font-family: "Rajdhani", sans-serif;
-          font-size: 2vh;
+          font-size: 0.78125vw;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
         }
       }
     }
 
     .sendDiv {
-      background-color: red;
-      width: 5.6vh;
-      height: 5.6vh;
-      border-radius: 100px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      width: 3.0729166666vw;
+      height: 3.0729166666vw;
       cursor: pointer;
-      img {
-        width: 3.3vh;
-        filter: invert(1);
-      }
     }
   }
 }

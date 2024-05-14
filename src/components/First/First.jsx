@@ -1,6 +1,6 @@
 import style from "./first.module.scss";
 import face from "../../assets/SalesGuy.svg";
-import send from "../../assets/send.svg";
+import send from "../../assets/sendIcon.svg";
 import More from "../moreButton/More";
 
 const First = () => {
@@ -21,19 +21,19 @@ const First = () => {
             <input type="text" placeholder="Ask away! Lucky is here to help" />
           </div>
 
-          <div className={style.sendDiv}>
-            <img src={send} alt="the send icon" />
-          </div>
+         
+            <img className={style.sendDiv} src={send} alt="the send icon" />
+         
         </div>
 
         <More
           position="absolute"
-          top={0}
-          right={0}
-          backgroundColor="grey"
+          top={1.851851851}
+          right={1.2385416666}
+          backgroundColor="rgba(0, 0, 0, 0.25)"
           text="CHAT MENU"
-          width={5}
-          height={5}
+          width={2.3958333333}
+          height={2.3958333333}
         />
       </div>
     </>
