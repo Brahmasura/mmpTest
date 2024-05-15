@@ -9,6 +9,7 @@
   // grid-gap: 3vh;
 
   .rowOne {
+    display:flex;
     // display: grid;
     // grid-template-columns: 45% 23% auto;
     // column-gap: 1.2vw;
@@ -23,13 +24,13 @@
       // background-color: whitesmoke;
     // }
 
-    .second {
-      height: 31.6vh;
-      border: 2px solid white;
-      background-color: rgba(0, 0, 0, 0.4);
-      @include grid-box-style;
+    // .second {
+      // height: 31.6vh;
+      // border: 2px solid white;
+      // background-color: rgba(0, 0, 0, 0.4);
+      // @include grid-box-style;
       // padding:1.5rem;
-    }
+    // }
 
     .third {
       height: 31.6vh;

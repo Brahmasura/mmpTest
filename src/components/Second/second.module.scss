@@ -1,15 +1,24 @@
+@import "../../mixins.module.scss";
+
 .mainDiv {
-  width: 100%;
+  width: 19.010416666vw;
+  height: 29.72222222vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  @include grid-box-style;
+  padding-left:1.09375vw;
+  padding-right:1.09375vw;
+
+  padding-top: 2.685185185vh;
+  overflow:hidden;
 
   .brandsContainer {
     height: 21.4vh;
     overflow-y: auto;
     // scrollbar-color: red rgba(0,0,0,0.3);
-    scrollbar-width:none;
-  
+    scrollbar-width: none;
 
-        // &::-webkit-scrollbar{
-        //     display:none;
-        // }
+    // &::-webkit-scrollbar{
+    //     display:none;
+    // }
   }
 }

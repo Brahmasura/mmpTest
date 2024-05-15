@@ -6,11 +6,12 @@
   align-items: center;
   width: 100%;
   border-bottom: 2px solid grey;
-  padding: 5px;
+  // padding: 5px;
+  height: 7.9629629629vh;
   position: relative;
 
   .star {
-    width: 3.3vh;
+    width: 1.19630208333vw;
     height: auto;
     filter: invert(0.5);
   }
@@ -21,18 +22,29 @@
   }
 
   .text {
-    font-size: 2vh;
-    color: white;
-    font-weight: 500;
+    // font-size: 2vh;
+    // color: white;
+    // font-weight: 500;
+    color: #fffdfc;
+    font-family: "Rajdhani", sans-serif;
+    font-size: 1.0416666666vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
     margin-bottom: 0;
   }
 
   .title {
     position: absolute;
-    bottom: 0;
+    bottom: 1vh;
+    // the above needs to be monitored
     left: 0;
-    color: white;
+    color: #fffdfc;
+    font-family: "Rajdhani", sans-serif;
+    font-size: 0.625vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
     margin-bottom: 0;
-    font-size: 1.6vh;
   }
 }
