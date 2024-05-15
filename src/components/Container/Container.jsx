@@ -20,9 +20,9 @@ const Container = () => {
           {/* </div> */}
 
 
-          {/* <div className={style.third}>
+          {/* <div className={style.third}> */}
             <Third />
-          </div>  */}
+          {/* </div>  */}
           
         </div>
         {/* <div className={style.rowTwo}>

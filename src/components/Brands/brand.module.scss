@@ -9,6 +9,8 @@
   // padding: 5px;
   height: 7.9629629629vh;
   position: relative;
+  padding-left: 0.8854166666vw;
+  padding-right: 0.5208333333vw;
 
   .star {
     width: 1.19630208333vw;
@@ -38,7 +40,7 @@
     position: absolute;
     bottom: 1vh;
     // the above needs to be monitored
-    left: 0;
+    left: 0.5208333333vw;
     color: #fffdfc;
     font-family: "Rajdhani", sans-serif;
     font-size: 0.625vw;

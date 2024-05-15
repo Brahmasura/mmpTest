@@ -10,6 +10,7 @@
 
   .rowOne {
     display:flex;
+    justify-content: space-between;
     // display: grid;
     // grid-template-columns: 45% 23% auto;
     // column-gap: 1.2vw;
@@ -32,13 +33,13 @@
       // padding:1.5rem;
     // }
 
-    .third {
-      height: 31.6vh;
-      border: 2px solid white;
-      padding: 15px;
-      background-color: rgba(0, 0, 0, 0.4);
-      @include grid-box-style;
-    }
+    // .third {
+    //   height: 31.6vh;
+    //   border: 2px solid white;
+    //   padding: 15px;
+    //   background-color: rgba(0, 0, 0, 0.5);
+    //   @include grid-box-style;
+    // }
   }
 
   .rowTwo {

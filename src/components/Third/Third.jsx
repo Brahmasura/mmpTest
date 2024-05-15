@@ -7,13 +7,13 @@ const projectArray = [
     fraction: "4/7",
     title: "SpaceX Website Pages",
     text: "75% completed",
-    color: "orange",
+    color: "#FF7F00",
   },
   {
     fraction: "2/7",
     title: "Visual Branding",
     text: "15% completed",
-    color: "yellow",
+    color: "#FFD700",
   },
 
   {

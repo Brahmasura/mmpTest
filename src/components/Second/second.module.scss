@@ -5,15 +5,16 @@
   height: 29.72222222vh;
   background-color: rgba(0, 0, 0, 0.5);
   @include grid-box-style;
-  padding-left:1.09375vw;
-  padding-right:1.09375vw;
+  padding-left: 1.09375vw;
+  padding-right: 1.09375vw;
 
   padding-top: 2.685185185vh;
-  overflow:hidden;
+  overflow: hidden;
 
   .brandsContainer {
-    height: 21.4vh;
+    height: 21vh;
     overflow-y: auto;
+    
     // scrollbar-color: red rgba(0,0,0,0.3);
     scrollbar-width: none;
 

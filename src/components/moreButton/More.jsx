@@ -23,7 +23,7 @@ const More = ({
     right: `${right}vw`,
     text: text,
     backgroundColor: backgroundColor,
-    width:   `${isHovered ? width * 3.5 : width}vw`,
+    width:   `${isHovered ? width * 3.2: width}vw`,
     height: `${height}vw`,
   };
 
