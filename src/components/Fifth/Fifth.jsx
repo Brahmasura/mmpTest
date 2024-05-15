@@ -18,56 +18,56 @@ const eventArray = [
     date: "JAN 30",
   },
 
-  {
-    date: "JAN 25",
-  },
+  // {
+  //   date: "JAN 25",
+  // },
 
-  {
-    date: "JAN 27",
-  },
-  {
-    date: "JAN 28",
-  },
-  {
-    date: "JAN 30",
-  },
-  {
-    date: "JAN 25",
-  },
+  // {
+  //   date: "JAN 27",
+  // },
+  // {
+  //   date: "JAN 28",
+  // },
+  // {
+  //   date: "JAN 30",
+  // },
+  // {
+  //   date: "JAN 25",
+  // },
 
-  {
-    date: "JAN 27",
-  },
-  {
-    date: "JAN 28",
-  },
-  {
-    date: "JAN 30",
-  },
+  // {
+  //   date: "JAN 27",
+  // },
+  // {
+  //   date: "JAN 28",
+  // },
+  // {
+  //   date: "JAN 30",
+  // },
 
-  {
-    date: "JAN 25",
-  },
+  // {
+  //   date: "JAN 25",
+  // },
 
-  {
-    date: "JAN 27",
-  },
-  {
-    date: "JAN 28",
-  },
-  {
-    date: "JAN 30",
-  },
+  // {
+  //   date: "JAN 27",
+  // },
+  // {
+  //   date: "JAN 28",
+  // },
+  // {
+  //   date: "JAN 30",
+  // },
 ];
 
 const Fifth = () => {
   return (
     <>
       <div className={style.mainDiv}>
-        <p className={style.title}>SCHEDULE COACHING</p>
+        <p className={style.title}>SCHEDULE 1-ON-1 COACHING</p>
         <div className={style.secondDiv}>
-          <p className={style.paraOne}>Upcoming Events</p>
-          <p className={style.paraTwo}>RSVP for community events</p>
+          <p className={style.paraOne}>MyMarketingCalendar</p>
+          <p className={style.paraTwo}>Upcoming community events</p>
 
           <div className={style.eventsContainer}>
             {eventArray.map((item, index) => (

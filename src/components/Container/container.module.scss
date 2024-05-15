@@ -45,6 +45,7 @@
   .rowTwo {
     padding-top:3.2407407407vh;
     display:flex;
+    justify-content: space-between;
     // justify-content: space-between;
     // display: grid;
     // grid-template-columns: 74% auto;
@@ -61,15 +62,15 @@
       // overflow: hidden;
     // }
 
-    .fifth {
+    // .fifth {
       // height:45vh;
-      border-radius: 30px;
-      padding: 4px 0 0 0;
-      border: 2px solid white;
-      background-color: grey;
-      overflow: hidden;
-      height: auto;
-    }
+      // border-radius: 30px;
+      // padding: 4px 0 0 0;
+      // border: 2px solid white;
+      // background-color: grey;
+      // overflow: hidden;
+      // height: auto;
+    // }
   }
 }
 

@@ -1,15 +1,23 @@
 .mainDiv {
-  margin:0.5vh 0 1.5vh 0;
+  margin: 1.7vh 0 1.5vh 0;
   .date {
-    color: red;
-    font-size: 23px;
+    color: #f40009;
+    font-family: "Rajdhani", sans-serif;
+    font-size: 1.25vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
     display: inline-block;
-    font-weight: 600;
   }
 
   .title {
-    font-size: 15px;
+    color: #333;
+    font-family: "Rajdhani", sans-serif;
+    font-size: 0.833333333vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
     display: inline-block;
-    margin-left:10px;
+    margin-left: 0.5208333333vw;
   }
 }
