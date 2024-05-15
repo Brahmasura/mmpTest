@@ -1,93 +1,137 @@
 @import "../../mixins.module.scss";
 
 .mainDiv {
+  width: 62.187499999vw;
+  height: 45.74074074vh;
   display: grid;
-  grid-template-columns: 25% auto;
-  height: 100%;
+  grid-template-columns: 15.052083333vw auto;
+  // height: 100%;
+  @include grid-box-style;
+  overflow: hidden;
 
   .fourthLeft {
     background-color: #424242;
-    padding: 10px 12px 10px 24px;
+    // padding: 10px 12px 10px 24px;
+    padding-top: 1.944444444444vh;
+    padding-left: 1.92708333333vw;
 
     p {
-      margin-bottom: 0.3rem;
+      margin-bottom: 1.85185185185vh;
     }
 
     p:nth-child(1) {
-      color: white;
-      font-size: 1.5vw;
-      font-weight: 500;
+      color: #ffd700;
+      font-family: "Rajdhani", sans-serif;
+      font-size: 1.6666666666vw;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
     }
 
     p:nth-child(2) {
-      color: white;
-      font-size: 1.3vw;
-      font-weight: 500;
+      color: var(--text-text-invert, #fffdfc);
+      font-family: "Rajdhani", sans-serif;
+      font-size: 1.458333333vw;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
     }
 
     .darkParas {
-      color: #9e9e9e;
-      font-size: 1.3vw;
-      font-weight: 500;
+      color: rgb(255, 253, 252, 0.5);
+      font-family: "Rajdhani", sans-serif;
+      font-size: 1.458333333vw;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
 
       span {
         img {
-          width: 8px;
+          width: 0.5679166666vw;
           height: auto;
           position: relative;
-          bottom: 1.5px;
+          bottom: 0.185185185vh;
         }
-        font-size: 10px;
-        color: white;
+        color: #fffdfc;
+        opacity: 1;
+        text-align: center;
+        font-family: "Rajdhani", sans-serif;
+        font-size: 0.8333333333vw;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
         margin-left: 3px;
       }
     }
 
     .passDiv {
       @include x-center-center;
-      background: red;
+      background: #f40009;
       border-radius: 30px;
-      height: 4.5vh;
+      width: 10.7708333333vw;
+      height: 4.4259259259vh;
       margin-top: 10px;
       cursor: pointer;
 
       img {
-        width: 22px;
+        // width: 22px;
+        height: 1.85185185185vh;
         filter: invert(1);
       }
 
       p {
         margin-bottom: 0;
-        font-size: 0.9vw;
-        margin-left: 6px;
+        margin-left: 0.765625vw;
+        color: var(--text-text-white, #fffdfc);
+        font-family: "Rajdhani", sans-serif;
+        font-size: 0.818229166666vw;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
       }
     }
   }
 
   .fourthRight {
-    padding: 0 5px;
     background: black;
     max-height: 100%;
     // overflow-y: auto;
 
     .tableWrapper {
-      &::-webkit-scrollbar {
-        display: none;
-      }
+      // &::-webkit-scrollbar {
+      //   display: none;
+      // }
+      scrollbar-width: none;
       overflow-y: auto;
       max-height: 39.1vh;
+      padding-left: 1.6666666666vw;
+      padding-right: 1.466667vw;
+      
       table {
         width: 100%;
         // border-collapse: collapse;
 
         thead {
+            .headRow{
+              border:none !important;
+            }
+
           th {
             position: sticky;
             top: 0;
-            color: white;
             background: black;
-            font-size: 11px;
             text-align: center;
+
+            // begin
+            color: #fffdfc;
+            font-family: "Rajdhani", sans-serif;
+            font-size: 0.8942708333vw;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            padding-top: 1.244444vh;
+
+            // end
 
             &:nth-child(1) {
               text-align: start;
@@ -95,15 +139,30 @@
             }
           }
         }
+
+        tbody {
+          td {
+            color: var(--text-text-invert, #fffdfc);
+            font-family: "Rajdhani", sans-serif;
+            font-size: 0.833333333vw;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+        }
       }
     }
 
     .viewAllPara {
       text-align: center;
-      color: red;
-      font-size: 13px;
+      color: #f40009;
+      text-align: center;
+      font-family: "Rajdhani", sans-serif;
+      font-size: 1.041666666666vw;
+      font-style: normal;
       font-weight: 700;
-      margin-bottom: 2px;
+      line-height: normal;
+      padding-top: 0.955556vh;
       // margin-top:5px;
       cursor: pointer;
     }
@@ -113,38 +172,15 @@
 // for larger screens
 @media (min-width: 1300px) and (orientation: landscape) {
   .mainDiv {
-    .fourthLeft {
-      p {
-        margin-bottom: 2vh;
-      }
-    }
     .fourthRight {
       .tableWrapper {
         // max-height: 42.1vh;
         max-height: 40.8vh;
 
-        table {
-          tr {
-            height: 5vh;
-          }
-
-          thead {
-            th {
-              font-size: 1rem;
-            }
-          }
-
-          tbody {
-           td{
-             font-size: 0.9rem;
-          }
-        }
-        }
+      
       }
 
-      .viewAllPara{
-        font-size:1.2rem;
-      }
+   
     }
   }
 }

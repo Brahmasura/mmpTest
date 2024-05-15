@@ -1,6 +1,8 @@
 tr {
-  height: 34px;
-  border-bottom: 1.5px solid grey !important;
+  // height: 34px;
+  // height:6.759259259259vh;
+  height: 5.759259vh;
+  border-bottom: 0.185185185vh solid grey !important;
 
   td {
     color: white;
@@ -8,12 +10,18 @@ tr {
     font-size: 10px;
 
     .projectDiv {
-      display:inline-block;
+      display: inline-block;
       width: auto;
-      padding:1px 10px;
-   
+      padding:0.185185185vh 0.5208333333vw;
+
       border-radius: 30px;
       p {
+        text-align: center;
+        font-family: Rajdhani;
+        font-size: 13.008px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
         margin-bottom: 0;
       }
     }
@@ -43,12 +51,12 @@ tr {
 }
 
 // for larger screens
-@media (min-width: 1300px) and (orientation: landscape) {
-  tr{
-    td{
-      .projectDiv{
-        padding: 1.5px 10px;
-      }
-    }
-  }
-}
+// @media (min-width: 1300px) and (orientation: landscape) {
+//   tr{
+//     td{
+//       .projectDiv{
+//         padding: 1.5px 10px;
+//       }
+//     }
+//   }
+// }

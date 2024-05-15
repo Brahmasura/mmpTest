@@ -2,6 +2,7 @@ import style from "./fourth.module.scss";
 import ticket from "../../assets/ticket.svg";
 import Tbody from "./Tbody/Tbody";
 import siren from "../../assets/siren.svg";
+import bulb from "../../assets/bulb.svg";
 
 const tbodyArray = [
   {
@@ -339,13 +340,19 @@ const Fourth = () => {
             Up Next <span> 07</span>
           </p>
           <p className={style.darkParas}>
-            Drafts <span> 12</span>
+            Drafts <span>12 </span>
           </p>
           <p className={style.darkParas}>
-            Needs Attention <span className={style.sirenSpan}><img src={siren} alt="siren"/> 19</span>
+            Needs Attention{" "}
+            <span className={style.bulbSpan}>
+              <img src={bulb} alt="bulb" /> 19
+            </span>
           </p>
           <p className={style.darkParas}>
-            Needs Approval <span className={style.sirenSpan}><img src={siren} alt="siren"/> 03</span>
+            Needs Approval{" "}
+            <span className={style.bulbSpan}>
+              <img src={bulb} alt="bulb" /> 03
+            </span>
           </p>
           <p className={style.darkParas}>Completed</p>
 
@@ -359,7 +366,7 @@ const Fourth = () => {
           <div className={style.tableWrapper}>
             <table>
               <thead>
-                <tr>
+                <tr className={style.headRow}>
                   <th>#</th>
                   <th>Brand</th>
                   <th>Project</th>

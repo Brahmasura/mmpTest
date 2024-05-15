@@ -43,20 +43,23 @@
   }
 
   .rowTwo {
-    display: grid;
-    grid-template-columns: 74% auto;
-    column-gap: 1.2vw;
-    height: 45vh;
+    padding-top:3.2407407407vh;
+    display:flex;
+    // justify-content: space-between;
+    // display: grid;
+    // grid-template-columns: 74% auto;
+    // column-gap: 1.2vw;
+    // height: 45vh;
 
-    .fourth {
-      border: 2px solid white;
+    // .fourth {
+      // border: 2px solid white;
       // height:45vh;
       // grid-column: span 3;
-      @include grid-box-style;
-      padding: 0;
-      height: auto;
-      overflow: hidden;
-    }
+      // @include grid-box-style;
+      // padding: 0;
+      // height: auto;
+      // overflow: hidden;
+    // }
 
     .fifth {
       // height:45vh;
