@@ -5,13 +5,12 @@
   height: 45.74074074vh;
   display: grid;
   grid-template-columns: 15.052083333vw auto;
-  // height: 100%;
+
   @include grid-box-style;
   overflow: hidden;
 
   .fourthLeft {
     background-color: #424242;
-    // padding: 10px 12px 10px 24px;
     padding-top: 1.944444444444vh;
     padding-left: 1.92708333333vw;
 
@@ -74,7 +73,6 @@
       cursor: pointer;
 
       img {
-        // width: 22px;
         height: 1.85185185185vh;
         filter: invert(1);
       }
@@ -95,26 +93,21 @@
   .fourthRight {
     background: black;
     max-height: 100%;
-    // overflow-y: auto;
 
     .tableWrapper {
-      // &::-webkit-scrollbar {
-      //   display: none;
-      // }
       scrollbar-width: none;
       overflow-y: auto;
-      max-height: 39.1vh;
+      max-height: 40.8vh;
       padding-left: 1.6666666666vw;
       padding-right: 1.466667vw;
-      
+
       table {
         width: 100%;
-        // border-collapse: collapse;
 
         thead {
-            .headRow{
-              border:none !important;
-            }
+          .headRow {
+            border: none !important;
+          }
 
           th {
             position: sticky;
@@ -163,24 +156,9 @@
       font-weight: 700;
       line-height: normal;
       padding-top: 0.955556vh;
-      // margin-top:5px;
       cursor: pointer;
     }
   }
 }
 
-// for larger screens
-@media (min-width: 1300px) and (orientation: landscape) {
-  .mainDiv {
-    .fourthRight {
-      .tableWrapper {
-        // max-height: 42.1vh;
-        max-height: 40.8vh;
 
-      
-      }
-
-   
-    }
-  }
-}

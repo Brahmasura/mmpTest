@@ -1,89 +1,20 @@
 @import "../../mixins.module.scss";
 
 .mainContainer {
-  height: 80vh;
+  height: 78.703703703vh;
   position: relative;
-  margin-top:5.7407407407vh;
-  // display: grid;
-  // grid-template-rows: 31.6vh auto;
-  // grid-gap: 3vh;
+  margin-top: 5.7407407407vh;
 
   .rowOne {
-    display:flex;
+    display: flex;
     justify-content: space-between;
-    // display: grid;
-    // grid-template-columns: 45% 23% auto;
-    // column-gap: 1.2vw;
-    // height: 31.6vh;
-
-    // .first {
-      // grid-column: span 2;
-      // height: 31.6vh;
-      // @include grid-box-style;
-      // padding: 1.5rem;
-
-      // background-color: whitesmoke;
-    // }
-
-    // .second {
-      // height: 31.6vh;
-      // border: 2px solid white;
-      // background-color: rgba(0, 0, 0, 0.4);
-      // @include grid-box-style;
-      // padding:1.5rem;
-    // }
-
-    // .third {
-    //   height: 31.6vh;
-    //   border: 2px solid white;
-    //   padding: 15px;
-    //   background-color: rgba(0, 0, 0, 0.5);
-    //   @include grid-box-style;
-    // }
   }
 
   .rowTwo {
-    padding-top:3.2407407407vh;
-    display:flex;
+    padding-top: 3.2407407407vh;
+    display: flex;
     justify-content: space-between;
-    // justify-content: space-between;
-    // display: grid;
-    // grid-template-columns: 74% auto;
-    // column-gap: 1.2vw;
-    // height: 45vh;
-
-    // .fourth {
-      // border: 2px solid white;
-      // height:45vh;
-      // grid-column: span 3;
-      // @include grid-box-style;
-      // padding: 0;
-      // height: auto;
-      // overflow: hidden;
-    // }
-
-    // .fifth {
-      // height:45vh;
-      // border-radius: 30px;
-      // padding: 4px 0 0 0;
-      // border: 2px solid white;
-      // background-color: grey;
-      // overflow: hidden;
-      // height: auto;
-    // }
   }
 }
 
-// @media (min-width:1300px) and (orientation:landscape){
-//   .mainContainer{
-//     .rowOne{
-//       .second{
-//         padding:1.5rem;
-//       }
 
-//       .third{
-//         padding:1.5rem;
-//       }
-//     }
-//   }
-// }

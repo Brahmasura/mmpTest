@@ -5,22 +5,15 @@
   width: 19.89583333333vw;
   height: 45.74074074vh;
   padding-top: 0.92592592592vh;
-  // border-radius: 30px;
 
-  // border: 2px solid white;
   background: rgba(0, 0, 0, 0.5);
   overflow: hidden;
-  // height: auto;
+
   p {
     margin-bottom: 0;
   }
 
   .title {
-    // text-align: center;
-    // color: white;
-    // font-size: 1vw;
-    // margin-bottom: 0.62vh;
-    // font-weight: 500;
     color: #fffdfc;
     text-align: center;
     font-family: "Rajdhani", sans-serif;
@@ -33,7 +26,6 @@
 
   .secondDiv {
     padding-top: 0.83333333333vh;
-    // padding-left:1.5625vw;
     border-radius: 30px 30px 0 0;
     background-color: whitesmoke;
     height: 41.759259259vh;
@@ -61,7 +53,7 @@
 
     .eventsContainer {
       padding-left: 1.5625vw;
-      height: 16.1vh;
+      height: 24.1vh;
       overflow-y: auto;
 
       &::-webkit-scrollbar {
@@ -70,14 +62,13 @@
     }
 
     .arrowBox {
-      margin: 18px 0 10px 0;
-
+      margin-bottom: 2.037037037vh;
       @include x-center-center;
 
       .leftArrow {
         transform: rotate(90deg);
         width: 0.8586979166666vw;
-        margin-right:  2.760416666666vw;
+        margin-right: 2.760416666666vw;
         filter: invert(0.5);
         cursor: pointer;
       }
@@ -85,7 +76,7 @@
       .rightArrow {
         transform: rotate(-90deg);
         width: 0.8586979166666vw;
-        margin-left:  2.760416666666vw;
+        margin-left: 2.760416666666vw;
         filter: invert(0.5);
         cursor: pointer;
       }
@@ -109,19 +100,6 @@
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-        // margin-left: 2px;
-      }
-    }
-  }
-}
-
-// for larger screens
-@media (min-width: 1300px) and (orientation: landscape) {
-  .mainDiv {
-    .secondDiv {
-      .eventsContainer {
-        height: 24.1vh;
-        overflow-y: auto;
       }
     }
   }
