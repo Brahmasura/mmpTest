@@ -42,25 +42,13 @@
       }
     }
 
-    // chatAshleyDiv styles
-
-    .chatAshleyDiv {
+    // chatAshley style
+    .chatAshleyLogo {
       width: 18.3333333333vw;
       height: 18.3333333333vw;
-      background: #d9d9d9;
-      //   padding-top:2.101851851vh;
-      border-radius: 18.3333333333vw;
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: end;
       margin-left: 4.4791666666vw;
-
-      img {
-        width: 16.6671875vw;
-        height: auto;
-      }
     }
+
 
     // rest of the paras
     .paraDiv {
@@ -110,13 +98,18 @@
     .divOne {
       display: flex;
       justify-content: space-between;
-      width:90%;
-    //   this width could be changed or could be made absolute later
+      width: 90%;
+      //   this width could be changed or could be made absolute later
 
       .leftdivOne {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        img{
+          width: 2.02812499999vw;
+          height:auto;
+        }
 
         p {
           color: var(--surface-surface-brand, #f40009);
@@ -137,6 +130,7 @@
         align-items: center;
         width: 12.3614583333vw;
         padding-inline: 0.2692708333333vw;
+        position: relative;
 
         p {
           color: var(--text-text-brand, #f40009);
@@ -150,6 +144,73 @@
 
         .chatDownArrow {
           margin-left: auto;
+          rotate: 0deg;
+          transition: rotate 0.7s ease;
+        }
+
+        .chatUpArrow {
+          margin-left: auto;
+          rotate: 180deg;
+          transition: rotate 0.7s ease;
+        }
+
+        .brandsToggleDiv {
+          position: absolute;
+          top: 4.5vh;
+          right: 0;
+          z-index: 1;
+          width: 12.3614583333vw;
+          border-radius: 1.25vw;
+          overflow: hidden;
+
+          .brandDiv {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            // background: linear-gradient(
+            //   rgba(256, 256, 256, 0.1) 100%,
+            //   transparent
+            // );
+            background: rgba(91, 95, 98, 0.3);
+            backdrop-filter: blur(3.4px);
+            border-bottom: 1px solid #333;
+            padding-top: 0.288889vh;
+            padding-bottom: 0.288889vh;
+            padding-left: 0.9375vw;
+
+            img {
+              fill: red;
+            }
+            p {
+              margin-bottom: 0;
+              margin-left: 0.7vw;
+              color: var(--text-text-primary, #333);
+              font-family: Rajdhani;
+              font-size: 1.25vw;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+            }
+          }
+
+          .createBrandDiv {
+            // height: 5.925925925925vh;
+            height: 5.425926vh;
+            background: #fffdfc;
+            border-radius: 1.25vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            p {
+              color: var(--text-text-brand, #f40009);
+              font-family: Rajdhani;
+              font-size: 1.041666666666vw;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+            }
+          }
         }
       }
     }
@@ -175,7 +236,7 @@
 
     .hr {
       margin-top: 1.94444444444vh;
-      margin-bottom:5.370370370370vh;
+      margin-bottom: 5.37037037037vh;
     }
 
     .divThree {
@@ -190,16 +251,20 @@
         background: rgba(91, 95, 98, 0.3);
         padding: 1.145833333vw;
 
+        &:hover {
+          background: rgba(192, 65, 65, 0.3);
+        }
+
         img {
           width: 2.91666666666vw;
           height: auto;
         }
 
         p {
-            margin-top:3.7962962962vh;
+          margin-top: 3.7962962962vh;
           color: var(--text-text-primary, #333);
           font-family: Rajdhani;
-          font-size:  1.25vw ;
+          font-size: 1.25vw;
           font-style: normal;
           font-weight: 700;
           line-height: normal;
@@ -208,9 +273,13 @@
     }
   }
 
-  .chatClose {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
+
+}
+.chatClose {
+  position: absolute;
+  width: 2.8125vw;
+  height: auto;
+  top: -0.5555555555vh;
+  right: -0.5208333333333vw;
+  z-index: 10;
 }

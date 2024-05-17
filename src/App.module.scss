@@ -9,13 +9,14 @@
     padding-left: 1.979166vw;
     padding-top: 3.6111111vh;
 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6) 100%, transparent),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5) 100%, transparent),
       url("./assets/Map\ design\ Simple\ Without\ building-01.jpg");
     background-position: center;
     background-size: cover;
 
     .parentContainer {
       margin-top: 5.7407407407vh;
+      position:relative;
     }
   }
 }
