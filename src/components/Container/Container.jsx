@@ -8,31 +8,29 @@ import style from "./container.module.scss";
 const Container = () => {
 
 
+
   return (
     <>
       <div className={style.mainContainer}>
         <div className={style.rowOne}>
           {/* <div className={style.first}> */}
-            <First />
+          <First />
           {/* </div> */}
-
 
           {/* {/* <div className={style.second}> */}
-            <Second />
+          <Second />
           {/* </div> */}
 
-
           {/* <div className={style.third}> */}
-            <Third />
+          <Third />
           {/* </div>  */}
-          
         </div>
         <div className={style.rowTwo}>
           {/* <div className={style.fourth}> */}
-            <Fourth />
+          <Fourth />
           {/* </div> */}
           {/* <div className={style.fifth}> */}
-            <Fifth />
+          <Fifth />
           {/* </div> */}
         </div>
       </div>

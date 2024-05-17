@@ -2,11 +2,15 @@ import style from "./first.module.scss";
 import face from "../../assets/SalesGuy.svg";
 import send from "../../assets/sendIcon.svg";
 import More from "../moreButton/More";
+import { useContext } from "react";
+import { ContainerContext } from "../../Cotntext/ContainerContext";
 
 const First = () => {
+  const {handleChatMenuClick} = useContext(ContainerContext);
+
   return (
     <>
-      <div className={style.mainDiv}>
+      <div onClick={handleChatMenuClick} className={style.mainDiv}>
         <div className="textDiv">
           <h2>Welcome, Ashley</h2>
           <br />
@@ -27,6 +31,7 @@ const First = () => {
         </div>
 
         <More
+          
           position="absolute"
           top={1.851851851}
           right={1.2385416666}

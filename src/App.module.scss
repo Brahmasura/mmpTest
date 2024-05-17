@@ -1,29 +1,21 @@
 .mainDiv {
-  position:relative;
-  // .sidebar {
-    
-  //   height: 100vh;
-  //   padding-top:15px;
-  //   background-color: black;
-  // }
+  position: relative;
 
   .contentDiv {
-    height:100vh;
-    // margin-left:121px;
-    // padding-right:160px;
-    // padding-top:39px;
-    margin-left:6.30208333vw; 
+    height: 100vh;
+
+    margin-left: 6.30208333vw;
     padding-right: 8.48958333vw;
     padding-left: 1.979166vw;
     padding-top: 3.6111111vh;
-    // padding-bottom: 7.1vh;
-    background-image:linear-gradient( rgba(0,0,0,0.6) 100%, transparent), url("./assets/Map\ design\ Simple\ Without\ building-01.jpg");
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6) 100%, transparent),
+      url("./assets/Map\ design\ Simple\ Without\ building-01.jpg");
     background-position: center;
     background-size: cover;
-    // position:relative;
-    // z-index:1;
-    
+
+    .parentContainer {
+      margin-top: 5.7407407407vh;
+    }
   }
-
-
 }
