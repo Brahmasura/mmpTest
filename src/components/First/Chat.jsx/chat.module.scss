@@ -1,285 +1,285 @@
 @import "../../../mixins.module.scss";
 
-.mainDiv {
-  height: 78.703703703vh;
-  display: grid;
-  grid-template-columns: 34.010416666vw auto;
-
-  border-radius: 2.604166666vw;
-  overflow: hidden;
+.chatMainDiv {
   position: relative;
 
-  .leftDiv {
-    background: #fffdfc;
-    padding-left: 2.6041666666vw;
-    padding-right: 4.5833333333vw;
-    padding-top: 2.9629629629vh;
+  .mainDiv {
+    margin-top: 5.7407407407vh;
+    height: 78.703703703vh;
+    display: grid;
+    grid-template-columns: 34.010416666vw auto;
+    border-radius: 2.604166666vw;
+    overflow: hidden;
 
-    .textDiv {
-      margin-bottom: 3.3333333333vh;
+    .leftDiv {
+      background: #fffdfc;
+      padding-left: 2.6041666666vw;
+      padding-right: 4.5833333333vw;
+      padding-top: 2.9629629629vh;
 
-      h2,
-      h3 {
-        font-family: "Rajdhani", sans-serif;
-        line-height: normal;
-        font-style: normal;
+      .textDiv {
+        margin-bottom: 3.3333333333vh;
+
+        h2,
+        h3 {
+          font-family: "Rajdhani", sans-serif;
+          line-height: normal;
+          font-style: normal;
+        }
+
+        h2 {
+          display: inline-block;
+          margin-bottom: 0;
+          font-size: 3.333333333vw;
+          font-weight: 700;
+          color: #333;
+          margin-bottom: -0.7407407407vh;
+        }
+
+        h3 {
+          font-size: 2.083333333vw;
+          font-weight: 500;
+          margin-bottom: 0;
+          display: inline-block;
+        }
       }
 
-      h2 {
-        display: inline-block;
-        margin-bottom: 0;
-        font-size: 3.333333333vw;
-        font-weight: 700;
-        color: #333;
-        margin-bottom: -0.7407407407vh;
+      // chatAshley style
+      .chatAshleyLogo {
+        width: 18.3333333333vw;
+        height: 18.3333333333vw;
+        margin-left: 4.4791666666vw;
       }
 
-      h3 {
-        font-size: 2.083333333vw;
-        font-weight: 500;
-        margin-bottom: 0;
-        display: inline-block;
+      // rest of the paras
+      .paraDiv {
+        margin-top: 2.5vh;
+        .firstPara {
+          color: var(--text-text-primary, #333);
+          text-align: center;
+          font-family: Rajdhani;
+          font-size: 1.875vw;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          margin-bottom: 0;
+        }
+
+        .secondPara {
+          color: var(--text-text-primary, #333);
+          text-align: center;
+          font-family: Rajdhani;
+          font-size: 1.875vw;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          margin-bottom: 0;
+        }
       }
-    }
 
-    // chatAshley style
-    .chatAshleyLogo {
-      width: 18.3333333333vw;
-      height: 18.3333333333vw;
-      margin-left: 4.4791666666vw;
-    }
-
-
-    // rest of the paras
-    .paraDiv {
-      margin-top: 2.5vh;
-      .firstPara {
-        color: var(--text-text-primary, #333);
-        text-align: center;
+      .thirdPara {
+        color: var(--text-text-secondary, #333);
         font-family: Rajdhani;
-        font-size: 1.875vw;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        margin-bottom: 0;
-      }
-
-      .secondPara {
-        color: var(--text-text-primary, #333);
-        text-align: center;
-        font-family: Rajdhani;
-        font-size: 1.875vw;
+        font-size: 0.83333333333vw;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
-        margin-bottom: 0;
       }
     }
 
-    .thirdPara {
-      color: var(--text-text-secondary, #333);
-      font-family: Rajdhani;
-      font-size: 0.83333333333vw;
-      font-style: normal;
-      font-weight: 500;
-      line-height: normal;
-    }
-  }
+    //   rightDiv style begins
+    .rightDiv {
+      background: linear-gradient(rgba(178, 178, 178, 0.2) 100%, transparent),
+        #fffdfc;
 
-  //   rightDiv style begins
-  .rightDiv {
-    background: linear-gradient(rgba(178, 178, 178, 0.2) 100%, transparent),
-      #fffdfc;
+      padding-top: 1.9444444444vh;
+      padding-left: 1.25vw;
+      padding-right: 2.3958333333vw;
 
-    padding-top: 1.9444444444vh;
-    padding-left: 1.25vw;
-    padding-right: 2.3958333333vw;
-
-    .divOne {
-      display: flex;
-      justify-content: space-between;
-      width: 90%;
-      //   this width could be changed or could be made absolute later
-
-      .leftdivOne {
+      .divOne {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        width: 90%;
+        //   this width could be changed or could be made absolute later
 
-        img{
-          width: 2.02812499999vw;
-          height:auto;
+        .leftdivOne {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          img {
+            width: 2.02812499999vw;
+            height: auto;
+          }
+
+          p {
+            color: var(--surface-surface-brand, #f40009);
+            font-family: Rajdhani;
+            font-size: 1.25vw;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 0;
+            margin-left: 0.784375vw;
+          }
         }
 
-        p {
-          color: var(--surface-surface-brand, #f40009);
-          font-family: Rajdhani;
-          font-size: 1.25vw;
-          font-style: normal;
-          font-weight: 700;
-          line-height: normal;
-          margin-bottom: 0;
-          margin-left: 0.784375vw;
-        }
-      }
-
-      .rightdivOne {
-        display: flex;
-        justify-content: start;
-        gap: 19px;
-        align-items: center;
-        width: 12.3614583333vw;
-        padding-inline: 0.2692708333333vw;
-        position: relative;
-
-        p {
-          color: var(--text-text-brand, #f40009);
-          font-family: Rajdhani;
-          font-size: 1.614218749999vw;
-          font-style: normal;
-          font-weight: 700;
-          line-height: normal;
-          margin-bottom: 0;
-        }
-
-        .chatDownArrow {
-          margin-left: auto;
-          rotate: 0deg;
-          transition: rotate 0.7s ease;
-        }
-
-        .chatUpArrow {
-          margin-left: auto;
-          rotate: 180deg;
-          transition: rotate 0.7s ease;
-        }
-
-        .brandsToggleDiv {
-          position: absolute;
-          top: 4.5vh;
-          right: 0;
-          z-index: 1;
+        .rightdivOne {
+          display: flex;
+          justify-content: start;
+          gap: 19px;
+          align-items: center;
           width: 12.3614583333vw;
-          border-radius: 1.25vw;
-          overflow: hidden;
+          padding-inline: 0.2692708333333vw;
+          position: relative;
 
-          .brandDiv {
-            display: flex;
-            justify-content: start;
-            align-items: center;
-            // background: linear-gradient(
-            //   rgba(256, 256, 256, 0.1) 100%,
-            //   transparent
-            // );
-            background: rgba(91, 95, 98, 0.3);
-            backdrop-filter: blur(3.4px);
-            border-bottom: 1px solid #333;
-            padding-top: 0.288889vh;
-            padding-bottom: 0.288889vh;
-            padding-left: 0.9375vw;
-
-            img {
-              fill: red;
-            }
-            p {
-              margin-bottom: 0;
-              margin-left: 0.7vw;
-              color: var(--text-text-primary, #333);
-              font-family: Rajdhani;
-              font-size: 1.25vw;
-              font-style: normal;
-              font-weight: 500;
-              line-height: normal;
-            }
+          p {
+            color: var(--text-text-brand, #f40009);
+            font-family: Rajdhani;
+            font-size: 1.614218749999vw;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 0;
           }
 
-          .createBrandDiv {
-            // height: 5.925925925925vh;
-            height: 5.425926vh;
-            background: #fffdfc;
-            border-radius: 1.25vw;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+          .chatDownArrow {
+            margin-left: auto;
+            rotate: 0deg;
+            transition: rotate 0.7s ease;
+          }
 
-            p {
-              color: var(--text-text-brand, #f40009);
-              font-family: Rajdhani;
-              font-size: 1.041666666666vw;
-              font-style: normal;
-              font-weight: 700;
-              line-height: normal;
+          .chatUpArrow {
+            margin-left: auto;
+            rotate: 180deg;
+            transition: rotate 0.7s ease;
+          }
+
+          .brandsToggleDiv {
+            position: absolute;
+            top: 4.5vh;
+            right: 0;
+            z-index: 1;
+            width: 12.3614583333vw;
+            border-radius: 1.25vw;
+            overflow: hidden;
+
+            .brandDiv {
+              display: flex;
+              justify-content: start;
+              align-items: center;
+              // background: linear-gradient(
+              //   rgba(256, 256, 256, 0.1) 100%,
+              //   transparent
+              // );
+              background: rgba(91, 95, 98, 0.3);
+              backdrop-filter: blur(3.4px);
+              border-bottom: 1px solid #333;
+              padding-top: 0.288889vh;
+              padding-bottom: 0.288889vh;
+              padding-left: 0.9375vw;
+
+              img {
+                fill: red;
+              }
+              p {
+                margin-bottom: 0;
+                margin-left: 0.7vw;
+                color: var(--text-text-primary, #333);
+                font-family: Rajdhani;
+                font-size: 1.25vw;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+              }
+            }
+
+            .createBrandDiv {
+              // height: 5.925925925925vh;
+              height: 5.425926vh;
+              background: #fffdfc;
+              border-radius: 1.25vw;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              p {
+                color: var(--text-text-brand, #f40009);
+                font-family: Rajdhani;
+                font-size: 1.041666666666vw;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+              }
             }
           }
         }
       }
-    }
 
-    .divTwo {
-      display: flex;
-      justify-content: space-between;
-      align-items: start;
-      margin-top: 2.037037037vh;
+      .divTwo {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        margin-top: 2.037037037vh;
 
-      .searchDiv {
-        border-radius: 1.0416666666666vw;
-        border: 0.15625vw solid #f40009;
-        width: 42.08333333333vw;
-        height: 8.6111111111vh;
-      }
-
-      img {
-        width: 3.072916666666vw;
-        height: auto;
-      }
-    }
-
-    .hr {
-      margin-top: 1.94444444444vh;
-      margin-bottom: 5.37037037037vh;
-    }
-
-    .divThree {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.310417vw;
-
-      .chatCard {
-        width: 14.2708333333vw;
-        height: 19.16666666666vh;
-        border-radius: 2.1354166666vw;
-        background: rgba(91, 95, 98, 0.3);
-        padding: 1.145833333vw;
-
-        &:hover {
-          background: rgba(192, 65, 65, 0.3);
+        .searchDiv {
+          border-radius: 1.0416666666666vw;
+          border: 0.15625vw solid #f40009;
+          width: 42.08333333333vw;
+          height: 8.6111111111vh;
         }
 
         img {
-          width: 2.91666666666vw;
+          width: 3.072916666666vw;
           height: auto;
         }
+      }
 
-        p {
-          margin-top: 3.7962962962vh;
-          color: var(--text-text-primary, #333);
-          font-family: Rajdhani;
-          font-size: 1.25vw;
-          font-style: normal;
-          font-weight: 700;
-          line-height: normal;
+      .hr {
+        margin-top: 1.94444444444vh;
+        margin-bottom: 5.37037037037vh;
+      }
+
+      .divThree {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.310417vw;
+
+        .chatCard {
+          width: 14.2708333333vw;
+          height: 19.16666666666vh;
+          border-radius: 2.1354166666vw;
+          background: rgba(91, 95, 98, 0.3);
+          padding: 1.145833333vw;
+
+          &:hover {
+            background: rgba(192, 65, 65, 0.3);
+          }
+
+          img {
+            width: 2.91666666666vw;
+            height: auto;
+          }
+
+          p {
+            margin-top: 3.7962962962vh;
+            color: var(--text-text-primary, #333);
+            font-family: Rajdhani;
+            font-size: 1.25vw;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+          }
         }
       }
     }
   }
-
-
-}
-.chatClose {
-  position: absolute;
-  width: 2.8125vw;
-  height: auto;
-  top: -0.5555555555vh;
-  right: -0.5208333333333vw;
-  z-index: 10;
+  .chatClose {
+    position: absolute;
+    width: 2.8125vw;
+    height: auto;
+    top: -0.5555555555vh;
+    right: -0.5208333333333vw;
+    z-index: 10;
+  }
 }

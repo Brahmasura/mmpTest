@@ -4,12 +4,12 @@ import { createContext, useState } from "react";
 export const ContainerContext = createContext();
 
 export const ContainerProvider = ({children}) => {
-    const [chatMenuClicked, setChatMenuClicked] = useState(false);
+    const [containerNumber, setContainerNumber] = useState(0);
 
-    const handleChatMenuClick = () => {
-        setChatMenuClicked(!chatMenuClicked);
+    const handleContainerClick = (number) => {
+        setContainerNumber(number);
       };
-    const value = {chatMenuClicked, setChatMenuClicked, handleChatMenuClick};
+    const value = {containerNumber, setContainerNumber, handleContainerClick };
 
     return (
         <ContainerContext.Provider value={value}>

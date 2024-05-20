@@ -37,7 +37,7 @@ const chatBrandsArray = [
 ];
 
 const Chat = () => {
-  const { handleChatMenuClick } = useContext(ContainerContext);
+  const { handleContainerClick } = useContext(ContainerContext);
   const [brand, setBrand] = useState("SpaceX");
   const [brandTabOpen, setBrandTabOpen] = useState(false);
 
@@ -51,107 +51,109 @@ const Chat = () => {
 
   return (
     <>
-      <div className={style.mainDiv}>
-        {/* left div */}
-        <div className={style.leftDiv}>
-          <div className={style.textDiv}>
-            <h2>Welcome, Ashley</h2>
-            <br />
-            <h3>Happy Monday! How can i help?</h3>
-          </div>
+      <div className={style.chatMainDiv}>
+        <div className={style.mainDiv}>
+          {/* left div */}
+          <div className={style.leftDiv}>
+            <div className={style.textDiv}>
+              <h2>Welcome, Ashley</h2>
+              <br />
+              <h3>Happy Monday! How can i help?</h3>
+            </div>
 
-          <img
-            className={style.chatAshleyLogo}
-            src={chatAshleyLogo}
-            alt="chat Ashley logo"
-          />
+            <img
+              className={style.chatAshleyLogo}
+              src={chatAshleyLogo}
+              alt="chat Ashley logo"
+            />
 
-          {/* rest of the paras */}
-          <div className={style.paraDiv}>
-            <p className={style.firstPara}>Hi! I am Lucky</p>
-            <p className={style.secondPara}>
-              your Personal Marketing Assistant
+            {/* rest of the paras */}
+            <div className={style.paraDiv}>
+              <p className={style.firstPara}>Hi! I am Lucky</p>
+              <p className={style.secondPara}>
+                your Personal Marketing Assistant
+              </p>
+            </div>
+
+            <p className={style.thirdPara}>
+              Talk to me about anything from adding new tickets, checking on
+              existing ones, or even general business strategies for growing
+              your brand!
             </p>
           </div>
 
-          <p className={style.thirdPara}>
-            Talk to me about anything from adding new tickets, checking on
-            existing ones, or even general business strategies for growing your
-            brand!
-          </p>
-        </div>
+          {/* right div */}
+          <div className={style.rightDiv}>
+            {/* right div inner begins  */}
 
-        {/* right div */}
-        <div className={style.rightDiv}>
-          {/* right div inner begins  */}
-
-          {/* divOne */}
-          <div className={style.divOne}>
-            <div className={style.leftdivOne}>
-              <img src={chatHistory} alt="chat history logo" />
-              <p>RECENT CHATS</p>
-            </div>
-            <div onClick={handleBrandToggle} className={style.rightdivOne}>
-              <img src={chatStar} alt="chat Start" />
-              <p>{brand}</p>
-              <img
-                className={
-                  brandTabOpen ? style.chatUpArrow : style.chatDownArrow
-                }
-                src={chatDownArrow}
-                alt="chat down arrow"
-              />
-
-              {/* the open chat brands div  */}
-
-              {brandTabOpen && (
-                <div className={style.brandsToggleDiv}>
-                  {chatBrandsArray.map((item, index) => (
-                    <div
-                      key={index}
-                      onClick={() => handleSelectBrand(item.brand)}
-                      className={style.brandDiv}
-                    >
-                      <img src={chatBrandStar} alt="star" />
-                      <p>{item.brand}</p>
-                    </div>
-                  ))}
-
-                  <div className={style.createBrandDiv}>
-                    <p>+ Create a Brand</p>
-                  </div>
-                </div>
-              )}
-            </div>
-          </div>
-
-          {/* divTwo */}
-          <div className={style.divTwo}>
-            <div className={style.searchDiv}></div>
-            <img src={chatSend} alt="the send icon" />
-          </div>
-
-          <hr className={style.hr} />
-
-          {/* divThree */}
-          <div className={style.divThree}>
-            {chatCardsArray.map((item, index) => (
-              <div key={index} className={style.chatCard}>
-                <img src={chatQuestion} alt="chat Question logo" />
-                <p>{item.text}</p>
+            {/* divOne */}
+            <div className={style.divOne}>
+              <div className={style.leftdivOne}>
+                <img src={chatHistory} alt="chat history logo" />
+                <p>RECENT CHATS</p>
               </div>
-            ))}
-          </div>
+              <div onClick={handleBrandToggle} className={style.rightdivOne}>
+                <img src={chatStar} alt="chat Start" />
+                <p>{brand}</p>
+                <img
+                  className={
+                    brandTabOpen ? style.chatUpArrow : style.chatDownArrow
+                  }
+                  src={chatDownArrow}
+                  alt="chat down arrow"
+                />
 
-          {/* right div inner ends */}
+                {/* the open chat brands div  */}
+
+                {brandTabOpen && (
+                  <div className={style.brandsToggleDiv}>
+                    {chatBrandsArray.map((item, index) => (
+                      <div
+                        key={index}
+                        onClick={() => handleSelectBrand(item.brand)}
+                        className={style.brandDiv}
+                      >
+                        <img src={chatBrandStar} alt="star" />
+                        <p>{item.brand}</p>
+                      </div>
+                    ))}
+
+                    <div className={style.createBrandDiv}>
+                      <p>+ Create a Brand</p>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+
+            {/* divTwo */}
+            <div className={style.divTwo}>
+              <div className={style.searchDiv}></div>
+              <img src={chatSend} alt="the send icon" />
+            </div>
+
+            <hr className={style.hr} />
+
+            {/* divThree */}
+            <div className={style.divThree}>
+              {chatCardsArray.map((item, index) => (
+                <div key={index} className={style.chatCard}>
+                  <img src={chatQuestion} alt="chat Question logo" />
+                  <p>{item.text}</p>
+                </div>
+              ))}
+            </div>
+
+            {/* right div inner ends */}
+          </div>
         </div>
+        <img
+          onClick={ () => handleContainerClick(0)}
+          className={style.chatClose}
+          src={chatClose}
+          alt="close logo"
+        />
       </div>
-      <img
-        onClick={handleChatMenuClick}
-        className={style.chatClose}
-        src={chatClose}
-        alt="close logo"
-      />
     </>
   );
 };

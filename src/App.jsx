@@ -9,7 +9,7 @@ import { ContainerContext } from "./Cotntext/ContainerContext";
 import Chat from "./components/First/Chat.jsx/Chat";
 
 function App() {
-  const { chatMenuClicked } = useContext(ContainerContext);
+  const { containerNumber } = useContext(ContainerContext);
   // useEffect(() => {
 
   //   const fetchData = async () => {
@@ -39,13 +39,13 @@ function App() {
           <Navbar />
 
           {/* now the main container */}
-          <div className={style.parentContainer}>
-            {!chatMenuClicked && <Container />}
+          {/* <div className={style.parentContainer}> */}
+            {containerNumber === 0 && <Container />}
 
-            {chatMenuClicked && <Chat/>}
+            {containerNumber === 1 && <Chat/>}
 
             {/* so this is going to be the renderer of other pages */}
-          </div>
+          {/* </div> */}
         </div>
       </div>
     </>

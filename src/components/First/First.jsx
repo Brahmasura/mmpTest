@@ -6,11 +6,15 @@ import { useContext } from "react";
 import { ContainerContext } from "../../Cotntext/ContainerContext";
 
 const First = () => {
-  const {handleChatMenuClick} = useContext(ContainerContext);
+  const { handleContainerClick } = useContext(ContainerContext);
+
+  const handleInputClick = (event) => {
+    event.stopPropagation();
+  };
 
   return (
     <>
-      <div onClick={handleChatMenuClick} className={style.mainDiv}>
+      <div onClick={() => handleContainerClick(1)} className={style.mainDiv}>
         <div className="textDiv">
           <h2>Welcome, Ashley</h2>
           <br />
@@ -22,16 +26,17 @@ const First = () => {
 
           <div className={style.thirdDiv}>
             <p>How can i help today?</p>
-            <input type="text" placeholder="Ask away! Lucky is here to help" />
+            <input
+              onClick={handleInputClick}
+              type="text"
+              placeholder="Ask away! Lucky is here to help"
+            />
           </div>
 
-         
-            <img className={style.sendDiv} src={send} alt="the send icon" />
-         
+          <img className={style.sendDiv} src={send} alt="the send icon" />
         </div>
 
         <More
-          
           position="absolute"
           top={1.851851851}
           right={1.2385416666}
