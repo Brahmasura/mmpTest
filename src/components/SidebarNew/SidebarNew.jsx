@@ -49,6 +49,7 @@ import sevenTwo from "../../assets/sidebar_icons/redSidebarIcons/iconSeven/seven
 import sevenThree from "../../assets/sidebar_icons/redSidebarIcons/iconSeven/sevenThree.svg";
 
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const iconsArray = [
   {
@@ -130,10 +131,15 @@ const iconsArray = [
 
 const SidebarNew = () => {
   const [hoveredIcon, setHoveredIcon] = useState(null);
+  const navigate= useNavigate();
 
   const handleIconHover = (index) => {
     setHoveredIcon(index);
   };
+
+  const handleNavigation = () => {
+    navigate("/");
+  }
 
   return (
     <>
@@ -147,7 +153,7 @@ const SidebarNew = () => {
         >
           {/* logo div */}
           <div className={style.sidebarLogoDiv}>
-            <img className={style.logo} src={face} alt="face guy" />
+            <img onClick={handleNavigation} className={style.logo} src={face} alt="face guy" />
             {hoveredIcon !== null && (
               <img className={style.mmpPic} src={mmpLogo} alt="mmp logo" />
             )}

@@ -4,17 +4,30 @@ import ashley from "../../assets/ashley.png";
 import down from "../../assets/down-chevron.svg";
 import search from "../../assets/search.svg";
 import { useState } from "react";
+import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [profileClicked, setProfileClicked] = useState(false);
+  const location = useLocation();
 
   const handleProfileClick = () => {
     setProfileClicked(!profileClicked);
   };
+
+  const getNavbarTitle = () => {
+    switch (location.pathname) {
+      case "/":
+        return "Overview";
+      case "/projects":
+        return "MyProjects";
+      default:
+        return "Overview";
+    }
+  };
   return (
     <>
       <div className={style.navbar}>
-        <p>Overview</p>
+        <p>{getNavbarTitle()}</p>
 
         <div className={style.navRight}>
           <img className={style.navMap} src={map} alt="the map logo" />

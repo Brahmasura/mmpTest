@@ -4,12 +4,15 @@ import App from "./App.jsx";
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import { ContainerProvider } from "./Cotntext/ContainerContext.jsx";
+// import { ContainerProvider } from "./Cotntext/ContainerContext.jsx";
+import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <ContainerProvider>
-      <App />
-    </ContainerProvider>
+    {/* <ContainerProvider> */}
+      <BrowserRouter basename="/myMarketingPassTest">
+        <App />
+      </BrowserRouter>
+    {/* </ContainerProvider> */}
   </React.StrictMode>
 );

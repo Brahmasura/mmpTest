@@ -1,14 +1,14 @@
 import style from "./chat.module.scss";
 import chatAshleyLogo from "../../../assets/First/Chat/chatAshleyLogo.svg";
 import chatClose from "../../../assets/First/Chat/chatClose.svg";
-import { useContext, useState } from "react";
-import { ContainerContext } from "../../../Cotntext/ContainerContext";
+import { useState } from "react";
 import chatHistory from "../../../assets/First/Chat/chatHistory.svg";
 import chatStar from "../../../assets/First/Chat/chatStar.svg";
 import chatDownArrow from "../../../assets/First/Chat/chatDownArrow.svg";
 import chatSend from "../../../assets/First/Chat/chatSend.svg";
 import chatQuestion from "../../../assets/First/Chat/chatQuestion.svg";
 import chatBrandStar from "../../../assets/First/Chat/chatBrandStar.svg";
+import { useNavigate } from "react-router-dom";
 
 // chatArray
 const chatCardsArray = [
@@ -37,9 +37,10 @@ const chatBrandsArray = [
 ];
 
 const Chat = () => {
-  const { handleContainerClick } = useContext(ContainerContext);
+ 
   const [brand, setBrand] = useState("SpaceX");
   const [brandTabOpen, setBrandTabOpen] = useState(false);
+  const navigate = useNavigate();
 
   const handleSelectBrand = (text) => {
     setBrand(text);
@@ -48,6 +49,10 @@ const Chat = () => {
   const handleBrandToggle = () => {
     setBrandTabOpen(!brandTabOpen);
   };
+
+  const handleNavigation = () => {
+    navigate("/");
+  }
 
   return (
     <>
@@ -148,7 +153,7 @@ const Chat = () => {
           </div>
         </div>
         <img
-          onClick={ () => handleContainerClick(0)}
+          onClick={handleNavigation}
           className={style.chatClose}
           src={chatClose}
           alt="close logo"

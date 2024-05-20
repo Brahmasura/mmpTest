@@ -1,8 +1,7 @@
-import { useContext } from "react";
 import Project from "../Projects/Project";
 import Title from "../Title/Title";
 import style from "./third.module.scss";
-import { ContainerContext } from "../../Cotntext/ContainerContext";
+import { useNavigate } from "react-router-dom";
 
 const projectArray = [
   {
@@ -34,12 +33,18 @@ const projectArray = [
 ];
 
 const Third = () => {
-  const {handleContainerClick} = useContext(ContainerContext);
+  const navigate = useNavigate();
+
+  const handleNavigation = () => {
+    navigate("/projects");
+  }
+
+
   return (
     <>
       <div className={style.mainDiv}>
         {/* title */}
-        <Title text="MyProjects" handleContainerClick={() => handleContainerClick(3)} />
+        <Title text="MyProjects" handleContainerClick={handleNavigation} />
 
         {/* content */}
 

@@ -2,19 +2,24 @@ import style from "./first.module.scss";
 import face from "../../assets/SalesGuy.svg";
 import send from "../../assets/sendIcon.svg";
 import More from "../moreButton/More";
-import { useContext } from "react";
-import { ContainerContext } from "../../Cotntext/ContainerContext";
+import { useNavigate } from "react-router-dom";
+
 
 const First = () => {
-  const { handleContainerClick } = useContext(ContainerContext);
+const navigate = useNavigate();
+
 
   const handleInputClick = (event) => {
     event.stopPropagation();
   };
 
+  const handleNavigation = () => {
+    navigate("/chat");
+  }
+
   return (
     <>
-      <div onClick={() => handleContainerClick(1)} className={style.mainDiv}>
+      <div onClick={handleNavigation} className={style.mainDiv}>
         <div className="textDiv">
           <h2>Welcome, Ashley</h2>
           <br />
