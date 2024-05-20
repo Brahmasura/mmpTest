@@ -7,23 +7,24 @@ import Navbar from "./components/Navbar/Navbar";
 import SidebarNew from "./components/SidebarNew/SidebarNew";
 import { ContainerContext } from "./Cotntext/ContainerContext";
 import Chat from "./components/First/Chat.jsx/Chat";
+import ProjectsHome from "./components/Third/ProjectsHome/ProjectsHome";
+import { render } from "react-dom";
 
 function App() {
   const { containerNumber } = useContext(ContainerContext);
-  // useEffect(() => {
 
-  //   const fetchData = async () => {
-  //     try {
-  //       const response = await axios.get("https://api-dev.mmp.updatechange.com/brands/brand_summary?access_token=1234567890ABCDEF&brand=47001465225");
-  //         console.log("the response:", response.data);
-
-  //     } catch (err) {
-  //       console.log(err);
-  //     }
-  //   };
-
-  //   fetchData();
-  // }, []);
+  const renderContainer = () => {
+    switch (containerNumber) {
+      case 0:
+        return <Container />;
+      case 1:
+        return <Chat />;
+      case 3:
+        return <ProjectsHome />;
+      default:
+        return null;
+    }
+  };
 
   return (
     <>
@@ -40,11 +41,15 @@ function App() {
 
           {/* now the main container */}
           {/* <div className={style.parentContainer}> */}
-            {containerNumber === 0 && <Container />}
+          {/* {containerNumber === 0 && <Container />}
 
-            {containerNumber === 1 && <Chat/>}
+          {containerNumber === 1 && <Chat />}
 
-            {/* so this is going to be the renderer of other pages */}
+          {containerNumber === 3 && <ProjectsHome />} */}
+           
+
+           {renderContainer()}
+          {/* so this is going to be the renderer of other pages */}
           {/* </div> */}
         </div>
       </div>

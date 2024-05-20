@@ -1,6 +1,8 @@
+import { useContext } from "react";
 import Project from "../Projects/Project";
 import Title from "../Title/Title";
 import style from "./third.module.scss";
+import { ContainerContext } from "../../Cotntext/ContainerContext";
 
 const projectArray = [
   {
@@ -32,11 +34,12 @@ const projectArray = [
 ];
 
 const Third = () => {
+  const {handleContainerClick} = useContext(ContainerContext);
   return (
     <>
       <div className={style.mainDiv}>
         {/* title */}
-        <Title text="MyProjects" />
+        <Title text="MyProjects" handleContainerClick={() => handleContainerClick(3)} />
 
         {/* content */}
 

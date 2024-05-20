@@ -1,10 +1,10 @@
 import More from "../moreButton/More";
 import style from "./title.module.scss";
 
-const Title = ({ text }) => {
+const Title = ({ text, handleContainerClick }) => {
   return (
     <>
-      <div className={style.mainDiv}>
+      <div className={style.mainDiv} onClick={handleContainerClick}>
         <p>{text}</p>
         <More
           backgroundColor="red"

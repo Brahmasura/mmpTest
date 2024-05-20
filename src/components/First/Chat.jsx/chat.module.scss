@@ -125,6 +125,7 @@
         }
 
         .rightdivOne {
+          cursor:pointer;
           display: flex;
           justify-content: start;
           gap: 19px;
@@ -275,6 +276,7 @@
     }
   }
   .chatClose {
+    cursor: pointer;
     position: absolute;
     width: 2.8125vw;
     height: auto;
