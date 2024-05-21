@@ -1,13 +1,14 @@
-import React from 'react'
+import { Route, Routes } from "react-router-dom";
+import ProjectsMain from "../ProjectsMain/ProjectsMain";
 
 const ProjectsHome = () => {
   return (
     <>
-        <div>
-            <h1>this is the projects home page</h1>
-        </div>
+       <Routes>
+        <Route path="/" element={<ProjectsMain/>}/>
+       </Routes>
     </>
-  )
-}
+  );
+};
 
 export default ProjectsHome;
