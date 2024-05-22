@@ -9,6 +9,7 @@
     align-items: start;
     height: 5.55555555555vh;
     padding-right: 3.352083333333vw;
+    position: relative;
 
     .brandsToggler {
       width: 14.460520833333vw;
@@ -34,10 +35,73 @@
         margin-bottom: 0;
       }
 
+      .upArrow {
+        margin-left: auto;
+        width: 1.1953125vw;
+        height: auto;
+        rotate: 180deg;
+        transition: rotate 0.7s ease;
+      }
+
       .downArrow {
         margin-left: auto;
         width: 1.1953125vw;
         height: auto;
+        rotate: 0deg;
+        transition: rotate 0.7s ease;
+      }
+    }
+
+    .brandsToggleDiv {
+      border-radius: 1.25vw;
+      position: absolute;
+      z-index: 2;
+      top: 100%;
+      width: 13.802083333333vw;
+      height: 20.4629629629vh;
+      background: #000;
+
+      .starBrandDiv {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        height: 58px;
+        color: white;
+        border-radius: 1.25vw;
+        padding-left: 0.9375vw ;
+
+        P {
+          color: var(--text-text-invert, #fffdfc);
+          font-family: Rajdhani;
+          font-size:1.0416666666vw;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          margin-left: 0.8348958333vw;
+          margin-bottom: 0;
+        }
+      }
+
+      .starBrandDivSelected {
+        background: rgba(236, 34, 39, 0.3);
+        // display:flex;
+        // justify-content: start;
+        // align-items: center;
+        // height: 58px;
+        // color:white;
+        //  border-radius: 1.25vw;
+      }
+
+      button {
+        width: 100%;
+        background: none;
+        border: none;
+        color: var(--text-text-complementary, #b2b2b2);
+        font-family: Rajdhani;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
       }
     }
   }
@@ -55,6 +119,7 @@
       padding-left: 1.3541666666vw;
       padding-right: 2.604166666vw;
       overflow: auto;
+      scrollbar-width: none;
 
       .activeProjectsContainer {
         // active projects title begins
@@ -222,7 +287,7 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                gap:4.21875vw;
+                gap: 4.21875vw;
 
                 .newTicketDiv {
                   display: flex;
@@ -391,7 +456,7 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                gap:4.21875vw;
+                gap: 4.21875vw;
                 .newTicketDiv {
                   display: flex;
                   justify-content: start;

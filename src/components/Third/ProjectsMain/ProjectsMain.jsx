@@ -8,6 +8,8 @@ import clock from "../../../assets/Third/projectClock.svg";
 import tick from "../../../assets/Third/projectReady.svg";
 import edit from "../../../assets/Third/projectEdit.svg";
 import projectDelete from "../../../assets/Third/projectDelete.svg";
+import unselectedStar from "../../../assets/Third/projectUnselectedStar.svg";
+
 import { useState } from "react";
 
 // the active projects array
@@ -122,6 +124,20 @@ const InactiveProjectsArray = [
   },
 ];
 
+// project brand array begins
+
+const ProjectBrandsArray = [
+  {
+    brand: "SpaceX",
+  },
+  {
+    brand: "SmartFit",
+  },
+  {
+    brand: "A Roof For You",
+  },
+];
+
 const addProgress = (projects) => {
   return projects.map((project) => {
     const { completed, total } = project;
@@ -140,9 +156,20 @@ const updatedActiveProjectsArray = addProgress(ActiveProjectsArray);
 const ProjectsMain = () => {
   const navigate = useNavigate();
   const [activeProjectHover, setActiveProjectHover] = useState(null);
+  const [projectBrandToggle, setProjectBrandToggle] = useState(false);
+  const [selectedBrand, setSelectedBrand] = useState(0);
+
+  // function to handle the brand selection from the toggler
+  const handleBrandselect = (index) => {
+    setSelectedBrand(index)
+  };
 
   const handleActiveProjectHover = (index) => {
     setActiveProjectHover(index);
+  };
+
+  const handleProjectBrandToggle = () => {
+    setProjectBrandToggle(!projectBrandToggle);
   };
 
   // to handle navigation
@@ -152,20 +179,37 @@ const ProjectsMain = () => {
   return (
     <>
       <div className={style.projectsMainContainer}>
-        <div className={style.brandsTogglerContainer}>
+        <div
+          onClick={handleProjectBrandToggle}
+          className={style.brandsTogglerContainer}
+        >
           <div className={style.brandsToggler}>
             <img
               className={style.star}
               src={star}
               alt="the active brand start"
             />
-            <p>SpaceX</p>
+            <p>{ProjectBrandsArray[selectedBrand].brand}</p>
             <img
-              className={style.downArrow}
+              className={projectBrandToggle ? style.upArrow : style.downArrow}
               src={downArrow}
               alt="the down arrow"
             />
           </div>
+
+          {/* the toggler div begins  */}
+          {projectBrandToggle && <div className={style.brandsToggleDiv}>
+            {ProjectBrandsArray.map((brand,index) => (
+              <div onClick={() => handleBrandselect(index)} key={index} className={` ${style.starBrandDiv} ${selectedBrand === index ? style.starBrandDivSelected : " "}`}>
+                  <img src={selectedBrand === index ? star : unselectedStar } alt="the star" />
+                  <p>{brand.brand}</p>
+              </div>
+            ))}
+
+            <button>+ Create a Brand</button>
+          </div>}
+
+          {/* the toggler div ends */}
         </div>
 
         <div className={style.projectCoveringForClose}>
