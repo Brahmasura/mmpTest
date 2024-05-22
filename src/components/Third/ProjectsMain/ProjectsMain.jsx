@@ -8,6 +8,7 @@ import clock from "../../../assets/Third/projectClock.svg";
 import tick from "../../../assets/Third/projectReady.svg";
 import edit from "../../../assets/Third/projectEdit.svg";
 import projectDelete from "../../../assets/Third/projectDelete.svg";
+import { useState } from "react";
 
 // the active projects array
 const ActiveProjectsArray = [
@@ -94,6 +95,11 @@ const updatedActiveProjectsArray = addProgress(ActiveProjectsArray);
 
 const ProjectsMain = () => {
   const navigate = useNavigate();
+  const [activeProjectHover, setActiveProjectHover] = useState(null);
+
+  const handleActiveProjectHover = (index) => {
+    setActiveProjectHover(index);
+  }
 
   // to handle navigation
   const handleNavigation = () => {
@@ -138,7 +144,9 @@ const ProjectsMain = () => {
             {/* the active project div container begins */}
             <div className={style.activeProjectDivContainer}>
               {updatedActiveProjectsArray.map((project, index) => (
-                <div key={index} className={style.activeProjectDiv}>
+                <div key={index} className={style.activeProjectDiv}
+                onMouseEnter={() => handleActiveProjectHover(index)}
+                onMouseLeave={() => handleActiveProjectHover(null)}>
                   <p
                     className={style.projectName}
                     style={{ color: project.color }}
@@ -177,7 +185,7 @@ const ProjectsMain = () => {
 
                     {/* the edit delete and down arrow div */}
                     <div className={style.editIconsDiv}>
-                      <img src={edit} alt="edit icon" />
+                      <img src={edit} alt="edit icon" className={activeProjectHover === index ? style.hoveredEdit :""} />
                       <img src={projectDelete} alt="delete icon" />
                       <img src={downArrow} alt="edit icon" />
                     </div>
