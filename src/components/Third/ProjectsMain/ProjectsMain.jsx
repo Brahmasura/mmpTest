@@ -78,6 +78,50 @@ const ActiveProjectsArray = [
   },
 ];
 
+// the inactive projects array
+const InactiveProjectsArray = [
+  {
+    projectName: "SpaceX Website Pages",
+    closedOn: "Feb 03 2024",
+    totalPasses: 20,
+  },
+  {
+    projectName: "visual Branding",
+    closedOn: "Feb 03 2024",
+    totalPasses: 12,
+  },
+  {
+    projectName: "Landing Page Frontex",
+    closedOn: "Feb 03 2024",
+    totalPasses: 2,
+  },
+  {
+    projectName: "Facebook Ads",
+    closedOn: "Feb 03 2024",
+    totalPasses: 1,
+  },
+  {
+    projectName: "Paid Campaigns",
+    closedOn: "Feb 03 2024",
+    totalPasses: 6,
+  },
+  {
+    projectName: "SpaceX Website Pages",
+    closedOn: "Feb 03 2024",
+    totalPasses: 20,
+  },
+  {
+    projectName: "visual Branding",
+    closedOn: "Feb 03 2024",
+    totalPasses: 12,
+  },
+  {
+    projectName: "Landing Page Frontex",
+    closedOn: "Feb 03 2024",
+    totalPasses: 2,
+  },
+];
+
 const addProgress = (projects) => {
   return projects.map((project) => {
     const { completed, total } = project;
@@ -99,7 +143,7 @@ const ProjectsMain = () => {
 
   const handleActiveProjectHover = (index) => {
     setActiveProjectHover(index);
-  }
+  };
 
   // to handle navigation
   const handleNavigation = () => {
@@ -124,88 +168,160 @@ const ProjectsMain = () => {
           </div>
         </div>
 
-        <div className={style.projectsContainer}>
-          <div className={style.activeProjectsContainer}>
-            {/* active projects title begins */}
-            <div className={style.activeProjectsTitle}>
-              <div className={style.activeTitleLeftDiv}>
-                <p>
-                  Active Projects <span>10</span>
-                </p>
-              </div>
-
-              <div className={style.activeTitleRightDiv}>
-                <img src={addIcon} alt="add Icon" />
-                <p>ADD NEW</p>
-              </div>
-            </div>
-            {/* active projects title ends */}
-
-            {/* the active project div container begins */}
-            <div className={style.activeProjectDivContainer}>
-              {updatedActiveProjectsArray.map((project, index) => (
-                <div key={index} className={style.activeProjectDiv}
-                onMouseEnter={() => handleActiveProjectHover(index)}
-                onMouseLeave={() => handleActiveProjectHover(null)}>
-                  <p
-                    className={style.projectName}
-                    style={{ color: project.color }}
-                  >
-                    {project.projectName}
+        <div className={style.projectCoveringForClose}>
+          <div className={style.projectsContainer}>
+            <div className={style.activeProjectsContainer}>
+              {/* active projects title begins */}
+              <div className={style.activeProjectsTitle}>
+                <div className={style.activeTitleLeftDiv}>
+                  <p>
+                    Active Projects <span>10</span>
                   </p>
+                </div>
 
-                  <div className={style.activeProjectDivRight}>
-                    <p className={style.completedTotal}>
-                      {project.completed}/{project.total}
+                <div className={style.activeTitleRightDiv}>
+                  <img src={addIcon} alt="add Icon" />
+                  <p>ADD NEW</p>
+                </div>
+              </div>
+              {/* active projects title ends */}
+
+              {/* the active project div container begins */}
+              <div className={style.activeProjectDivContainer}>
+                {updatedActiveProjectsArray.map((project, index) => (
+                  <div
+                    key={index}
+                    className={style.activeProjectDiv}
+                    onMouseEnter={() => handleActiveProjectHover(index)}
+                    onMouseLeave={() => handleActiveProjectHover(null)}
+                  >
+                    <p
+                      className={style.projectName}
+                      style={{ color: project.color }}
+                    >
+                      {project.projectName}
                     </p>
 
-                    <div className={style.openPassesDiv}>
-                      <img src={clock} alt="clock icon" />
-                      <p>Open Passess: {project.openPasses}</p>
+                    <div className={style.activeProjectDivRight}>
+                      <p className={style.completedTotal}>
+                        {project.completed}/{project.total}
+                      </p>
+
+                      <div className={style.openPassesDiv}>
+                        <img src={clock} alt="clock icon" />
+                        <p>Open Passess: {project.openPasses}</p>
+                      </div>
+
+                      <div className={style.totalPassesDiv}>
+                        <img src={tick} alt="ready icon" />
+                        <p>Total Passes: {project.totalPasses}</p>
+                      </div>
+
+                      {/* the progress div */}
+                      <div className={style.progressDiv}>
+                        <div
+                          className={style.progress}
+                          style={{ width: project.progress }}
+                        ></div>
+                      </div>
+
+                      {/* the ticket edit icon div begins */}
+
+                      <div className={style.ticketEditDiv}>
+                        {/* the add ticket div  */}
+                        <div className={style.newTicketDiv}>
+                          <img src={addIcon} alt="add Icon" />
+                          <p>NEW TICKET</p>
+                        </div>
+
+                        {/* the edit delete and down arrow div */}
+                        <div className={style.editIconsDiv}>
+                          <img
+                            src={edit}
+                            alt="edit icon"
+                            className={
+                              activeProjectHover === index
+                                ? style.hoveredEdit
+                                : ""
+                            }
+                          />
+                          <img src={projectDelete} alt="delete icon" />
+                          <img src={downArrow} alt="edit icon" />
+                        </div>
+                      </div>
+                      {/* the ticket edit icon div ends */}
                     </div>
-
-                    <div className={style.totalPassesDiv}>
-                      <img src={tick} alt="ready icon" />
-                      <p>Total Passes: {project.totalPasses}</p>
-                    </div>
-
-                    {/* the progress div */}
-                    <div className={style.progressDiv}>
-                      <div
-                        className={style.progress}
-                        style={{ width: project.progress }}
-                      ></div>
-                    </div>
-
-                    {/* the add ticket div  */}
-                    <div className={style.newTicketDiv}>
-                      <img src={addIcon} alt="add Icon" />
-                      <p>NEW TICKET</p>
-                    </div>
-
-                    {/* the edit delete and down arrow div */}
-                    <div className={style.editIconsDiv}>
-                      <img src={edit} alt="edit icon" className={activeProjectHover === index ? style.hoveredEdit :""} />
-                      <img src={projectDelete} alt="delete icon" />
-                      <img src={downArrow} alt="edit icon" />
-                    </div>
-
-
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
+
+              {/* the active project div container ends */}
             </div>
 
-            {/* the active project div container ends */}
-          </div>
+            {/* inactive projects container begins */}
+            <div className={style.inactiveProjectsContainer}>
+              <div className={style.inactiveProjectsTitle}>
+                <div className={style.inactiveTitleLeftDiv}>
+                  <p>
+                    Inactive Projects <span>10</span>
+                  </p>
+                </div>
+              </div>
 
-          {/* the close button */}
-          <img
-            onClick={handleNavigation}
-            className={style.chatClose}
-            src={chatClose}
-            alt="close logo"
-          />
+              <div className={style.inactiveProjectDivContainer}>
+                {InactiveProjectsArray.map((project, index) => (
+                  <div key={index} className={style.inactiveProjectDiv}>
+                    <p className={style.projectName}>{project.projectName}</p>
+
+                    <div className={style.inactiveProjectDivRight}>
+                      <div className={style.closedOnDiv}>
+                        <img src={clock} alt="clock icon" />
+                        <p>Closed On: {project.closedOn}</p>
+                      </div>
+
+                      <div className={style.totalPassesDiv}>
+                        <img src={tick} alt="ready icon" />
+                        <p>Total Passes: {project.totalPasses}</p>
+                      </div>
+
+                      <div className={style.ticketEditDiv}>
+                        {/* the add ticket div  */}
+                        <div className={style.newTicketDiv}>
+                          <img src={addIcon} alt="add Icon" />
+                          <p>NEW TICKET</p>
+                        </div>
+
+                        {/* the edit delete and down arrow div */}
+                        <div className={style.editIconsDiv}>
+                          <img
+                            src={edit}
+                            alt="edit icon"
+                            className={
+                              activeProjectHover === index
+                                ? style.hoveredEdit
+                                : ""
+                            }
+                          />
+                          <img src={projectDelete} alt="delete icon" />
+                          <img src={downArrow} alt="edit icon" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* inactive projects container ends */}
+
+            {/* the close button */}
+            <img
+              onClick={handleNavigation}
+              className={style.chatClose}
+              src={chatClose}
+              alt="close logo"
+            />
+          </div>
         </div>
       </div>
     </>
