@@ -140,8 +140,8 @@ const ProjectBrandsArray = [
 
 const addProgress = (projects) => {
   return projects.map((project) => {
-    const { completed, total } = project;
-    const progress = total !== 0 ? ((completed / total) * 100).toFixed(2) : "0";
+    const { openPasses, totalPasses } = project;
+    const progress = totalPasses !== 0 ? ((openPasses / totalPasses) * 100).toFixed(2) : "0";
     return {
       ...project,
       progress: `${progress}%`,
@@ -158,6 +158,18 @@ const ProjectsMain = () => {
   const [activeProjectHover, setActiveProjectHover] = useState(null);
   const [projectBrandToggle, setProjectBrandToggle] = useState(false);
   const [selectedBrand, setSelectedBrand] = useState(0);
+  // const [activeDescriptionOpen, setActiveDescriptionOpen] = useState(null);
+  const [arrowState, setArrowState] = useState({});
+  
+  
+  // active description open function
+  const handleActiveDescription = (index) => {
+    // setActiveDescriptionOpen(index);
+    setArrowState((prevState) => ({
+      ...prevState,
+      [index]: !prevState[index],
+    }));
+  }
 
   // function to handle the brand selection from the toggler
   const handleBrandselect = (index) => {
@@ -247,9 +259,9 @@ const ProjectsMain = () => {
                     </p>
 
                     <div className={style.activeProjectDivRight}>
-                      <p className={style.completedTotal}>
+                      {/* <p className={style.completedTotal}>
                         {project.completed}/{project.total}
-                      </p>
+                      </p> */}
 
                       <div className={style.openPassesDiv}>
                         <img src={clock} alt="clock icon" />
@@ -290,7 +302,7 @@ const ProjectsMain = () => {
                             }
                           />
                           <img src={projectDelete} alt="delete icon" />
-                          <img src={downArrow} alt="edit icon" />
+                          <img onClick={() => handleActiveDescription(index)} className={ arrowState[index] ? style.activeProjectUpArrow : style.activeProjectDownArrow} src={downArrow} alt="edit icon" />
                         </div>
                       </div>
                       {/* the ticket edit icon div ends */}

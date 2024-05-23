@@ -12,11 +12,11 @@
     position: relative;
 
     .brandsToggler {
-      width: 14.460520833333vw;
+      // width: 14.460520833333vw;
       display: flex;
       justify-content: start;
       align-items: center;
-      gap: 1.30885416666vw;
+      // gap: 1.30885416666vw;
       padding-left: 0.65364583333vw;
       padding-right: 0.76614583333vw;
 
@@ -28,27 +28,32 @@
       p {
         color: var(--text-text-invert, #fffdfc);
         font-family: Rajdhani;
-        font-size: 35.444px;
+        font-size: 1.846041666666vw;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
         margin-bottom: 0;
+        margin-left: 1.308854166vw;
       }
 
       .upArrow {
-        margin-left: auto;
+        // margin-left: auto;
+        margin-left: 4.1322916666vw;
         width: 1.1953125vw;
         height: auto;
         rotate: 180deg;
         transition: rotate 0.7s ease;
+        cursor: pointer;
       }
 
       .downArrow {
-        margin-left: auto;
+        // margin-left: auto;
+        margin-left: 4.1322916666vw;
         width: 1.1953125vw;
         height: auto;
         rotate: 0deg;
         transition: rotate 0.7s ease;
+        cursor: pointer;
       }
     }
 
@@ -65,15 +70,20 @@
         display: flex;
         justify-content: start;
         align-items: center;
-        height: 58px;
+        height: 5.37037037037vh;
         color: white;
         border-radius: 1.25vw;
-        padding-left: 0.9375vw ;
+        padding-left: 0.9375vw;
+
+        img {
+          width: 1.19630208333vw;
+          height: auto;
+        }
 
         P {
           color: var(--text-text-invert, #fffdfc);
           font-family: Rajdhani;
-          font-size:1.0416666666vw;
+          font-size: 1.0416666666vw;
           font-style: normal;
           font-weight: 500;
           line-height: normal;
@@ -84,12 +94,6 @@
 
       .starBrandDivSelected {
         background: rgba(236, 34, 39, 0.3);
-        // display:flex;
-        // justify-content: start;
-        // align-items: center;
-        // height: 58px;
-        // color:white;
-        //  border-radius: 1.25vw;
       }
 
       button {
@@ -98,10 +102,11 @@
         border: none;
         color: var(--text-text-complementary, #b2b2b2);
         font-family: Rajdhani;
-        font-size: 20px;
+        font-size: 1.0416666666vw;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
+        margin-top: 0.9vh;
       }
     }
   }
@@ -230,7 +235,7 @@
               // open passes div
               .openPassesDiv {
                 display: flex;
-                width:7.1891145833vw;
+                width: 7.1891145833vw;
                 // margin-right: 1.1979166666vw;
 
                 img {
@@ -252,7 +257,7 @@
               // total Passes div
               .totalPassesDiv {
                 display: flex;
-                width:7.1891145833vw;
+                width: 7.1891145833vw;
                 // margin-right: 2.8125vw;
                 img {
                   width: 1.0417708333333vw;
@@ -277,7 +282,7 @@
                 background: #fffdfc;
                 border-radius: 2.604166666vw;
                 padding: 0.10416666666vw;
-                // margin-right: 10.10416666666vw;
+                margin-right: 7vw;
 
                 .progress {
                   height: 100%;
@@ -303,7 +308,9 @@
                   border-radius: 0.963541666666vw;
                   cursor: pointer;
 
-                  // margin-right: 2.760208333vw;
+                  &:hover {
+                    background: #f40009;
+                  }
 
                   img {
                     width: 1.0692708333vw;
@@ -340,8 +347,22 @@
                     cursor: pointer;
                   }
 
-                  img:nth-child(3) {
+                  // img:nth-child(3) {
+                  // width: 1.19546875vw;
+                  // cursor: pointer;
+                  // }
+
+                  .activeProjectDownArrow {
                     width: 1.19546875vw;
+                    rotate: 0deg;
+                    transition: rotate 0.7s ease;
+                    cursor: pointer;
+                  }
+
+                  .activeProjectUpArrow {
+                    width: 1.19546875vw;
+                    rotate: 180deg;
+                    transition: rotate 0.7s ease;
                     cursor: pointer;
                   }
                 }
@@ -409,7 +430,8 @@
               display: flex;
               align-items: center;
               justify-content: space-between;
-              width: 51.25vw;
+              // width: 51.25vw;
+              width: 56.25vw;
               // the above width need to adjusted, fine for now but
               // might need to change it
 
@@ -437,7 +459,8 @@
               // total Passes div
               .totalPassesDiv {
                 display: flex;
-                width:7.1891145833vw;
+                width: 7.1891145833vw;
+                margin-right: 15vw;
 
                 // margin-right: 2.8125vw;
                 img {
@@ -473,8 +496,9 @@
                   border-radius: 0.963541666666vw;
                   cursor: pointer;
 
-                  // margin-right: 2.760208333vw;
-
+                  &:hover {
+                    background: #f40009;
+                  }
                   img {
                     width: 1.0692708333vw;
                   }
