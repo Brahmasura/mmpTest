@@ -184,7 +184,8 @@
 
         // active Project div container styling begins
         .activeProjectDivContainer {
-          height: 41.277778vh;
+          // height: 41.277778vh;
+          height:42.177778vh;
           overflow: auto;
           scrollbar-width: none;
 
@@ -408,6 +409,7 @@
                     display: flex;
                     flex-direction: column;
                     margin-top: 2.5vh;
+                    cursor:pointer;
 
                     .openTicket {
                       color: var(--text-text-white, #fffdfc);
@@ -417,6 +419,13 @@
                       font-weight: 700;
                       line-height: normal;
                       margin-bottom: 1.1111111111vh;
+                     
+
+                      &:hover{
+                        color:#f40009;
+                      }
+
+
                     }
 
                     .outerDiv {

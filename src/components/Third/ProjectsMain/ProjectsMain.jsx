@@ -515,13 +515,32 @@ const ProjectsMain = () => {
   const [activeProjectClick, setActiveProjectClick] = useState(false);
 
   // active description open function
+  // const handleActiveDescription = (index) => {
+  //   setActiveProjectClick(!activeProjectClick);
+  //   setActiveDescriptionOpen((prevState) => ({
+  //     ...prevState,
+  //     [index]: !prevState[index],
+  //   }));
+  // };
+
+
+  // new logic begins 
+
   const handleActiveDescription = (index) => {
-    setActiveProjectClick(!activeProjectClick);
-    setActiveDescriptionOpen((prevState) => ({
-      ...prevState,
-      [index]: !prevState[index],
-    }));
+    setActiveDescriptionOpen((prevState) => {
+      const newState = {
+        ...prevState,
+        [index]: !prevState[index],
+      };
+
+      const anyActive = Object.values(newState).some(value => value);
+      setActiveProjectClick(anyActive);
+
+      return newState;
+    });
   };
+
+  // new logic ends
 
   // function to handle the brand selection from the toggler
   const handleBrandselect = (index) => {
