@@ -21,6 +21,50 @@ const ActiveProjectsArray = [
     openPasses: 2,
     totalPasses: 20,
     color: "#FF7F00",
+    open_tickets: [
+      {
+        ticket_id: 23105,
+        dept: "Automation & Cotact Management",
+        percentage: 50,
+      },
+      {
+        ticket_id: 23105,
+        dept: "Website Work",
+        percentage: 30,
+      },
+    ],
+    closed_tickets: [
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Brand Logo",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Copywriting",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Ads",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "FB Professional Profile",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Linkeding Social Media Banners",
+        closed: "Feb 03 2024",
+      },
+    ],
   },
   {
     projectName: "visual Branding",
@@ -29,6 +73,50 @@ const ActiveProjectsArray = [
     openPasses: 1,
     totalPasses: 12,
     color: "#FFD700",
+    open_tickets: [
+      {
+        ticket_id: 23105,
+        dept: "Automation & Cotact Management",
+        percentage: 50,
+      },
+      {
+        ticket_id: 23105,
+        dept: "Website Work",
+        percentage: 30,
+      },
+    ],
+    closed_tickets: [
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Brand Logo",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Copywriting",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Ads",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "FB Professional Profile",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Linkeding Social Media Banners",
+        closed: "Feb 03 2024",
+      },
+    ],
   },
   {
     projectName: "Landing Page Frontex",
@@ -37,6 +125,50 @@ const ActiveProjectsArray = [
     openPasses: 1,
     totalPasses: 2,
     color: "#00A6FB",
+    open_tickets: [
+      {
+        ticket_id: 23105,
+        dept: "Automation & Cotact Management",
+        percentage: 50,
+      },
+      {
+        ticket_id: 23105,
+        dept: "Website Work",
+        percentage: 30,
+      },
+    ],
+    closed_tickets: [
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Brand Logo",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Copywriting",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Ads",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "FB Professional Profile",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Linkeding Social Media Banners",
+        closed: "Feb 03 2024",
+      },
+    ],
   },
   {
     projectName: "Facebook Ads",
@@ -45,6 +177,50 @@ const ActiveProjectsArray = [
     openPasses: 0,
     totalPasses: 1,
     color: "#32CD32",
+    open_tickets: [
+      {
+        ticket_id: 23105,
+        dept: "Automation & Cotact Management",
+        percentage: 50,
+      },
+      {
+        ticket_id: 23105,
+        dept: "Website Work",
+        percentage: 30,
+      },
+    ],
+    closed_tickets: [
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Brand Logo",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Copywriting",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Ads",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "FB Professional Profile",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Linkeding Social Media Banners",
+        closed: "Feb 03 2024",
+      },
+    ],
   },
   {
     projectName: "Paid Campaigns",
@@ -53,6 +229,50 @@ const ActiveProjectsArray = [
     openPasses: 3,
     totalPasses: 6,
     color: "#FFFDFC",
+    open_tickets: [
+      {
+        ticket_id: 23105,
+        dept: "Automation & Cotact Management",
+        percentage: 50,
+      },
+      {
+        ticket_id: 23105,
+        dept: "Website Work",
+        percentage: 30,
+      },
+    ],
+    closed_tickets: [
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Brand Logo",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Copywriting",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Ads",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "FB Professional Profile",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Linkeding Social Media Banners",
+        closed: "Feb 03 2024",
+      },
+    ],
   },
   {
     projectName: "SpaceX Website Pages",
@@ -61,6 +281,50 @@ const ActiveProjectsArray = [
     openPasses: 2,
     totalPasses: 20,
     color: "#FF7F00",
+    open_tickets: [
+      {
+        ticket_id: 23105,
+        dept: "Automation & Cotact Management",
+        percentage: 50,
+      },
+      {
+        ticket_id: 23105,
+        dept: "Website Work",
+        percentage: 30,
+      },
+    ],
+    closed_tickets: [
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Brand Logo",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Copywriting",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Ads",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "FB Professional Profile",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Linkeding Social Media Banners",
+        closed: "Feb 03 2024",
+      },
+    ],
   },
   {
     projectName: "visual Branding",
@@ -69,6 +333,50 @@ const ActiveProjectsArray = [
     openPasses: 1,
     totalPasses: 12,
     color: "#FFD700",
+    open_tickets: [
+      {
+        ticket_id: 23105,
+        dept: "Automation & Cotact Management",
+        percentage: 50,
+      },
+      {
+        ticket_id: 23105,
+        dept: "Website Work",
+        percentage: 30,
+      },
+    ],
+    closed_tickets: [
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Brand Logo",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Copywriting",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Ads",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "FB Professional Profile",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Linkeding Social Media Banners",
+        closed: "Feb 03 2024",
+      },
+    ],
   },
   {
     projectName: "Landing Page Frontex",
@@ -77,6 +385,50 @@ const ActiveProjectsArray = [
     openPasses: 1,
     totalPasses: 2,
     color: "#00A6FB",
+    open_tickets: [
+      {
+        ticket_id: 23105,
+        dept: "Automation & Cotact Management",
+        percentage: 50,
+      },
+      {
+        ticket_id: 23105,
+        dept: "Website Work",
+        percentage: 30,
+      },
+    ],
+    closed_tickets: [
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Brand Logo",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Copywriting",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Ads",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "FB Professional Profile",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Linkeding Social Media Banners",
+        closed: "Feb 03 2024",
+      },
+    ],
   },
 ];
 
@@ -141,7 +493,8 @@ const ProjectBrandsArray = [
 const addProgress = (projects) => {
   return projects.map((project) => {
     const { openPasses, totalPasses } = project;
-    const progress = totalPasses !== 0 ? ((openPasses / totalPasses) * 100).toFixed(2) : "0";
+    const progress =
+      totalPasses !== 0 ? ((openPasses / totalPasses) * 100).toFixed(2) : "0";
     return {
       ...project,
       progress: `${progress}%`,
@@ -158,22 +511,21 @@ const ProjectsMain = () => {
   const [activeProjectHover, setActiveProjectHover] = useState(null);
   const [projectBrandToggle, setProjectBrandToggle] = useState(false);
   const [selectedBrand, setSelectedBrand] = useState(0);
-  // const [activeDescriptionOpen, setActiveDescriptionOpen] = useState(null);
-  const [arrowState, setArrowState] = useState({});
-  
-  
+  const [activeDescriptionOpen, setActiveDescriptionOpen] = useState({});
+  const [activeProjectClick, setActiveProjectClick] = useState(false);
+
   // active description open function
   const handleActiveDescription = (index) => {
-    // setActiveDescriptionOpen(index);
-    setArrowState((prevState) => ({
+    setActiveProjectClick(!activeProjectClick);
+    setActiveDescriptionOpen((prevState) => ({
       ...prevState,
       [index]: !prevState[index],
     }));
-  }
+  };
 
   // function to handle the brand selection from the toggler
   const handleBrandselect = (index) => {
-    setSelectedBrand(index)
+    setSelectedBrand(index);
   };
 
   const handleActiveProjectHover = (index) => {
@@ -210,16 +562,27 @@ const ProjectsMain = () => {
           </div>
 
           {/* the toggler div begins  */}
-          {projectBrandToggle && <div className={style.brandsToggleDiv}>
-            {ProjectBrandsArray.map((brand,index) => (
-              <div onClick={() => handleBrandselect(index)} key={index} className={` ${style.starBrandDiv} ${selectedBrand === index ? style.starBrandDivSelected : " "}`}>
-                  <img src={selectedBrand === index ? star : unselectedStar } alt="the star" />
+          {projectBrandToggle && (
+            <div className={style.brandsToggleDiv}>
+              {ProjectBrandsArray.map((brand, index) => (
+                <div
+                  onClick={() => handleBrandselect(index)}
+                  key={index}
+                  className={` ${style.starBrandDiv} ${
+                    selectedBrand === index ? style.starBrandDivSelected : " "
+                  }`}
+                >
+                  <img
+                    src={selectedBrand === index ? star : unselectedStar}
+                    alt="the star"
+                  />
                   <p>{brand.brand}</p>
-              </div>
-            ))}
+                </div>
+              ))}
 
-            <button>+ Create a Brand</button>
-          </div>}
+              <button>+ Create a Brand</button>
+            </div>
+          )}
 
           {/* the toggler div ends */}
         </div>
@@ -243,7 +606,11 @@ const ProjectsMain = () => {
               {/* active projects title ends */}
 
               {/* the active project div container begins */}
-              <div className={style.activeProjectDivContainer}>
+              <div
+                className={`${style.activeProjectDivContainer} ${
+                  activeProjectClick && style.activeProjectDivContainerOpen
+                }`}
+              >
                 {updatedActiveProjectsArray.map((project, index) => (
                   <div
                     key={index}
@@ -251,61 +618,130 @@ const ProjectsMain = () => {
                     onMouseEnter={() => handleActiveProjectHover(index)}
                     onMouseLeave={() => handleActiveProjectHover(null)}
                   >
-                    <p
-                      className={style.projectName}
-                      style={{ color: project.color }}
+                    <div
+                      // key={index}
+                      className={style.activeProjectIntro}
                     >
-                      {project.projectName}
-                    </p>
+                      <p
+                        className={style.projectName}
+                        style={{ color: project.color }}
+                      >
+                        {project.projectName}
+                      </p>
 
-                    <div className={style.activeProjectDivRight}>
-                      {/* <p className={style.completedTotal}>
+                      <div className={style.activeProjectIntroRight}>
+                        {/* <p className={style.completedTotal}>
                         {project.completed}/{project.total}
                       </p> */}
 
-                      <div className={style.openPassesDiv}>
-                        <img src={clock} alt="clock icon" />
-                        <p>Open Passess: {project.openPasses}</p>
-                      </div>
-
-                      <div className={style.totalPassesDiv}>
-                        <img src={tick} alt="ready icon" />
-                        <p>Total Passes: {project.totalPasses}</p>
-                      </div>
-
-                      {/* the progress div */}
-                      <div className={style.progressDiv}>
-                        <div
-                          className={style.progress}
-                          style={{ width: project.progress }}
-                        ></div>
-                      </div>
-
-                      {/* the ticket edit icon div begins */}
-
-                      <div className={style.ticketEditDiv}>
-                        {/* the add ticket div  */}
-                        <div className={style.newTicketDiv}>
-                          <img src={addIcon} alt="add Icon" />
-                          <p>NEW TICKET</p>
+                        <div className={style.openPassesDiv}>
+                          <img src={clock} alt="clock icon" />
+                          <p>Open Passess: {project.openPasses}</p>
                         </div>
 
-                        {/* the edit delete and down arrow div */}
-                        <div className={style.editIconsDiv}>
-                          <img
-                            src={edit}
-                            alt="edit icon"
-                            className={
-                              activeProjectHover === index
-                                ? style.hoveredEdit
-                                : ""
-                            }
-                          />
-                          <img src={projectDelete} alt="delete icon" />
-                          <img onClick={() => handleActiveDescription(index)} className={ arrowState[index] ? style.activeProjectUpArrow : style.activeProjectDownArrow} src={downArrow} alt="edit icon" />
+                        <div className={style.totalPassesDiv}>
+                          <img src={tick} alt="ready icon" />
+                          <p>Total Passes: {project.totalPasses}</p>
+                        </div>
+
+                        {/* the progress div */}
+                        <div className={style.progressDiv}>
+                          <div
+                            className={style.progress}
+                            style={{ width: project.progress }}
+                          ></div>
+                        </div>
+
+                        {/* the ticket edit icon div begins */}
+
+                        <div className={style.ticketEditDiv}>
+                          {/* the add ticket div  */}
+                          <div className={style.newTicketDiv}>
+                            <img src={addIcon} alt="add Icon" />
+                            <p>NEW TICKET</p>
+                          </div>
+
+                          {/* the edit delete and down arrow div */}
+                          <div className={style.editIconsDiv}>
+                            <img
+                              src={edit}
+                              alt="edit icon"
+                              className={
+                                activeProjectHover === index
+                                  ? style.hoveredEdit
+                                  : ""
+                              }
+                            />
+                            <img src={projectDelete} alt="delete icon" />
+                            <img
+                              onClick={() => handleActiveDescription(index)}
+                              className={
+                                activeDescriptionOpen[index]
+                                  ? style.activeProjectUpArrow
+                                  : style.activeProjectDownArrow
+                              }
+                              src={downArrow}
+                              alt="edit icon"
+                            />
+                          </div>
+                        </div>
+                        {/* the ticket edit icon div ends */}
+                      </div>
+                    </div>
+
+                    {/* the active projecct description begins */}
+
+                    <div
+                      className={
+                        activeDescriptionOpen[index]
+                          ? style.activeProjectDescriptionOpen
+                          : style.activeProjectDescriptionClosed
+                      }
+                    >
+                      <div className={style.activeDescriptionDiv}>
+                        <div className={style.descriptionLeft}>
+                          <p className={style.passesProgressTitle}>
+                            Passes In Progress
+                          </p>
+                          {project.open_tickets.map((ticket, ticketIndex) => (
+                            <div
+                              key={ticketIndex}
+                              className={style.progressPassesDiv}
+                            >
+                              <p className={style.openTicket}>
+                                #{ticket.ticket_id} | {ticket.dept}
+                              </p>
+                              <div className={style.outerDiv}>
+                                <div
+                                  style={{
+                                    width: `${ticket.percentage}%`,
+                                  }} className={style.innerProgressDiv}
+                                ></div>
+                              </div>
+                            </div>
+                          ))}
+
+                          <p className={style.passesClosedTitle}>
+                            Closed Passes
+                          </p>
+
+                          {project.closed_tickets.map((ticket, ticketIndex) => (
+                            <div key={ticketIndex} className={style.closedPassesDiv}>
+                              <p className={style.closedTicket}>#{ticket.ticket_id} | {ticket.type}</p>
+                              <div className={style.dateDiv}>
+                                <img src={clock} alt="the time"/>
+                                <p className={style.date}>{ticket.closed}</p>
+                              </div>
+
+                            </div>
+                          ))}
+
+
+                        </div>
+                        <div className={style.descriptionRight}>
+                          <h1>this is the right div </h1>
                         </div>
                       </div>
-                      {/* the ticket edit icon div ends */}
                     </div>
                   </div>
                 ))}
