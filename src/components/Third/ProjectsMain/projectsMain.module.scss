@@ -388,11 +388,11 @@
                 display: grid;
                 grid-template-columns: 25.5208333333vw auto;
                 margin-top: 2.037037037vh;
-                padding-bottom:2.77777777777vh;
+                padding-bottom: 2.77777777777vh;
 
                 .descriptionLeft {
                   padding-left: 1.302083333333vw;
-                  border-right:0.1041666666vw solid #fff;
+                  border-right: 0.1041666666vw solid #fff;
 
                   .passesProgressTitle {
                     color: var(--text-text-white, #fffdfc);
@@ -484,9 +484,57 @@
                 }
 
                 .descriptionRight {
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
+                  padding-left: 3.80208333333vw;
+                  padding-right: 1.7708333333333vw;
+
+                  .rightDescriptionDiv {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom:2.5vh;
+
+                    .mainDescriptionTitle {
+                      color: var(--text-text-white, #fffdfc);
+                      font-family: Rajdhani;
+                      font-size: 1.0416666666vw;
+                      font-style: normal;
+                      font-weight: 700;
+                      line-height: normal;
+                      margin-bottom: 0;
+                    }
+
+                    .descriptionEditDiv {
+                      display: flex;
+                      .descriptionEditIcon {
+                        width: 1.04083333333vw;
+                        margin-right: 1vw;
+                      }
+
+                      .descriptionArrow {
+                        width: 0.893072916666vw;
+                      }
+                    }
+                  }
+
+                  .descriptionTitle {
+                    color: var(--text-text-white, #fffdfc);
+                    font-family: Rajdhani;
+                    font-size: 0.8333333333vw;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    margin-bottom:0;
+                  }
+
+                  .descriptionText{
+                    color: var(--text-text-white, #fffdfc);
+                    font-family: Rajdhani;
+                    font-size: 0.8333333333vw;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    margin-bottom:1vh;
+                  }
                 }
               }
             }

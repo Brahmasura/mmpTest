@@ -715,7 +715,8 @@ const ProjectsMain = () => {
                                 <div
                                   style={{
                                     width: `${ticket.percentage}%`,
-                                  }} className={style.innerProgressDiv}
+                                  }}
+                                  className={style.innerProgressDiv}
                                 ></div>
                               </div>
                             </div>
@@ -726,20 +727,68 @@ const ProjectsMain = () => {
                           </p>
 
                           {project.closed_tickets.map((ticket, ticketIndex) => (
-                            <div key={ticketIndex} className={style.closedPassesDiv}>
-                              <p className={style.closedTicket}>#{ticket.ticket_id} | {ticket.type}</p>
+                            <div
+                              key={ticketIndex}
+                              className={style.closedPassesDiv}
+                            >
+                              <p className={style.closedTicket}>
+                                #{ticket.ticket_id} | {ticket.type}
+                              </p>
                               <div className={style.dateDiv}>
-                                <img src={clock} alt="the time"/>
+                                <img src={clock} alt="the time" />
                                 <p className={style.date}>{ticket.closed}</p>
                               </div>
-
                             </div>
                           ))}
-
-
                         </div>
                         <div className={style.descriptionRight}>
-                          <h1>this is the right div </h1>
+                          <div className={style.rightDescriptionDiv}>
+                            <p className={style.mainDescriptionTitle}>
+                              Project Description
+                            </p>
+                            <div className={style.descriptionEditDiv}>
+                              <img
+                                className={style.descriptionEditIcon}
+                                src={edit}
+                                alt="edit icon"
+                              />
+                              <img
+                                className={style.descriptionArrow}
+                                src={downArrow}
+                                alt="down Arrow"
+                              />
+                            </div>
+                          </div>
+
+                          <p className={style.descriptionTitle}>
+                            Which Audits do you need?
+                          </p>
+                          <p className={style.descriptionText}>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum dolore
+                            eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia
+                            deserunt mollit anim id est laborum.
+                          </p>
+
+                          <p className={style.descriptionTitle}>
+                            Which Audits do you need?
+                          </p>
+                          <p className={style.descriptionText}>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum dolore
+                            eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia
+                            deserunt mollit anim id est laborum.
+                          </p>
                         </div>
                       </div>
                     </div>
