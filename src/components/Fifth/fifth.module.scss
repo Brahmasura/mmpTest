@@ -5,9 +5,11 @@
   width: 19.89583333333vw;
   height: 45.74074074vh;
   padding-top: 0.92592592592vh;
-
   background: rgba(0, 0, 0, 0.5);
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
 
   p {
     margin-bottom: 0;
@@ -24,11 +26,40 @@
     margin-bottom: 0.648148148148vh;
   }
 
+  // selection Div style begins
+  .selectionDiv {
+    margin-bottom: auto;
+    margin-top: 1.2vh;
+
+    p {
+      color: var(--text-text-invert, #fffdfc);
+      text-align: center;
+      font-family: Rajdhani;
+      font-style: normal;
+      line-height: normal;
+    }
+
+    .clickedTitle {
+      font-size: 2.59259259259vh;
+      font-weight: 700;
+      margin-bottom:1.296296296vh;
+    }
+
+    .description {
+      font-size: 1.388888888vh;
+      font-weight: 500;
+    }
+  }
+
+  // selection Div style ends
+
+  // second Div style begins
   .secondDiv {
     padding-top: 0.83333333333vh;
     border-radius: 30px 30px 0 0;
     background-color: whitesmoke;
     height: 41.759259259vh;
+    width: 100%;
 
     .paraOne {
       color: #333;
@@ -51,6 +82,7 @@
       margin-left: 1.5625vw;
     }
 
+    // classes for event container begins
     .eventsContainer {
       padding-left: 1.5625vw;
       height: 24.1vh;
@@ -61,8 +93,16 @@
       }
     }
 
+    .eventsContainerHidden {
+      display: none;
+    }
+
+    // classes for event container ends
+
+    // arrowBox classes begin
+
     .arrowBox {
-      margin-bottom: 2.037037037vh;
+      // margin-bottom: 2.037037037vh;
       @include x-center-center;
 
       .leftArrow {
@@ -82,9 +122,17 @@
       }
     }
 
+    .arrowBoxHidden {
+      display: none;
+    }
+
+    // arrowBox classes ends
+
     .calendarDiv {
       border-top: 1px solid grey;
-      padding-top: 1.94444444444vh;
+      // padding-top: 1.94444444444vh;
+      height: 6.574074074074vh;
+      margin-top: 2.037037037vh;
       @include x-center-center;
       cursor: pointer;
       img {
@@ -102,5 +150,17 @@
         line-height: normal;
       }
     }
+  }
+
+  .secondDivOff {
+    height: auto;
+    padding-top: 2.5vh;
+  }
+
+  // second div style ends
+
+  &:hover {
+    background: #f40009;
+    cursor: pointer;
   }
 }
