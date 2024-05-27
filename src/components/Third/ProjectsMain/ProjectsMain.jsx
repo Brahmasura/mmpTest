@@ -438,41 +438,297 @@ const InactiveProjectsArray = [
     projectName: "SpaceX Website Pages",
     closedOn: "Feb 03 2024",
     totalPasses: 20,
+    closed_tickets: [
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Brand Logo",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Copywriting",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Ads",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "FB Professional Profile",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Linkeding Social Media Banners",
+        closed: "Feb 03 2024",
+      },
+    ],
   },
   {
     projectName: "visual Branding",
     closedOn: "Feb 03 2024",
     totalPasses: 12,
+    closed_tickets: [
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Brand Logo",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Copywriting",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Ads",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "FB Professional Profile",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Linkeding Social Media Banners",
+        closed: "Feb 03 2024",
+      },
+    ],
   },
   {
     projectName: "Landing Page Frontex",
     closedOn: "Feb 03 2024",
     totalPasses: 2,
+    closed_tickets: [
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Brand Logo",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Copywriting",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Ads",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "FB Professional Profile",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Linkeding Social Media Banners",
+        closed: "Feb 03 2024",
+      },
+    ],
   },
   {
     projectName: "Facebook Ads",
     closedOn: "Feb 03 2024",
     totalPasses: 1,
+    closed_tickets: [
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Brand Logo",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Copywriting",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Ads",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "FB Professional Profile",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Linkeding Social Media Banners",
+        closed: "Feb 03 2024",
+      },
+    ],
   },
   {
     projectName: "Paid Campaigns",
     closedOn: "Feb 03 2024",
     totalPasses: 6,
+    closed_tickets: [
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Brand Logo",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Copywriting",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Ads",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "FB Professional Profile",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Linkeding Social Media Banners",
+        closed: "Feb 03 2024",
+      },
+    ],
   },
   {
     projectName: "SpaceX Website Pages",
     closedOn: "Feb 03 2024",
     totalPasses: 20,
+    closed_tickets: [
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Brand Logo",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Copywriting",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Ads",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "FB Professional Profile",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Linkeding Social Media Banners",
+        closed: "Feb 03 2024",
+      },
+    ],
   },
   {
     projectName: "visual Branding",
     closedOn: "Feb 03 2024",
     totalPasses: 12,
+    closed_tickets: [
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Brand Logo",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Copywriting",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Ads",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "FB Professional Profile",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Linkeding Social Media Banners",
+        closed: "Feb 03 2024",
+      },
+    ],
   },
   {
     projectName: "Landing Page Frontex",
     closedOn: "Feb 03 2024",
     totalPasses: 2,
+    closed_tickets: [
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Brand Logo",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Copywriting",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Ads",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "FB Professional Profile",
+        closed: "Feb 03 2024",
+      },
+      {
+        ticket_id: 23105,
+        // dept: "Writing",
+        type: "Linkeding Social Media Banners",
+        closed: "Feb 03 2024",
+      },
+    ],
   },
 ];
 
@@ -514,17 +770,11 @@ const ProjectsMain = () => {
   const [activeDescriptionOpen, setActiveDescriptionOpen] = useState({});
   const [activeProjectClick, setActiveProjectClick] = useState(false);
 
+  // state for inactive Projects
+  const [inactiveDescriptionOpen, setInactiveDescriptionOpen] = useState({});
+  const [inactiveProjectClick, setInactiveProjectClick] = useState(false);
+
   // active description open function
-  // const handleActiveDescription = (index) => {
-  //   setActiveProjectClick(!activeProjectClick);
-  //   setActiveDescriptionOpen((prevState) => ({
-  //     ...prevState,
-  //     [index]: !prevState[index],
-  //   }));
-  // };
-
-
-  // new logic begins 
 
   const handleActiveDescription = (index) => {
     setActiveDescriptionOpen((prevState) => {
@@ -533,8 +783,22 @@ const ProjectsMain = () => {
         [index]: !prevState[index],
       };
 
-      const anyActive = Object.values(newState).some(value => value);
+      const anyActive = Object.values(newState).some((value) => value);
       setActiveProjectClick(anyActive);
+
+      return newState;
+    });
+  };
+
+  const handleInactiveDescription = (index) => {
+    setInactiveDescriptionOpen((prevState) => {
+      const newState = {
+        ...prevState,
+        [index]: !prevState[index],
+      };
+
+      const anyActive = Object.values(newState).some((value) => value);
+      setInactiveProjectClick(anyActive);
 
       return newState;
     });
@@ -608,6 +872,7 @@ const ProjectsMain = () => {
 
         <div className={style.projectCoveringForClose}>
           <div className={style.projectsContainer}>
+            {/* active Projects Container begins */}
             <div className={style.activeProjectsContainer}>
               {/* active projects title begins */}
               <div className={style.activeProjectsTitle}>
@@ -637,10 +902,7 @@ const ProjectsMain = () => {
                     onMouseEnter={() => handleActiveProjectHover(index)}
                     onMouseLeave={() => handleActiveProjectHover(null)}
                   >
-                    <div
-                      // key={index}
-                      className={style.activeProjectIntro}
-                    >
+                    <div className={style.activeProjectIntro}>
                       <p
                         className={style.projectName}
                         style={{ color: project.color }}
@@ -708,7 +970,7 @@ const ProjectsMain = () => {
                       </div>
                     </div>
 
-                    {/* the active projecct description begins */}
+                    {/* the active project description begins */}
 
                     <div
                       className={
@@ -824,49 +1086,157 @@ const ProjectsMain = () => {
                 <div className={style.inactiveTitleLeftDiv}>
                   <p>
                     Inactive Projects <span>10</span>
+                    {/* here in place of no. 10 we need to get the data from the array, will be needing state for that as well */}
                   </p>
                 </div>
               </div>
+              {/* inactive projects title ends */}
 
-              <div className={style.inactiveProjectDivContainer}>
+              {/* the inactive project div container begins */}
+
+              <div
+                className={`${style.inactiveProjectDivContainer} ${
+                  inactiveProjectClick && style.inactiveProjectDivContainerOpen
+                }`}
+              >
                 {InactiveProjectsArray.map((project, index) => (
                   <div key={index} className={style.inactiveProjectDiv}>
-                    <p className={style.projectName}>{project.projectName}</p>
+                    <div className={style.inactiveProjectIntro}>
+                      <p className={style.projectName}>{project.projectName}</p>
 
-                    <div className={style.inactiveProjectDivRight}>
-                      <div className={style.closedOnDiv}>
-                        <img src={clock} alt="clock icon" />
-                        <p>Closed On: {project.closedOn}</p>
-                      </div>
-
-                      <div className={style.totalPassesDiv}>
-                        <img src={tick} alt="ready icon" />
-                        <p>Total Passes: {project.totalPasses}</p>
-                      </div>
-
-                      <div className={style.ticketEditDiv}>
-                        {/* the add ticket div  */}
-                        <div className={style.newTicketDiv}>
-                          <img src={addIcon} alt="add Icon" />
-                          <p>NEW TICKET</p>
+                      <div className={style.inactiveProjectDivRight}>
+                        <div className={style.closedOnDiv}>
+                          <img src={clock} alt="clock icon" />
+                          <p>Closed On: {project.closedOn}</p>
                         </div>
 
-                        {/* the edit delete and down arrow div */}
-                        <div className={style.editIconsDiv}>
-                          <img
-                            src={edit}
-                            alt="edit icon"
-                            className={
-                              activeProjectHover === index
-                                ? style.hoveredEdit
-                                : ""
-                            }
-                          />
-                          <img src={projectDelete} alt="delete icon" />
-                          <img src={downArrow} alt="edit icon" />
+                        <div className={style.totalPassesDiv}>
+                          <img src={tick} alt="ready icon" />
+                          <p>Total Passes: {project.totalPasses}</p>
+                        </div>
+
+                        <div className={style.ticketEditDiv}>
+                          {/* the add ticket div  */}
+                          <div className={style.newTicketDiv}>
+                            <img src={addIcon} alt="add Icon" />
+                            <p>NEW TICKET</p>
+                          </div>
+
+                          {/* the edit delete and down arrow div */}
+                          <div className={style.editIconsDiv}>
+                            <img
+                              src={edit}
+                              alt="edit icon"
+                              className={
+                                activeProjectHover === index
+                                  ? style.hoveredEdit
+                                  : ""
+                              }
+                            />
+                            <img src={projectDelete} alt="delete icon" />
+                            <img
+                              onClick={() => handleInactiveDescription(index)}
+                              className={
+                                inactiveDescriptionOpen[index]
+                                  ? style.activeProjectUpArrow
+                                  : style.activeProjectDownArrow
+                              }
+                              src={downArrow}
+                              alt="edit icon"
+                            />
+                          </div>
                         </div>
                       </div>
                     </div>
+
+                    {/* inactive project description div begins */}
+
+                    <div
+                      className={
+                        inactiveDescriptionOpen[index]
+                          ? style.inactiveProjectDescriptionOpen
+                          : style.inactiveProjectDescriptionClosed
+                      }
+                    >
+                      <div className={style.activeDescriptionDiv}>
+                        <div className={style.descriptionLeft}>
+                          <p className={style.passesProgressTitle}>
+                            Passes In Progress 0
+                          </p>
+                         
+
+                          <p className={style.passesClosedTitle}>
+                            Closed Passes
+                          </p>
+
+                          {project.closed_tickets.map((ticket, ticketIndex) => (
+                            <div
+                              key={ticketIndex}
+                              className={style.closedPassesDiv}
+                            >
+                              <p className={style.closedTicket}>
+                                #{ticket.ticket_id} | {ticket.type}
+                              </p>
+                              <div className={style.dateDiv}>
+                                <img src={clock} alt="the time" />
+                                <p className={style.date}>{ticket.closed}</p>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                        <div className={style.descriptionRight}>
+                          <div className={style.rightDescriptionDiv}>
+                            <p className={style.mainDescriptionTitle}>
+                              Project Description
+                            </p>
+                            <div className={style.descriptionEditDiv}>
+                              <img
+                                className={style.descriptionEditIcon}
+                                src={edit}
+                                alt="edit icon"
+                              />
+                              <img
+                                className={style.descriptionArrow}
+                                src={downArrow}
+                                alt="down Arrow"
+                              />
+                            </div>
+                          </div>
+
+                          <p className={style.descriptionTitle}>
+                            Which Audits do you need?
+                          </p>
+                          <p className={style.descriptionText}>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum dolore
+                            eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia
+                            deserunt mollit anim id est laborum.
+                          </p>
+
+                          <p className={style.descriptionTitle}>
+                            Which Audits do you need?
+                          </p>
+                          <p className={style.descriptionText}>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum dolore
+                            eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia
+                            deserunt mollit anim id est laborum.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* inactive project description div ends */}
                   </div>
                 ))}
               </div>
