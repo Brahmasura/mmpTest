@@ -1,7 +1,11 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import style from "./event.module.scss";
+import { EventContext } from "../../Context/EventContext";
 
-const Event = ({ date, title }) => {
+const Event = ({ date }) => {
+  // using event context
+  const {handleEventClick} = useContext(EventContext);
+
   const [eventHover, setEventHover] = useState(false);
 
   const handleEventHover = () => {
@@ -16,13 +20,15 @@ const Event = ({ date, title }) => {
         onMouseLeave={handleEventHover}
       >
         <p className={style.date}>{date}</p>
-        <p className={style.title}>MEMBER PARTY {eventHover && (<br/>)} MEETING - 2PM EST</p>
+        <p className={style.title}>
+          MEMBER PARTY {eventHover && <br />} MEETING - 2PM EST
+        </p>
 
         {/* the RSVP div */}
 
         {eventHover && (
           <>
-            <div className={style.rsvpDiv}>
+            <div className={style.rsvpDiv} onClick={() => handleEventClick(date)}>
               <p>RSVP</p>
             </div>
           </>
