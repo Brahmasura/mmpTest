@@ -738,7 +738,6 @@
             }
             // inactive project intro ends
 
-
             // apparently here the inactive project description will begin
             .inactiveProjectDescriptionClosed {
               display: none;
@@ -766,8 +765,6 @@
                     line-height: normal;
                     margin-bottom: 0;
                   }
-
-                
 
                   .passesClosedTitle {
                     color: var(--text-text-white, #fffdfc);
@@ -874,11 +871,12 @@
                 }
               }
             }
-
-             
-
           }
           // inactive project div ends
+        }
+
+        .inactiveProjectDivContainerOpen {
+          height: auto;
         }
       }
 
