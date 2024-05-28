@@ -181,7 +181,9 @@
 
     // classes for event container begins
     .eventsContainer {
-      padding-left: 1.5625vw;
+      // padding-left: 1.5625vw;
+      padding-top: 0.7vh;
+      // now above padding top is being done by me for asthetics
       height: 24.1vh;
       overflow-y: auto;
 

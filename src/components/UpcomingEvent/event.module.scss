@@ -1,5 +1,15 @@
 .mainDiv {
-  margin: 1.7vh 0 1.5vh 0;
+  // margin: 1.7vh 0 1.5vh 0;
+  padding-left: 1.5625vw;
+  padding-right: 0.625vw;
+  width: 100%;
+  // height: 4.1666666666vh;
+  // the height below is personalised so use with caution for future
+  height: 4.466667vh;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
   .date {
     color: #f40009;
     font-family: "Rajdhani", sans-serif;
@@ -19,5 +29,38 @@
     line-height: normal;
     display: inline-block;
     margin-left: 0.5208333333vw;
+  }
+}
+
+.mainDiv__backRed {
+  background: #f40009;
+  // justify-content: space-between;
+
+  .date {
+    color: #fffdfc;
+  }
+
+  .title {
+    color: #fffdfc;
+  }
+
+  .rsvpDiv {
+    width: 4.427083333vw;
+    height: 3.42592592592vh;
+    border: 0.5px solid #fffdfc;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      color: var(--text-text-white, #fffdfc);
+      text-align: center;
+      font-family: Rajdhani;
+      font-size: 1.25vw;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin-bottom: 0;
+    }
   }
 }
