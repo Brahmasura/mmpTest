@@ -39,13 +39,20 @@ const coachingOptionsArray = [
 const Fifth = () => {
   // local states begins
   const [mainDivClicked, setMainDivClicked] = useState(false);
+  const [titleHover, setTitleHover] = useState(false);
   const [coachingSelected, setCoachingSelected] = useState(0);
   const [coachingToggle, setCoachingToggle] = useState(false);
 
   // local states ends
 
+  // funtion for background red color on title hover
+  const handleTitleHover = () => {
+    setTitleHover(!titleHover);
+  };
+
   const handleMainDivClick = () => {
     setMainDivClicked(!mainDivClicked);
+    setTitleHover(false);
   };
 
   //  funciton to select the coaching from the option
@@ -61,7 +68,7 @@ const Fifth = () => {
 
   return (
     <>
-      <div className={style.mainDiv}>
+      <div className={`${style.mainDiv} ${titleHover && style.mainDiv__backRed}`}>
         {mainDivClicked ? (
           <>
             {/* selection Div begins */}
@@ -78,7 +85,9 @@ const Fifth = () => {
                 onClick={handleCoachingToggle}
                 className={style.coachingSelectionDiv}
               >
-                <p className={style.selectedCoachingPara}>{coachingOptionsArray[coachingSelected].coaching}</p>
+                <p className={style.selectedCoachingPara}>
+                  {coachingOptionsArray[coachingSelected].coaching}
+                </p>
                 <img
                   className={coachingToggle ? style.upArrow : style.downArrow}
                   src={downArrow}
@@ -86,7 +95,11 @@ const Fifth = () => {
                 />
               </div>
 
-              <button style={{visibility: coachingSelected !== 0 && "visible" }}>CONTINUE</button>
+              <button
+                style={{ visibility: coachingSelected !== 0 && "visible" }}
+              >
+                CONTINUE
+              </button>
 
               {/* the coaching option div is below */}
               {coachingToggle && (
@@ -95,9 +108,9 @@ const Fifth = () => {
                     <p
                       onClick={() => handleCoachingSelect(index)}
                       key={index}
-                      style={
-                        {fontWeight: coachingSelected === index && "700" }
-                      }
+                      style={{
+                        fontWeight: coachingSelected === index && "700",
+                      }}
                     >
                       {item.coaching}
                     </p>
@@ -112,7 +125,12 @@ const Fifth = () => {
           </>
         ) : (
           <>
-            <p onClick={handleMainDivClick} className={style.title}>
+            <p
+              onClick={handleMainDivClick}
+              onMouseEnter={handleTitleHover}
+              onMouseLeave={handleTitleHover}
+              className={style.title}
+            >
               SCHEDULE 1-ON-1 COACHING
             </p>
           </>

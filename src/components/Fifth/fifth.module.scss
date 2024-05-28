@@ -106,6 +106,7 @@
       width: 7.760416666vw;
       height: 3.4259259259vh;
       border-radius: 0.9635416666vw;
+      border:none;
       background: #fffdfc;
       color: #f40009;
       text-align: center;
@@ -114,7 +115,7 @@
       font-style: normal;
       font-weight: 700;
       line-height: normal;
-      margin-top:2.4074074074vh;
+      margin-top: 2.4074074074vh;
       visibility: hidden;
     }
 
@@ -254,4 +255,8 @@
   }
 
   // second div style ends
+}
+
+.mainDiv__backRed {
+  background: #f40009;
 }
