@@ -86,6 +86,8 @@ const Fifth = () => {
                 />
               </div>
 
+              <button style={{visibility: coachingSelected !== 0 && "visible" }}>CONTINUE</button>
+
               {/* the coaching option div is below */}
               {coachingToggle && (
                 <div className={style.coachingOptionsDiv}>
