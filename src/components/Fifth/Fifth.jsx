@@ -68,7 +68,9 @@ const Fifth = () => {
 
   return (
     <>
-      <div className={`${style.mainDiv} ${titleHover && style.mainDiv__backRed}`}>
+      <div
+        className={`${style.mainDiv} ${titleHover && style.mainDiv__backRed}`}
+      >
         {mainDivClicked ? (
           <>
             {/* selection Div begins */}
