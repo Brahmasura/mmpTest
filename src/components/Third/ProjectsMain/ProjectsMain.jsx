@@ -1163,7 +1163,6 @@ const ProjectsMain = () => {
                           <p className={style.passesProgressTitle}>
                             Passes In Progress 0
                           </p>
-                         
 
                           <p className={style.passesClosedTitle}>
                             Closed Passes
