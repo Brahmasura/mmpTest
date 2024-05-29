@@ -59,7 +59,10 @@ function App() {
 
                   {/* email input div begins
                    */}
-                  <div className={style.emailInputWrapper}>
+                  {/* <div className={style.emailInputWrapper}> */}
+                  <form>
+
+                  
                     <label htmlFor="email" className={style.label}>
                       CONFIRM YOUR EMAIL
                     </label>
@@ -70,8 +73,9 @@ function App() {
                       required
                     />
 
-                  <button>SUBMIT</button>
-                  </div>
+                  <button type="submit">SUBMIT</button>
+                  </form>
+                  {/* </div> */}
                   {/* email input ends */}
 
 

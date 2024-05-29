@@ -53,6 +53,7 @@ const Fifth = () => {
   const handleMainDivClick = () => {
     setMainDivClicked(!mainDivClicked);
     setTitleHover(false);
+    setCoachingSelected(0);
   };
 
   //  funciton to select the coaching from the option
@@ -98,6 +99,7 @@ const Fifth = () => {
               </div>
 
               <button
+                onClick={handleMainDivClick}
                 style={{ visibility: coachingSelected !== 0 && "visible" }}
               >
                 CONTINUE

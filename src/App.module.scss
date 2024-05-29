@@ -65,6 +65,7 @@
           img {
             width: 2.34375vw;
             height: auto;
+            cursor:pointer;
           }
         }
 
@@ -91,7 +92,8 @@
         }
 
         // email input div style begins
-        .emailInputWrapper {
+        // .emailInputWrapper 
+        form{
           padding-left:0.8854166666vw;
           width: 100%;
           display: flex;
@@ -131,6 +133,8 @@
             font-style: normal;
             font-weight: 700;
             line-height: normal;
+            cursor:pointer;
+
           }
         }
       }
