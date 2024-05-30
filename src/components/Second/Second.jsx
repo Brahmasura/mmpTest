@@ -52,8 +52,17 @@ const Second = () => {
 
         <div className={style.brandsContainer}>
           {brandsArray.map((item, index) => (
-            <Brands key={index} brand={item.brand} text={item.text} title={item.title} />
+            <Brands
+              key={index}
+              brand={item.brand}
+              text={item.text}
+              title={item.title}
+            />
           ))}
+
+          <div className={style.newBrandParaDiv}>
+            <p>NEW BRAND</p>
+          </div>
         </div>
       </div>
     </>

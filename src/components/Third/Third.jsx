@@ -29,7 +29,6 @@ const projectArray = [
     text: "15% completed",
     color: "yellow",
   },
-  
 ];
 
 const Third = () => {
@@ -37,8 +36,7 @@ const Third = () => {
 
   const handleNavigation = () => {
     navigate("/projects");
-  }
-
+  };
 
   return (
     <>
@@ -58,6 +56,10 @@ const Third = () => {
               color={item.color}
             />
           ))}
+
+          <div className={style.newProjectParaDiv}>
+            <p>NEW PROJECT</p>
+          </div>
         </div>
       </div>
     </>

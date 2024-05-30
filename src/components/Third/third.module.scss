@@ -14,9 +14,27 @@
   .projectContainer {
     height: 21.4vh;
     overflow-y: auto;
+    scrollbar-width: none;
+   
 
-    &::-webkit-scrollbar {
-      display: none;
+    .newProjectParaDiv {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 7.5vh;
+
+      p {
+        // margin-top:2.31481481481vh;
+        color: var(--text-text-brand, #f40009);
+        text-align: center;
+        font-family: Rajdhani;
+        font-size: 1.0416666666vw;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        cursor: pointer;
+        margin-bottom: 0;
+      }
     }
   }
 }

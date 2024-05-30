@@ -1,115 +1,116 @@
 @import "../../../mixins.module.scss";
 
 .projectsMainContainer {
-  margin-top: 2.5vh;
+  // margin-top: 2.5vh;
+  margin-top: 5.7407407407vh;
 
-  .brandsTogglerContainer {
-    display: flex;
-    justify-content: end;
-    align-items: start;
-    height: 5.55555555555vh;
-    padding-right: 3.352083333333vw;
-    position: relative;
+  // .brandsTogglerContainer {
+  //   display: flex;
+  //   justify-content: end;
+  //   align-items: start;
+  //   height: 5.55555555555vh;
+  //   padding-right: 3.352083333333vw;
+  //   position: relative;
 
-    .brandsToggler {
-      // width: 14.460520833333vw;
-      display: flex;
-      justify-content: start;
-      align-items: center;
-      // gap: 1.30885416666vw;
-      padding-left: 0.65364583333vw;
-      padding-right: 0.76614583333vw;
+  //   .brandsToggler {
+  //     // width: 14.460520833333vw;
+  //     display: flex;
+  //     justify-content: start;
+  //     align-items: center;
+  //     // gap: 1.30885416666vw;
+  //     padding-left: 0.65364583333vw;
+  //     padding-right: 0.76614583333vw;
 
-      .star {
-        width: 0.8833333333vw;
-        height: auto;
-      }
+  //     .star {
+  //       width: 0.8833333333vw;
+  //       height: auto;
+  //     }
 
-      p {
-        color: var(--text-text-invert, #fffdfc);
-        font-family: Rajdhani;
-        font-size: 1.846041666666vw;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        margin-bottom: 0;
-        margin-left: 1.308854166vw;
-      }
+  //     p {
+  //       color: var(--text-text-invert, #fffdfc);
+  //       font-family: Rajdhani;
+  //       font-size: 1.846041666666vw;
+  //       font-style: normal;
+  //       font-weight: 500;
+  //       line-height: normal;
+  //       margin-bottom: 0;
+  //       margin-left: 1.308854166vw;
+  //     }
 
-      .upArrow {
-        // margin-left: auto;
-        margin-left: 4.1322916666vw;
-        width: 1.1953125vw;
-        height: auto;
-        rotate: 180deg;
-        transition: rotate 0.7s ease;
-        cursor: pointer;
-      }
+  //     .upArrow {
+  //       // margin-left: auto;
+  //       margin-left: 4.1322916666vw;
+  //       width: 1.1953125vw;
+  //       height: auto;
+  //       rotate: 180deg;
+  //       transition: rotate 0.7s ease;
+  //       cursor: pointer;
+  //     }
 
-      .downArrow {
-        // margin-left: auto;
-        margin-left: 4.1322916666vw;
-        width: 1.1953125vw;
-        height: auto;
-        rotate: 0deg;
-        transition: rotate 0.7s ease;
-        cursor: pointer;
-      }
-    }
+  //     .downArrow {
+  //       // margin-left: auto;
+  //       margin-left: 4.1322916666vw;
+  //       width: 1.1953125vw;
+  //       height: auto;
+  //       rotate: 0deg;
+  //       transition: rotate 0.7s ease;
+  //       cursor: pointer;
+  //     }
+  //   }
 
-    .brandsToggleDiv {
-      border-radius: 1.25vw;
-      position: absolute;
-      z-index: 2;
-      top: 100%;
-      width: 13.802083333333vw;
-      height: 20.4629629629vh;
-      background: #000;
+  //   .brandsToggleDiv {
+  //     border-radius: 1.25vw;
+  //     position: absolute;
+  //     z-index: 2;
+  //     top: 100%;
+  //     width: 13.802083333333vw;
+  //     height: 20.4629629629vh;
+  //     background: #000;
 
-      .starBrandDiv {
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        height: 5.37037037037vh;
-        color: white;
-        border-radius: 1.25vw;
-        padding-left: 0.9375vw;
+  //     .starBrandDiv {
+  //       display: flex;
+  //       justify-content: start;
+  //       align-items: center;
+  //       height: 5.37037037037vh;
+  //       color: white;
+  //       border-radius: 1.25vw;
+  //       padding-left: 0.9375vw;
 
-        img {
-          width: 1.19630208333vw;
-          height: auto;
-        }
+  //       img {
+  //         width: 1.19630208333vw;
+  //         height: auto;
+  //       }
 
-        P {
-          color: var(--text-text-invert, #fffdfc);
-          font-family: Rajdhani;
-          font-size: 1.0416666666vw;
-          font-style: normal;
-          font-weight: 500;
-          line-height: normal;
-          margin-left: 0.8348958333vw;
-          margin-bottom: 0;
-        }
-      }
+  //       P {
+  //         color: var(--text-text-invert, #fffdfc);
+  //         font-family: Rajdhani;
+  //         font-size: 1.0416666666vw;
+  //         font-style: normal;
+  //         font-weight: 500;
+  //         line-height: normal;
+  //         margin-left: 0.8348958333vw;
+  //         margin-bottom: 0;
+  //       }
+  //     }
 
-      .starBrandDivSelected {
-        background: rgba(236, 34, 39, 0.3);
-      }
+  //     .starBrandDivSelected {
+  //       background: rgba(236, 34, 39, 0.3);
+  //     }
 
-      button {
-        width: 100%;
-        background: none;
-        border: none;
-        color: var(--text-text-complementary, #b2b2b2);
-        font-family: Rajdhani;
-        font-size: 1.0416666666vw;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        margin-top: 0.9vh;
-      }
-    }
-  }
+  //     button {
+  //       width: 100%;
+  //       background: none;
+  //       border: none;
+  //       color: var(--text-text-complementary, #b2b2b2);
+  //       font-family: Rajdhani;
+  //       font-size: 1.0416666666vw;
+  //       font-style: normal;
+  //       font-weight: 500;
+  //       line-height: normal;
+  //       margin-top: 0.9vh;
+  //     }
+  //   }
+  // }
 
   .projectCoveringForClose {
     position: relative;
@@ -118,7 +119,8 @@
       border-radius: 2.6041666666vw;
       border: 3px solid #fffdfc;
       background: rgba(0, 0, 0, 0.5);
-      height: 79.537037037037vh;
+      // height: 79.537037037037vh;
+      height: 78.703703703vh;
       // position: relative;
       padding-top: 2.77777777777vh;
       padding-left: 1.3541666666vw;
@@ -135,50 +137,171 @@
           padding-left: 0.88541666666vw;
           padding-bottom: 1.57407407407vh;
           border-bottom: 0.277777777vh solid #fffdfc;
-          .activeTitleLeftDiv {
-            p {
-              color: var(--text-text-invert, #fffdfc);
-              font-family: Rajdhani;
-              font-size: 1.6666666666vw;
-              font-style: normal;
-              font-weight: 700;
-              line-height: normal;
-              margin-bottom: 0;
 
-              span {
+          .activeTitleLeftDiv {
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            .activeProjectNumber {
+              p {
+                color: var(--text-text-invert, #fffdfc);
+                font-family: Rajdhani;
+                font-size: 1.6666666666vw;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin-bottom: 0;
+
+                span {
+                  font-size: 1.0416666666vw;
+                  margin-left: 0.703125vw;
+                }
+              }
+            }
+
+            .addNewDiv {
+              margin-left: 6.1vw;
+              // margin-left: 15.6vw;
+              display: flex;
+              justify-content: start;
+              align-items: center;
+              gap: 1.206771vw;
+              padding-left: 0.663542vw;
+              background: rgba(178, 178, 178, 0.5);
+              width: 8.28125vw;
+              height: 3.42592592592vh;
+              border-radius: 0.963541666666vw;
+              cursor: pointer;
+  
+              img {
+                width: 1.0692708333vw;
+              }
+  
+              p {
+                color: var(--text-text-white, #fffdfc);
+                text-align: center;
+                font-family: Rajdhani;
                 font-size: 1.0416666666vw;
-                margin-left: 0.703125vw;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin-bottom: 0;
+              }
+            }
+
+
+          }
+
+          .brandsTogglerContainer {
+            display: flex;
+            justify-content: end;
+            // align-items: start;
+            align-items:center;
+            height: 5.55555555555vh;
+            // padding-right: 3.352083333333vw;
+            position: relative;
+        
+            .brandsToggler {
+              // width: 14.460520833333vw;
+              display: flex;
+              justify-content: start;
+              align-items: center;
+              // gap: 1.30885416666vw;
+              padding-left: 0.65364583333vw;
+              padding-right: 0.76614583333vw;
+        
+              .star {
+                width: 0.8833333333vw;
+                height: auto;
+              }
+        
+              p {
+                color: var(--text-text-invert, #fffdfc);
+                font-family: Rajdhani;
+                font-size: 1.846041666666vw;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                margin-bottom: 0;
+                margin-left: 1.308854166vw;
+              }
+        
+              .upArrow {
+                // margin-left: auto;
+                margin-left: 4.1322916666vw;
+                width: 1.1953125vw;
+                height: auto;
+                rotate: 180deg;
+                transition: rotate 0.7s ease;
+                cursor: pointer;
+              }
+        
+              .downArrow {
+                // margin-left: auto;
+                margin-left: 4.1322916666vw;
+                width: 1.1953125vw;
+                height: auto;
+                rotate: 0deg;
+                transition: rotate 0.7s ease;
+                cursor: pointer;
+              }
+            }
+        
+            .brandsToggleDiv {
+              border-radius: 1.25vw;
+              position: absolute;
+              z-index: 2;
+              top: 100%;
+              width: 13.802083333333vw;
+              height: 20.4629629629vh;
+              background: #000;
+        
+              .starBrandDiv {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                height: 5.37037037037vh;
+                color: white;
+                border-radius: 1.25vw;
+                padding-left: 0.9375vw;
+        
+                img {
+                  width: 1.19630208333vw;
+                  height: auto;
+                }
+        
+                P {
+                  color: var(--text-text-invert, #fffdfc);
+                  font-family: Rajdhani;
+                  font-size: 1.0416666666vw;
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: normal;
+                  margin-left: 0.8348958333vw;
+                  margin-bottom: 0;
+                }
+              }
+        
+              .starBrandDivSelected {
+                background: rgba(236, 34, 39, 0.3);
+              }
+        
+              button {
+                width: 100%;
+                background: none;
+                border: none;
+                color: var(--text-text-complementary, #b2b2b2);
+                font-family: Rajdhani;
+                font-size: 1.0416666666vw;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                margin-top: 0.9vh;
               }
             }
           }
 
-          .activeTitleRightDiv {
-            display: flex;
-            justify-content: start;
-            align-items: center;
-            gap: 1.206771vw;
-            padding-left: 0.663542vw;
-            background: rgba(178, 178, 178, 0.5);
-            width: 8.28125vw;
-            height: 3.42592592592vh;
-            border-radius: 0.963541666666vw;
-            cursor: pointer;
-
-            img {
-              width: 1.0692708333vw;
-            }
-
-            p {
-              color: var(--text-text-white, #fffdfc);
-              text-align: center;
-              font-family: Rajdhani;
-              font-size: 1.0416666666vw;
-              font-style: normal;
-              font-weight: 700;
-              line-height: normal;
-              margin-bottom: 0;
-            }
-          }
+         
         }
         // activeProjectTitle style ends
 
