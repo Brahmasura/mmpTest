@@ -4,6 +4,7 @@ import arrow from "../../assets/down-chevron.svg";
 import calendar from "../../assets/calendar.svg";
 import downArrow from "../../assets/Fifth/fifthDownArrow.svg";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const eventArray = [
   {
@@ -42,6 +43,7 @@ const Fifth = () => {
   const [titleHover, setTitleHover] = useState(false);
   const [coachingSelected, setCoachingSelected] = useState(0);
   const [coachingToggle, setCoachingToggle] = useState(false);
+  const navigate = useNavigate();
 
   // local states ends
 
@@ -66,6 +68,11 @@ const Fifth = () => {
   const handleCoachingToggle = () => {
     setCoachingToggle(!coachingToggle);
   };
+
+  // for navigation 
+  const handleNavigation = () => {
+    navigate("calendar");
+  }
 
   return (
     <>
@@ -171,7 +178,7 @@ const Fifth = () => {
           </div>
 
           {/* calendar Div  */}
-          <div className={style.calendarDiv}>
+          <div onClick={handleNavigation} className={style.calendarDiv}>
             <img src={calendar} alt="the calendar" />
             <p>CALENDAR VIEW </p>
           </div>

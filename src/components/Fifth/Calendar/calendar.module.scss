@@ -1,0 +1,112 @@
+.wrapperDiv {
+  position: relative;
+
+  .mainDiv {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    display: grid;
+    grid-template-columns: 37.03125vw auto;
+    height: 82.962962962vh;
+    border: 2px solid #fffdff;
+    margin-top: 3.98148148vh;
+    border-radius: 2.604166666vw;
+    overflow: hidden;
+
+    // main left Div begins
+    .mainLeftDiv {
+      background: #ececec;
+      padding-left: 3.2291666666vw;
+      padding-top: 4.2592592592vh;
+      position: relative;
+
+      // main content styles begign
+      .firstMainPara {
+        color: var(--text-text-primary, #333);
+        font-family: Rajdhani;
+        font-size: 1.4583333333vw;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: .462962962vh;
+      }
+
+      .secondMainPara {
+        color: var(--text-text-primary, #333);
+        font-family: Rajdhani;
+        font-size: 1.25vw;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+
+      // main content styles ends
+
+      //   toggler div begins
+      .togglerDiv {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 17.5vw;
+        height: 11.0185185185vh;
+        padding-top: 4.2592592592vh;
+        background-color: #b2b2b2;
+        transition: background-color 400ms linear;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        gap: 0.74270833333vw;
+        cursor: pointer;
+
+        img {
+          width: 1.60109375vw;
+          height: auto;
+          // the dimension could be go wild, will check
+        }
+
+        p {
+          color: var(--text-text-primary, #333);
+          font-family: Rajdhani;
+          font-size: 1.4583333333vw;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          margin-bottom: 0;
+        }
+
+        &:hover {
+          background-color: #f40009;
+          transition: background-color 400ms linear;
+
+          img {
+            filter: invert(1);
+          }
+
+          p {
+            color: #fffdff;
+          }
+        }
+      }
+      //   toggler div ends
+    }
+    // main left div ends
+
+    // main right div begins
+    .mainRightDiv {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    // main right div ends
+  }
+
+  .closeIcon {
+    cursor: pointer;
+    position: absolute;
+    width: 2.8125vw;
+    height: auto;
+    top: -0.5555555555vh;
+    right: -0.5208333333vw;
+    z-index: 10;
+  }
+}

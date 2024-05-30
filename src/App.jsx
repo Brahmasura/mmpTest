@@ -8,6 +8,7 @@ import ProjectsHome from "./components/Third/ProjectsHome/ProjectsHome";
 import { Route, Routes } from "react-router-dom";
 import { EventContext } from "./Context/EventContext";
 import { useContext } from "react";
+import Calendar from "./components/Fifth/Calendar/Calendar";
 
 function App() {
   const { clickedEvent, handleEventClick } = useContext(EventContext);
@@ -30,6 +31,7 @@ function App() {
             <Route index element={<Container />} />
             <Route path="chat" element={<Chat />} />
             <Route path="projects/*" element={<ProjectsHome />} />
+            <Route path="calendar" element={<Calendar />} />
           </Routes>
 
           {/* the register event div begins */}
@@ -61,8 +63,6 @@ function App() {
                    */}
                   {/* <div className={style.emailInputWrapper}> */}
                   <form>
-
-                  
                     <label htmlFor="email" className={style.label}>
                       CONFIRM YOUR EMAIL
                     </label>
@@ -73,12 +73,10 @@ function App() {
                       required
                     />
 
-                  <button type="submit">SUBMIT</button>
+                    <button type="submit">SUBMIT</button>
                   </form>
                   {/* </div> */}
                   {/* email input ends */}
-
-
                 </div>
               </div>
             </>
