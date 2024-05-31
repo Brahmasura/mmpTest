@@ -20,27 +20,86 @@
       padding-top: 4.2592592592vh;
       position: relative;
 
-      // main content styles begign
-      .firstMainPara {
-        color: var(--text-text-primary, #333);
-        font-family: Rajdhani;
-        font-size: 1.4583333333vw;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        margin-bottom: .462962962vh;
+      // left default content styles begins
+      .leftDefaultContent {
+        .firstMainPara {
+          color: var(--text-text-primary, #333);
+          font-family: Rajdhani;
+          font-size: 1.4583333333vw;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          margin-bottom: 0.462962962vh;
+        }
+
+        .secondMainPara {
+          color: var(--text-text-primary, #333);
+          font-family: Rajdhani;
+          font-size: 1.25vw;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
       }
 
-      .secondMainPara {
-        color: var(--text-text-primary, #333);
-        font-family: Rajdhani;
-        font-size: 1.25vw;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
+      // left default content styles ends
+
+      // left toggled content style begins
+
+      .leftToggledContent {
+        .brandLogo {
+          width: 11.40625vw;
+        }
+
+        .profileIntroDiv {
+          margin-top: 2.925925925vh;
+          margin-bottom: 3vh;
+          // above mb is an assumed value so use it with caution when will get the real value
+          display: flex;
+          justify-content: start;
+          align-items: center;
+
+          img {
+            width: 2.9893229166vw;
+            height: auto;
+            border-radius: 5.2083333333vw;
+          }
+
+          p {
+            color: var(--text-text-invert, #fffdfc);
+            font-family: Rajdhani;
+            font-size: 1.32859375vw;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 0;
+            margin-left: 1.0630208333vw;
+          }
+        }
+
+        .memberPara {
+          color: var(--text-text-invert, #fffdfc);
+          font-family: Rajdhani;
+          font-size: 0.7291666666vw;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          text-transform: uppercase;
+          margin-bottom: 0.7vh;
+        }
+
+        .sessionPara {
+          color: var(--text-text-invert, #fffdfc);
+          font-family: Rajdhani;
+          font-size: 1.4583333333vw;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          text-transform: uppercase;
+        }
       }
 
-      // main content styles ends
+      // left toggled content style ends
 
       //   toggler div begins
       .togglerDiv {
@@ -90,6 +149,14 @@
       //   toggler div ends
     }
     // main left div ends
+
+    // maind left div toggled begins
+    .maindLeftDivToggled {
+      background: rgba(0, 0, 0, 0.5);
+      padding-top: 0;
+    }
+
+    // main left Div toggled ends
 
     // main right div begins
     .mainRightDiv {

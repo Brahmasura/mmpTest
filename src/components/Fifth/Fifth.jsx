@@ -58,7 +58,7 @@ const Fifth = () => {
     setCoachingSelected(0);
   };
 
-  //  funciton to select the coaching from the option
+  //  function to select the coaching from the option
   const handleCoachingSelect = (index) => {
     setCoachingSelected(index);
     setCoachingToggle(!coachingToggle);
@@ -69,10 +69,10 @@ const Fifth = () => {
     setCoachingToggle(!coachingToggle);
   };
 
-  // for navigation 
+  // for navigation
   const handleNavigation = () => {
     navigate("calendar");
-  }
+  };
 
   return (
     <>
