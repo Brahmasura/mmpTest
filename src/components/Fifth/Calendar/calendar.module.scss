@@ -97,6 +97,33 @@
           line-height: normal;
           text-transform: uppercase;
         }
+
+        .timeDiv {
+          display: flex;
+          align-items: start;
+
+          img {
+            width: 1.041666666vw;
+            height: auto;
+          }
+
+          .rightParaDiv {
+            p {
+              color: var(--text-text-invert, #fffdfc);
+              font-family: Rajdhani;
+              font-size: 0.8333333333vw;
+              font-style: normal;
+              line-height: normal;
+            }
+            .topPara {
+              font-weight: 700;
+            }
+
+            .bottomPara {
+              font-weight: 500;
+            }
+          }
+        }
       }
 
       // left toggled content style ends

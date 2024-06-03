@@ -3,6 +3,7 @@ import closeIcon from "../../../assets/closeIcon.svg";
 import calendarToggler from "../../../assets/Fifth/calendarTogglerIcon.svg";
 import spacexLogo from "../../../assets/spacex-logo-big.png";
 import ashleyPic from "../../../assets/ashley.png";
+import clock from "../../../assets/Fifth/calendarClock.svg";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
@@ -59,6 +60,23 @@ const Calendar = () => {
                 <p className={style.sessionPara}>
                   SCHEDULE YOUR COAChING SESSION
                 </p>
+
+                {/* space fro the coaching shcedule div begins */}
+
+                {/* space for the coaching schedule div ends */}
+
+
+              {/* time div begins */}
+                <div className={style.timeDiv}>
+                  <img src={clock} alt="the calendar clock" />
+                  <div className={style.rightParaDiv}>
+                    <p className={style.topPara}>30 min</p>
+                    <p className={style.bottomPara}>
+                      Web conferencing details provided upon confirmation
+                    </p>
+                  </div>
+                </div>
+                {/* time div ends */}
               </div>
             </>
           )}
