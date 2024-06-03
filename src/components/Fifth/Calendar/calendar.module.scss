@@ -53,8 +53,7 @@
 
         .profileIntroDiv {
           margin-top: 2.925925925vh;
-          margin-bottom: 3vh;
-          // above mb is an assumed value so use it with caution when will get the real value
+          margin-bottom: 3.2407407407vh;
           display: flex;
           justify-content: start;
           align-items: center;
@@ -85,7 +84,7 @@
           font-weight: 700;
           line-height: normal;
           text-transform: uppercase;
-          margin-bottom: 0.7vh;
+          margin-bottom: 0.5555555555vh;
         }
 
         .sessionPara {
@@ -96,11 +95,112 @@
           font-weight: 700;
           line-height: normal;
           text-transform: uppercase;
+          margin-bottom:0;
         }
+
+        // selection main div style begins
+        .selectionMainDiv {
+          position: relative;
+
+          // coaachingSelectionDiv styles begins
+          .coachingSelectionDiv {
+            width: 14.7916666666vw;
+            height: 3.3333333333vh;
+            background: #333;
+            border-radius: 0.78125vw;
+            border: 1px solid #fffdfc;
+            margin-top: 1.820370370vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 0.67708333333vw;
+            padding-right: 0.78125vw;
+            cursor: pointer;
+
+            .selectedCoachingPara {
+              color: var(--color-grey-200, #b2b2b2);
+              font-family: Rajdhani;
+              font-size: 0.729166666vw;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+              margin-bottom: 0;
+            }
+
+            .upArrow {
+              // margin-left: auto;
+              // margin-left: 4.1322916666vw;
+              width: 0.625vw;
+              height: auto;
+              rotate: 180deg;
+              transition: rotate 0.7s ease;
+              cursor: pointer;
+            }
+
+            .downArrow {
+              // margin-left: auto;
+              // margin-left: 4.1322916666vw;
+              width: 0.625vw;
+              height: auto;
+              rotate: 0deg;
+              transition: rotate 0.7s ease;
+              cursor: pointer;
+            }
+          }
+          // coachingSelectionDiv styles ends
+
+          // button {
+          //   width: 7.760416666vw;
+          //   height: 3.4259259259vh;
+          //   border-radius: 0.9635416666vw;
+          //   border:none;
+          //   background: #fffdfc;
+          //   color: #f40009;
+          //   text-align: center;
+          //   font-family: Rajdhani;
+          //   font-size: 1.0416666666vw;
+          //   font-style: normal;
+          //   font-weight: 700;
+          //   line-height: normal;
+          //   margin-top: 2.4074074074vh;
+          //   visibility: hidden;
+          // }
+
+          // coachingOptionsDiv style begins
+          .coachingOptionsDiv {
+            position: absolute;
+            top: 100%;
+            left: 0.7vw;
+            z-index: 3;
+            width: 13.4375vw;
+            background: #fffdfc;
+            padding-left: 0.67708333333vw;
+            padding-top: 0.8333333333vh;
+            border-radius: 0 0 0.78125vw 0.78125vw;
+            border: 1px solid #333;
+
+            p {
+              color: var(--text-text-primary, #333);
+              font-family: Rajdhani;
+              // font-size: 0.7291666666vw;
+              font-size: 1.29629629629vh;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+              text-align: start;
+              margin-bottom: 0.648148148148vh;
+              cursor: pointer;
+            }
+          }
+          // coachingOptionsDiv style ends
+        }
+        // selection main div style ends
 
         .timeDiv {
           display: flex;
           align-items: start;
+          gap:0.625vw;
+          margin-top: 2.407407407vh;
 
           img {
             width: 1.041666666vw;
@@ -117,12 +217,33 @@
             }
             .topPara {
               font-weight: 700;
+              margin-bottom:0.7407407407vh;
             }
 
             .bottomPara {
               font-weight: 500;
+              margin-bottom: 0;
             }
           }
+        }
+
+        .detailPara {
+          color: var(--text-text-invert, #fffdfc);
+          font-family: Rajdhani;
+          font-size: 1.0416666666vw;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          margin-top: 2.6851851851vh;
+        }
+
+        .descriptionPara {
+          color: var(--text-text-invert, #fffdfc);
+          font-family: Rajdhani;
+          font-size: 0.8333333333vw;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
         }
       }
 
