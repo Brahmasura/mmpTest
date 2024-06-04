@@ -8,6 +8,7 @@ import downArrow from "../../../assets/Fifth/fifthDownArrow.svg";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
+// the coachingOptionsArray
 const coachingOptionsArray = [
   { coaching: "Select..." },
   { coaching: "Offers" },
@@ -23,11 +24,247 @@ const coachingOptionsArray = [
   { coaching: "Other" },
 ];
 
+// calendar array with dummy dates and properties
+const calendarArray = [
+  {
+    month: "JANUARY",
+    shortMonth: "JAN",
+    days: [
+      {
+        date: "1",
+        dateInclusive: true,
+        eventScheduled: false,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+      {
+        date: "2",
+        dateInclusive: true,
+        eventScheduled: true,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+      {
+        date: "3",
+        dateInclusive: true,
+        eventScheduled: false,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+      {
+        date: "4",
+        dateInclusive: true,
+        eventScheduled: true,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+      {
+        date: "5",
+        dateInclusive: true,
+        eventScheduled: true,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+      {
+        date: "6",
+        dateInclusive: true,
+        eventScheduled: false,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+      {
+        date: "7",
+        dateInclusive: true,
+        eventScheduled: false,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+    ],
+  },
+  {
+    month: "FEBRUARY",
+    shortMonth: "FEB",
+    days: [
+      {
+        date: "1",
+        dateInclusive: true,
+        eventScheduled: false,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+      {
+        date: "2",
+        dateInclusive: true,
+        eventScheduled: true,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+      {
+        date: "3",
+        dateInclusive: true,
+        eventScheduled: false,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+      {
+        date: "4",
+        dateInclusive: true,
+        eventScheduled: false,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+      {
+        date: "5",
+        dateInclusive: true,
+        eventScheduled: true,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+      {
+        date: "6",
+        dateInclusive: true,
+        eventScheduled: false,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+      {
+        date: "7",
+        dateInclusive: true,
+        eventScheduled: true,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+    ],
+  },
+  {
+    month: "MARCH",
+    shortMonth: "MAR",
+    days: [
+      {
+        date: "1",
+        dateInclusive: true,
+        eventScheduled: true,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+      {
+        date: "2",
+        dateInclusive: true,
+        eventScheduled: false,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+      {
+        date: "3",
+        dateInclusive: true,
+        eventScheduled: true,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+      {
+        date: "4",
+        dateInclusive: true,
+        eventScheduled: false,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+      {
+        date: "5",
+        dateInclusive: true,
+        eventScheduled: true,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+      {
+        date: "6",
+        dateInclusive: true,
+        eventScheduled: false,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+      {
+        date: "7",
+        dateInclusive: true,
+        eventScheduled: true,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+    ],
+  },
+  {
+    month: "APRIL",
+    shortMonth: "APR",
+    days: [
+      {
+        date: "1",
+        dateInclusive: true,
+        eventScheduled: false,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+      {
+        date: "2",
+        dateInclusive: true,
+        eventScheduled: true,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+      {
+        date: "3",
+        dateInclusive: true,
+        eventScheduled: false,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+      {
+        date: "4",
+        dateInclusive: true,
+        eventScheduled: true,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+      {
+        date: "5",
+        dateInclusive: true,
+        eventScheduled: false,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+      {
+        date: "6",
+        dateInclusive: true,
+        eventScheduled: true,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+      {
+        date: "7",
+        dateInclusive: true,
+        eventScheduled: false,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+    ],
+  },
+  //  will add more months if needed
+];
+
 const Calendar = () => {
   const navigate = useNavigate();
   const [togglerDefault, setTogglerDefault] = useState(true);
   const [coachingSelected, setCoachingSelected] = useState(0);
   const [coachingToggle, setCoachingToggle] = useState(false);
+  const [startIndex, setStartIndex] = useState(0);
+  const [selectedEvent, setSelectedEvent] = useState(0);
+
+  // function to get six values and update on the click begins
+
+  const getFirstSixScheduledEvents = (calendarArray, startIndex) => {
+    const events = [];
+
+    for (let i = startIndex; i < calendarArray.length; i++) {
+      const month = calendarArray[i];
+      for (const day of month.days) {
+        if (day.eventScheduled) {
+          events.push({
+            shortMonth: month.shortMonth,
+            date: day.date,
+            scheduleDescription: day.scheduleDescription,
+          });
+        }
+        if (events.length === 6) {
+          return events;
+        }
+      }
+    }
+
+    return events;
+  };
+
+  const firstSixEvents = getFirstSixScheduledEvents(calendarArray, startIndex);
+
+  // const handleNextMonth = () => {
+  //   setStartIndex((prevIndex) => (prevIndex + 1) % calendarArray.length);
+  // };
+
+  // function to selectEvent index
+  const handleEventSelection = (index) => {
+    setSelectedEvent(index);
+  };
+
+  // function ends
 
   //  function to select the coaching from the option
   const handleCoachingSelect = (index) => {
@@ -68,6 +305,61 @@ const Calendar = () => {
                 <p className={style.secondMainPara}>
                   Upcoming Community Events
                 </p>
+
+                {/* six scheduled event code begins */}
+                {firstSixEvents.map((item, index) =>
+                  selectedEvent === index ? (
+                    <>
+                      <div className={style.expandedEvent}>
+                        <p className={style.datePara}>
+                          {item.shortMonth} {item.date}
+                        </p>
+
+                        <p className={style.meetingPara}>
+                          {item.scheduleDescription}
+                        </p>
+
+                        <p className={style.detailPara}>DETAIL</p>
+
+                        <p className={style.desciptionPara}>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat. Duis aute irure dolor in
+                          reprehenderit in voluptate velit esse cillum dolore eu
+                          fugiat nulla pariatur. Excepteur sint occaecat
+                          cupidatat non proident, sunt in culpa qui officia
+                          deserunt mollit anim id est laborum.
+                        </p>
+
+                        <button>
+                          <p>RSVP UPCOMING EVENT</p>
+                        </button>
+                      </div>
+                    </>
+                  ) : (
+                    <>
+                      <div
+                        onClick={() => handleEventSelection(index)}
+                        className={style.defaultEvent}
+                      >
+                        <div className={style.leftDiv}>
+                          <p className={style.datePara}>
+                            {item.shortMonth} {item.date}
+                          </p>
+                          <p className={style.meetingPara}>
+                            {item.scheduleDescription}
+                          </p>
+                        </div>
+
+                        <p className={style.rsvpPara}>RSVP</p>
+                      </div>
+                    </>
+                  )
+                )}
+
+                {/* six scheduled event code ends */}
               </div>
             </>
           ) : (

@@ -17,6 +17,7 @@
     .mainLeftDiv {
       background: #ececec;
       padding-left: 3.2291666666vw;
+      padding-right:1.71875000000vw;
       padding-top: 4.2592592592vh;
       position: relative;
 
@@ -40,6 +41,110 @@
           font-weight: 500;
           line-height: normal;
         }
+
+        // the six event style begins
+        .expandedEvent {
+          .datePara {
+            color: var(--text-text-brand, #f40009);
+            font-family: Rajdhani;
+            font-size: 2.20885416666vw;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+          }
+
+          .meetingPara {
+            color: var(--text-text-primary, #333);
+            font-family: Rajdhani;
+            font-size: 1.47255208333vw;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+          }
+
+          .detailPara {
+            color: var(--text-text-secondary, #333);
+            font-family: Rajdhani;
+            font-size: 1.25vw;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+
+          .descriptionPara {
+            color: var(--text-text-secondary, #333);
+            font-family: Rajdhani;
+            font-size: 0.8333333333vw;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+
+          button {
+            width: 12.2395833333vw;
+            height: 3.4259259259vh;
+            border: none;
+            border-radius: 0.96354166666vw;
+            background: #f40009;
+
+            p {
+              color: var(--text-text-white, #fffdfc);
+              text-align: center;
+              font-family: Rajdhani;
+              font-size: 1.0416666666vw;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+              margin-bottom: 0;
+            }
+          }
+        }
+
+        // the default event style begins
+        .defaultEvent {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .leftDiv {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 0.8vw;
+
+            .datePara {
+              color: var(--text-text-brand, #f40009);
+              font-family: Rajdhani;
+              font-size: 1.25vw;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+              margin-bottom: 0;
+            }
+
+            .meetingPara {
+              color: var(--text-text-primary, #333);
+              font-family: Rajdhani;
+              font-size: 0.8333333333vw;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+              margin-bottom: 0;
+            }
+          }
+
+          .rsvpPara {
+            margin-bottom: 0;
+            color: var(--text-text-brand, #f40009);
+            font-family: Rajdhani;
+            font-size: 0.7291666666vw;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+          }
+        }
+        // the default event style ends
+        // the six event style ends
       }
 
       // left default content styles ends
@@ -95,7 +200,7 @@
           font-weight: 700;
           line-height: normal;
           text-transform: uppercase;
-          margin-bottom:0;
+          margin-bottom: 0;
         }
 
         // selection main div style begins
@@ -109,7 +214,7 @@
             background: #333;
             border-radius: 0.78125vw;
             border: 1px solid #fffdfc;
-            margin-top: 1.820370370vh;
+            margin-top: 1.82037037vh;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -199,7 +304,7 @@
         .timeDiv {
           display: flex;
           align-items: start;
-          gap:0.625vw;
+          gap: 0.625vw;
           margin-top: 2.407407407vh;
 
           img {
@@ -217,7 +322,7 @@
             }
             .topPara {
               font-weight: 700;
-              margin-bottom:0.7407407407vh;
+              margin-bottom: 0.7407407407vh;
             }
 
             .bottomPara {

@@ -10,8 +10,6 @@ import { EventContext } from "./Context/EventContext";
 import { useContext } from "react";
 import Calendar from "./components/Fifth/Calendar/Calendar";
 
-
-
 function App() {
   const { clickedEvent, handleEventClick } = useContext(EventContext);
 
