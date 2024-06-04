@@ -44,6 +44,13 @@
 
         // the six event style begins
         .expandedEvent {
+          border-bottom: 0.185185185vh solid #fffdfc;
+          padding-bottom: 2vh;
+          padding-top: 1.5vh;
+          // even these padding top and bottom needs to be chagned as per the 
+          // figma design right now they are personalised
+
+
           .datePara {
             color: var(--text-text-brand, #f40009);
             font-family: Rajdhani;
@@ -105,6 +112,10 @@
           display: flex;
           justify-content: space-between;
           align-items: center;
+          border-bottom:0.1851851851vh solid #fffdfc;
+          height: 6.2vh;
+          // the height above needs to be adjusted as per the fima design
+          // it is personalised now
 
           .leftDiv {
             display: flex;
