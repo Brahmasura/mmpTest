@@ -5,6 +5,8 @@ import spacexLogo from "../../../assets/spacex-logo-big.png";
 import ashleyPic from "../../../assets/ashley.png";
 import clock from "../../../assets/Fifth/calendarClock.svg";
 import downArrow from "../../../assets/Fifth/fifthDownArrow.svg";
+import leftArrow from "../../../assets/Fifth/calendarLeftArrow.svg";
+import rightArrow from "../../../assets/Fifth/calendarRightArrow.svg";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
@@ -24,12 +26,21 @@ const coachingOptionsArray = [
   { coaching: "Other" },
 ];
 
+// days Array
+const daysArray = ["S", "M", "T", "W", "T", "F", "S"];
+
 // calendar array with dummy dates and properties
 const calendarArray = [
   {
     month: "JANUARY",
     shortMonth: "JAN",
     days: [
+      {
+        date: "31",
+        dateInclusive: false,
+        eventScheduled: false,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
       {
         date: "1",
         dateInclusive: true,
@@ -69,6 +80,168 @@ const calendarArray = [
       {
         date: "7",
         dateInclusive: true,
+        eventScheduled: false,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+      {
+        date: "8",
+        dateInclusive: true,
+        eventScheduled: false,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+      {
+        date: "9",
+        dateInclusive: true,
+        eventScheduled: false,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+      {
+        date: "10",
+        dateInclusive: true,
+        eventScheduled: false,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+      {
+        date: "11",
+        dateInclusive: true,
+        eventScheduled: false,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+      {
+        date: "12",
+        dateInclusive: true,
+        eventScheduled: false,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+      {
+        date: "13",
+        dateInclusive: true,
+        eventScheduled: false,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+      {
+        date: "14",
+        dateInclusive: true,
+        eventScheduled: false,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+      {
+        date: "15",
+        dateInclusive: true,
+        eventScheduled: false,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+      {
+        date: "16",
+        dateInclusive: true,
+        eventScheduled: false,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+      {
+        date: "17",
+        dateInclusive: true,
+        eventScheduled: false,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+      {
+        date: "18",
+        dateInclusive: true,
+        eventScheduled: false,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+      {
+        date: "19",
+        dateInclusive: true,
+        eventScheduled: false,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+      {
+        date: "20",
+        dateInclusive: true,
+        eventScheduled: false,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+      {
+        date: "21",
+        dateInclusive: true,
+        eventScheduled: false,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+      {
+        date: "22",
+        dateInclusive: true,
+        eventScheduled: false,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+      {
+        date: "23",
+        dateInclusive: true,
+        eventScheduled: false,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+      {
+        date: "24",
+        dateInclusive: true,
+        eventScheduled: false,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+      {
+        date: "25",
+        dateInclusive: true,
+        eventScheduled: false,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+      {
+        date: "26",
+        dateInclusive: true,
+        eventScheduled: false,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+      {
+        date: "27",
+        dateInclusive: true,
+        eventScheduled: false,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+      {
+        date: "28",
+        dateInclusive: true,
+        eventScheduled: false,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+      {
+        date: "29",
+        dateInclusive: true,
+        eventScheduled: false,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+      {
+        date: "30",
+        dateInclusive: true,
+        eventScheduled: false,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+      {
+        date: "31",
+        dateInclusive: true,
+        eventScheduled: false,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+      {
+        date: "1",
+        dateInclusive: false,
+        eventScheduled: false,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+      {
+        date: "2",
+        dateInclusive: false,
+        eventScheduled: false,
+        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
+      },
+      {
+        date: "3",
+        dateInclusive: false,
         eventScheduled: false,
         scheduleDescription: "MEMBER PARTY MEETING - 2PM",
       },
@@ -122,102 +295,7 @@ const calendarArray = [
       },
     ],
   },
-  {
-    month: "MARCH",
-    shortMonth: "MAR",
-    days: [
-      {
-        date: "1",
-        dateInclusive: true,
-        eventScheduled: true,
-        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
-      },
-      {
-        date: "2",
-        dateInclusive: true,
-        eventScheduled: false,
-        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
-      },
-      {
-        date: "3",
-        dateInclusive: true,
-        eventScheduled: true,
-        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
-      },
-      {
-        date: "4",
-        dateInclusive: true,
-        eventScheduled: false,
-        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
-      },
-      {
-        date: "5",
-        dateInclusive: true,
-        eventScheduled: true,
-        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
-      },
-      {
-        date: "6",
-        dateInclusive: true,
-        eventScheduled: false,
-        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
-      },
-      {
-        date: "7",
-        dateInclusive: true,
-        eventScheduled: true,
-        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
-      },
-    ],
-  },
-  {
-    month: "APRIL",
-    shortMonth: "APR",
-    days: [
-      {
-        date: "1",
-        dateInclusive: true,
-        eventScheduled: false,
-        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
-      },
-      {
-        date: "2",
-        dateInclusive: true,
-        eventScheduled: true,
-        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
-      },
-      {
-        date: "3",
-        dateInclusive: true,
-        eventScheduled: false,
-        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
-      },
-      {
-        date: "4",
-        dateInclusive: true,
-        eventScheduled: true,
-        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
-      },
-      {
-        date: "5",
-        dateInclusive: true,
-        eventScheduled: false,
-        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
-      },
-      {
-        date: "6",
-        dateInclusive: true,
-        eventScheduled: true,
-        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
-      },
-      {
-        date: "7",
-        dateInclusive: true,
-        eventScheduled: false,
-        scheduleDescription: "MEMBER PARTY MEETING - 2PM",
-      },
-    ],
-  },
+
   //  will add more months if needed
 ];
 
@@ -228,6 +306,7 @@ const Calendar = () => {
   const [coachingToggle, setCoachingToggle] = useState(false);
   const [startIndex, setStartIndex] = useState(0);
   const [selectedEvent, setSelectedEvent] = useState(0);
+  const { month, shortMonth, days } = calendarArray[startIndex];
 
   // function to get six values and update on the click begins
 
@@ -255,9 +334,31 @@ const Calendar = () => {
 
   const firstSixEvents = getFirstSixScheduledEvents(calendarArray, startIndex);
 
-  // const handleNextMonth = () => {
-  //   setStartIndex((prevIndex) => (prevIndex + 1) % calendarArray.length);
-  // };
+  // function to handeNextMonth increment
+  const handleNextMonth = () => {
+    // setStartIndex((prevIndex) => (prevIndex + 1) % calendarArray.length);
+    setStartIndex((prevIndex) => {
+      const value = prevIndex + 1;
+      if (value < calendarArray.length) {
+        return value;
+      } else {
+        return prevIndex;
+      }
+    });
+  };
+
+  // function to handlePreviousMonth
+  const handlePreviousMonth = () => {
+    // setStartIndex((prevIndex) => prevIndex - 1);
+    setStartIndex((prevIndex) => {
+      const value = prevIndex - 1;
+      if (value < 0) {
+        return prevIndex;
+      } else {
+        return value;
+      }
+    });
+  };
 
   // function to selectEvent index
   const handleEventSelection = (index) => {
@@ -468,7 +569,80 @@ const Calendar = () => {
             )}
           </div>
         </div>
-        <div className={style.mainRightDiv}>right Div</div>
+
+        {/* main right Div begins */}
+        <div className={style.mainRightDiv}>
+          <p className={style.dateSelectionPara}>Select a Date & Time</p>
+
+          {/* the calendar functionality begins */}
+          {/* {calendarArray[startIndex].map((item, index) => ( */}
+          <div className={style.calendarWrapper}>
+            <div className={style.monthDiv}>
+              <img
+                onClick={handlePreviousMonth}
+                src={leftArrow}
+                alt="left Arrow"
+              />
+              <p className={style.monthName}>{month}</p>
+              <img
+                onClick={handleNextMonth}
+                src={rightArrow}
+                alt="right Arrow"
+              />
+            </div>
+
+            {/* the real calendar begins */}
+            <div className={style.calendar}>
+              {/* days like sunday, monday div begins */}
+              {daysArray.map((item, index) => (
+                <div key={index} className={style.dayDiv}>
+                  <p>{item}</p>
+                </div>
+              ))}
+
+              {/* ends */}
+
+              {/* dates begins */}
+
+              {days.map((item, index) => (
+                <div
+                  key={index}
+                  className={`${style.dateDiv} ${
+                    item.eventScheduled ? style.scheduledDateDiv : ""
+                  }`}
+                >
+                  <p
+                    className={
+                      item.eventScheduled
+                        ? style.scheduledDate
+                        : item.dateInclusive
+                        ? style.inclusiveDate
+                        : style.nonInclusiveDate
+                    }
+                  >
+                    {item.date}
+                  </p>
+
+                  {item.eventScheduled && (
+                    <>
+                      <p className={style.scheduleDescPara}>
+                        MEMBER PARTY <br /> MEETING - 2:PM EST
+                      </p>
+                    </>
+                  )}
+                </div>
+              ))}
+
+              {/* ends */}
+            </div>
+
+            {/* the real calendar ends */}
+          </div>
+          {/* ))} */}
+
+          {/* the calendar functionality ends */}
+        </div>
+        {/* main right div ends */}
       </div>
 
       <img
