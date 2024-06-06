@@ -43,118 +43,129 @@
         }
 
         // the six event style begins
-        .expandedEvent {
-          border-bottom: 0.185185185vh solid #fffdfc;
-          padding-bottom: 2vh;
-          padding-top: 1.5vh;
-          // even these padding top and bottom needs to be chagned as per the
-          // figma design right now they are personalised
+        .scheduledEventWrapper {
+          // now thing to think is that weather the scehduled event are gonna be
+          // just six or more than that
 
-          .datePara {
-            color: var(--text-text-brand, #f40009);
-            font-family: Rajdhani;
-            font-size: 2.20885416666vw;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-          }
-
-          .meetingPara {
-            color: var(--text-text-primary, #333);
-            font-family: Rajdhani;
-            font-size: 1.47255208333vw;
-            font-style: normal;
-            font-weight: 600;
-            line-height: normal;
-          }
-
-          .detailPara {
-            color: var(--text-text-secondary, #333);
-            font-family: Rajdhani;
-            font-size: 1.25vw;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
-          }
-
-          .descriptionPara {
-            color: var(--text-text-secondary, #333);
-            font-family: Rajdhani;
-            font-size: 0.8333333333vw;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
-          }
-
-          button {
-            width: 12.2395833333vw;
-            height: 3.4259259259vh;
-            border: none;
-            border-radius: 0.96354166666vw;
-            background: #f40009;
-
-            p {
-              color: var(--text-text-white, #fffdfc);
-              text-align: center;
-              font-family: Rajdhani;
-              font-size: 1.0416666666vw;
-              font-style: normal;
-              font-weight: 700;
-              line-height: normal;
-              margin-bottom: 0;
-            }
-          }
-        }
-
-        // the default event style begins
-        .defaultEvent {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          border-bottom: 0.1851851851vh solid #fffdfc;
-          height: 6.2vh;
-          // the height above needs to be adjusted as per the fima design
-          // it is personalised now
-
-          .leftDiv {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 0.8vw;
+          .expandedEvent {
+            border-bottom: 0.185185185vh solid #fffdfc;
+            padding-bottom: 2vh;
+            padding-top: 1.5vh;
+            // even these padding top and bottom needs to be chagned as per the
+            // figma design right now they are personalised
 
             .datePara {
               color: var(--text-text-brand, #f40009);
               font-family: Rajdhani;
-              font-size: 1.25vw;
+              font-size: 2.20885416666vw;
               font-style: normal;
               font-weight: 700;
               line-height: normal;
-              margin-bottom: 0;
+              margin-bottom: 1.4814814814vh;
             }
 
             .meetingPara {
               color: var(--text-text-primary, #333);
               font-family: Rajdhani;
+              font-size: 1.47255208333vw;
+              font-style: normal;
+              font-weight: 600;
+              line-height: normal;
+              margin-bottom: 1.4814814814vh;
+            }
+
+            .detailPara {
+              color: var(--text-text-secondary, #333);
+              font-family: Rajdhani;
+              font-size: 1.25vw;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+              margin-bottom:1.4814814814vh;
+
+            }
+
+            .descriptionPara {
+              color: var(--text-text-secondary, #333);
+              font-family: Rajdhani;
               font-size: 0.8333333333vw;
               font-style: normal;
               font-weight: 500;
               line-height: normal;
-              margin-bottom: 0;
+              margin-bottom:1.4814814814vh;
+
+            }
+
+            button {
+              width: 12.2395833333vw;
+              height: 3.4259259259vh;
+              border: none;
+              border-radius: 0.96354166666vw;
+              background: #f40009;
+
+              p {
+                color: var(--text-text-white, #fffdfc);
+                text-align: center;
+                font-family: Rajdhani;
+                font-size: 1.0416666666vw;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin-bottom: 0;
+              }
             }
           }
 
-          .rsvpPara {
-            margin-bottom: 0;
-            color: var(--text-text-brand, #f40009);
-            font-family: Rajdhani;
-            font-size: 0.7291666666vw;
-            font-style: normal;
-            font-weight: 600;
-            line-height: normal;
+          // the default event style begins
+          .defaultEvent {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 0.1851851851vh solid #fffdfc;
+            height: 6.2vh;
+            // the height above needs to be adjusted as per the fima design
+            // it is personalised now
+
+            .leftDiv {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              width: 14.5vw;
+
+              .datePara {
+                color: var(--text-text-brand, #f40009);
+                font-family: Rajdhani;
+                font-size: 1.25vw;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin-bottom: 0;
+              }
+
+              .meetingPara {
+                color: var(--text-text-primary, #333);
+                font-family: Rajdhani;
+                font-size: 0.8333333333vw;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                margin-bottom: 0;
+              }
+            }
+
+            .rsvpPara {
+              margin-bottom: 0;
+              color: var(--text-text-brand, #f40009);
+              font-family: Rajdhani;
+              font-size: 0.7291666666vw;
+              font-style: normal;
+              font-weight: 600;
+              line-height: normal;
+            }
           }
+          // the default event style ends
+          // the six event style ends
         }
-        // the default event style ends
-        // the six event style ends
       }
 
       // left default content styles ends
@@ -535,7 +546,7 @@
               font-style: normal;
               font-weight: 600;
               line-height: normal;
-              margin-bottom:0;
+              margin-bottom: 0;
             }
           }
         }

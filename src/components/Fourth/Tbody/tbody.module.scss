@@ -4,6 +4,11 @@ tr {
   height: 5.759259vh;
   border-bottom: 0.185185185vh solid grey !important;
 
+  &:hover {
+    background: rgba(255, 215, 0, 0.5);
+  }
+  // this is added now
+
   td {
     color: white;
     text-align: center;
@@ -12,7 +17,7 @@ tr {
     .projectDiv {
       display: inline-block;
       width: auto;
-      padding:0.185185185vh 0.5208333333vw;
+      padding: 0.185185185vh 0.5208333333vw;
 
       border-radius: 30px;
       p {

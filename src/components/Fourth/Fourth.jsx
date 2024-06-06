@@ -1,7 +1,7 @@
 import style from "./fourth.module.scss";
 import ticket from "../../assets/ticket.svg";
 import Tbody from "./Tbody/Tbody";
-import siren from "../../assets/siren.svg";
+// import siren from "../../assets/siren.svg";
 import bulb from "../../assets/bulb.svg";
 
 const tbodyArray = [
