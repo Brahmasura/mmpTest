@@ -9,6 +9,7 @@ import { Route, Routes } from "react-router-dom";
 import { EventContext } from "./Context/EventContext";
 import { useContext } from "react";
 import Calendar from "./components/Fifth/Calendar/Calendar";
+import BrandsHome from "./components/Second/BrandsHome/BrandsHome";
 
 function App() {
   const { clickedEvent, handleEventClick } = useContext(EventContext);
@@ -31,6 +32,7 @@ function App() {
             <Route index element={<Container />} />
             <Route path="chat" element={<Chat />} />
             <Route path="projects/*" element={<ProjectsHome />} />
+            <Route path="brands/*" element={<BrandsHome />} />
             <Route path="calendar" element={<Calendar />} />
           </Routes>
 

@@ -1,0 +1,164 @@
+.myBrandsWrapper {
+  margin-top: 5.7407407407vh;
+  position: relative;
+
+  .myBrandsMainContainer {
+    border-radius: 2.6041666666vw;
+    border: 3px solid #fffdfc;
+    background: rgba(0, 0, 0, 0.7);
+    height: 78.703703703vh;
+    // above are the standard styling for the container
+
+    padding-left: 1.979166666666vw;
+    padding-top: 3.055555555vh;
+    padding-right: 1.614583333333vw;
+
+    display: flex;
+    flex-direction: column;
+
+    .myBrandsTitle {
+      height: 5.0925925925vh;
+      border-bottom: 0.27777777vh solid #fffdfc;
+
+      p {
+        color: var(--text-text-invert, #fffdfc);
+        font-family: Rajdhani;
+        font-size: 1.6666666666vw;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+    }
+
+    .mainContentDiv {
+      width: 100%;
+      flex: 1;
+      padding-inline: 17.604166666vw;
+
+      padding-top: 8vh;
+      // padding-top is just a dummu prop for now, will need to adjsut later
+
+      .firstPara {
+        color: var(--text-text-invert, #fffdfc);
+        font-family: Rajdhani;
+        font-size: 1.0416666666vw;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 0;
+      }
+
+      .secondPara {
+        color: var(--text-text-invert, #fffdfc);
+        font-family: Rajdhani;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+        span {
+          font-weight: 600;
+          color: #f40009;
+          cursor: pointer;
+        }
+      }
+
+      .myBrandsContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.0416666666vw;
+        // gap is 20px
+
+        width: 100%;
+
+        .brandDiv {
+          border-radius: 0.7291666666vw;
+          border: 0.0520833333vw solid rgba(178, 178, 178, 0.5);
+          background: #333;
+          height: 10.092592592vh;
+          padding-left: 0.520833333vw;
+          padding-top: 0.74074074vh;
+          // width:100%;
+          // height:100%;
+
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .starImageDiv {
+            display: flex;
+            align-items: start;
+
+            .starImage {
+              width: 1.196302083333vw;
+              height: auto;
+              margin-right: 1.7vw;
+            }
+
+            .brandImage {
+              width: 7.8125vw;
+              height: auto;
+            }
+          }
+
+          .nameStatusDiv {
+            p {
+              color: var(--text-text-invert, #fffdfc);
+              font-family: Rajdhani;
+              font-size: 0.67708333333vw;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+
+              span {
+                font-size: 10px;
+                font-weight: 400;
+              }
+            }
+          }
+
+          &:hover {
+            background: rgba(255, 215, 0, 0.2);
+            border: 0.0520833333vw solid #fffdfc;
+          }
+        }
+
+        .createNewBrandDiv {
+          height: 10.092592592vh;
+          border-radius: 0.7291666666vw;
+          border: 0.10416666666vw  dashed rgba(178, 178, 178, 0.5);
+          background: #333;
+          // 0.052083333vw
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          p {
+            color: var(--text-text-white, #fffdfc);
+            text-align: center;
+            font-family: Rajdhani;
+            font-size: 1.0416666666vw;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            opacity:0.5;
+            margin-bottom:0;
+          }
+        }
+      }
+      // my brands container style ends
+    }
+    // mainContentDiv styling ends
+  }
+
+  .closeIcon {
+    cursor: pointer;
+    position: absolute;
+    width: 2.8125vw;
+    height: auto;
+    top: -0.855556vh;
+    right: -0.720833vw;
+    z-index: 10;
+  }
+}

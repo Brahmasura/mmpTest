@@ -5,6 +5,7 @@ import smartfit from "../../assets/smart-fit-logo.png";
 import fedex from "../../assets/FedEx-Logo-PNG-Transparent.png";
 import frontex from "../../assets/FRONT3X-Logo.png";
 import Brands from "../Brands/Brand";
+import { useNavigate } from "react-router-dom";
 
 const brandsArray = [
   {
@@ -44,11 +45,16 @@ const brandsArray = [
 ];
 
 const Second = () => {
+  const navigate = useNavigate();
+
+  const handleNavigation = () => {
+    navigate("/brands");
+  }
   return (
     <>
       <div className={style.mainDiv}>
         {/* title */}
-        <Title text="MyBrands" />
+        <Title text="MyBrands" handleContainerClick={handleNavigation} />
 
         <div className={style.brandsContainer}>
           {brandsArray.map((item, index) => (
