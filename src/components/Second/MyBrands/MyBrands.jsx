@@ -53,8 +53,8 @@ const MyBrands = () => {
   const navigate = useNavigate();
 
   // funciton to handle navigation
-  const handleNavigation = (destination) => {
-    navigate(destination);
+  const handleNavigation = (destination, brand) => {
+    navigate(destination, { state: brand });
   };
 
   // function to handle active brand
@@ -90,7 +90,14 @@ const MyBrands = () => {
           {/* my brands div begins */}
           <div className={style.myBrandsContainer}>
             {MyBrandsArray.map((item, index) => (
-              <div key={index} className={style.brandDiv}>
+              <div
+                onClick={() => {
+                  handleBrandSelect(index),
+                    handleNavigation(`brandOption/${item.brandName}`, item);
+                }}
+                key={index}
+                className={style.brandDiv}
+              >
                 <div className={style.starImageDiv}>
                   <img
                     className={style.starImage}
@@ -106,7 +113,7 @@ const MyBrands = () => {
 
                 <div className={style.nameStatusDiv}>
                   <p>
-                    {item.brandName}&nbsp; 
+                    {item.brandName}&nbsp;
                     <span>{item.percentCompleted} completed</span>
                   </p>
                 </div>
