@@ -12,6 +12,11 @@
   padding-left: 0.8854166666vw;
   padding-right: 0.5208333333vw;
   position: relative;
+  cursor:pointer;
+
+  &:hover {
+    background: rgba(255, 215, 0, 0.2);
+  }
 
   .star {
     width: 1.19630208333vw;
@@ -53,32 +58,24 @@
 
   // brandHoveredDiv style begins
   .brandHoveredDiv {
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    background: #fffdfc;
+    background: #f40009;
+    // width: 3.6vw;
+    width:2.3vw;
+    height: 3vh;
+    border-radius: 2vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 100%;
 
-    button {
-      width:50%;
-      height:70%;
-      background: #f40009;
-      border:none;
-      border-radius:30px;
-      p {
-        color: #fffdfc;
-        font-family: "Rajdhani", sans-serif;
-        font-size: 1.0416666666vw;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        margin-bottom: 0;
-      }
+    p {
+      color: #fffdfc;
+      font-family: "Rajdhani", sans-serif;
+      // font-size: 1.0416666666vw;
+      font-size: 0.741667vw;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin-bottom: 0;
     }
   }
 }

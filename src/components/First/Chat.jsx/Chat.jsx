@@ -63,7 +63,7 @@ const Chat = () => {
             <div className={style.textDiv}>
               <h2>Welcome, Ashley</h2>
               <br />
-              <h3>Happy Monday! How can i help?</h3>
+              <h3>Happy Monday! How can I help?</h3>
             </div>
 
             <img

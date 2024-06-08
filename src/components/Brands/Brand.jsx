@@ -19,16 +19,21 @@ const Brands = ({ brand, text, title }) => {
       >
         <img className={style.star} src={star} alt="the star" />
         <img className={style.brand} src={brand} alt="brand logo" />
-        <p className={style.text}>{text}</p>
+        {/* <p className={style.text}>{text}</p> */}
+
         <p className={style.title}>{title}</p>
 
-        {brandHovered && (
+        {brandHovered ? (
           <>
             <div className={style.brandHoveredDiv}>
-              <button>
+             
                 <p>VIEW</p>
-              </button>
+         
             </div>
+          </>
+        ) : (
+          <>
+            <p className={style.text}>{text}</p>
           </>
         )}
       </div>

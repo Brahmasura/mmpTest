@@ -2,9 +2,10 @@
   border-bottom: 2px solid grey;
   // height:70px;
   // padding: 5px 0;
-  padding-top:2.40740740740vh;
-  padding-bottom:2.40740740740vh;
-  padding-left:0.8854166666vw;
+  padding-top: 2.4074074074vh;
+  padding-bottom: 2.4074074074vh;
+  padding-left: 0.8854166666vw;
+  cursor: pointer;
 
   .title {
     font-family: "Rajdhani", sans-serif;
@@ -39,5 +40,9 @@
     margin-bottom: 0;
     display: inline-block;
     margin-left: 10px;
+  }
+
+  &:hover {
+    background: rgba(255, 215, 0, 0.2);
   }
 }
