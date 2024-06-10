@@ -17,32 +17,38 @@ const MyBrandsArray = [
     brandImage: spaceX,
     brandName: "SPACEX",
     percentCompleted: "75%",
+    level:"55",
   },
   {
     brandImage: smartFit,
     brandName: "SMARTFIT",
     percentCompleted: "20%",
+    level:"15",
   },
   {
     brandImage: frontEx,
     brandName: "FRONTEX",
     percentCompleted: "55%",
+    level:"75",
   },
 
   {
     brandImage: fedEx,
     brandName: "FEDEX",
     percentCompleted: "0%",
+    level:"25",
   },
   {
     brandImage: mmpOne,
     brandName: "MyMarketingPass",
     percentCompleted: "10%",
+    level:"30",
   },
   {
     brandImage: mmpTwo,
     brandName: "MYMARKETINGPASS",
     percentCompleted: "10%",
+    level:"70",
   },
 ];
 

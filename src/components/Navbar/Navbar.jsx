@@ -15,11 +15,13 @@ const Navbar = () => {
   };
 
   const getNavbarTitle = () => {
-    switch (location.pathname) {
-      case "/":
+    switch (true) {
+      case location.pathname === "/":
         return "Overview";
-      case "/projects":
+      case location.pathname.startsWith("/projects"):
         return "MyProjects";
+      case location.pathname.startsWith("/brands"):
+        return "Manage Brands";
       default:
         return "Overview";
     }

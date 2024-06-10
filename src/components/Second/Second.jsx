@@ -9,60 +9,63 @@ import { useNavigate } from "react-router-dom";
 
 const brandsArray = [
   {
-    brand: spacex,
-    title: "spacex",
-    text: "LvL55",
+    brandImage: spacex,
+    brandName: "spacex",
+    level: "55",
   },
 
   {
-    brand: smartfit,
-    title: "smartfit",
-    text: "LvL15",
+    brandImage: smartfit,
+    brandName: "smartfit",
+    level: "15",
   },
 
   {
-    brand: fedex,
-    title: "fedex",
-    text: "LvL55",
+    brandImage: fedex,
+    brandName: "fedex",
+    level: "55",
   },
   {
-    brand: frontex,
-    title: "frontex",
-    text: "LvL55",
-  },
-
-  {
-    brand: spacex,
-    title: "spacex",
-    text: "LvL55",
+    brandImage: frontex,
+    brandName: "frontex",
+    level: "55",
   },
 
   {
-    brand: smartfit,
-    title: "smartfit",
-    text: "LvL15",
+    brandImage: spacex,
+    brandName: "spacex",
+    level: "55",
+  },
+
+  {
+    brandImage: smartfit,
+    brandName: "smartfit",
+    level: "15",
   },
 ];
 
 const Second = () => {
   const navigate = useNavigate();
 
-  const handleNavigation = () => {
-    navigate("/brands");
-  }
+  const handleNavigation = (destination, brand) => {
+    navigate(destination, { state: brand });
+  };
   return (
     <>
       <div className={style.mainDiv}>
         {/* title */}
-        <Title text="MyBrands" handleContainerClick={handleNavigation} />
+        <Title text="MyBrands" handleContainerClick={() => handleNavigation("/brands")} />
 
         <div className={style.brandsContainer}>
           {brandsArray.map((item, index) => (
             <Brands
+              onClick={() =>
+                handleNavigation(`/brands/brandOption/${item.brandName}`, item)
+              }
               key={index}
-              brand={item.brand}
-              text={item.text}
-              title={item.title}
+              brandImage={item.brandImage}
+              level={item.level}
+              brandName={item.brandName}
             />
           ))}
 

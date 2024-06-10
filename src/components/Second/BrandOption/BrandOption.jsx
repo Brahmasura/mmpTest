@@ -4,9 +4,54 @@ import backArrow from "../../../assets/Second/greyBackArrow.svg";
 import downArrow from "../../../assets/downArrowTwo.svg";
 import star from "../../../assets/yellowStar.svg";
 import unselectedStar from "../../../assets/greyStar.svg";
+import persona from "../../../assets/Second/personaLogo.svg";
+import design from "../../../assets/Second/designLogo.svg";
+import tools from "../../../assets/Second/toolsLogo.svg";
+import assets from "../../../assets/Second/assestsLogo.svg";
+import offers from "../../../assets/Second/offersLogo.svg";
+import audiences from "../../../assets/Second/audiencesLogo.svg";
+import preferences from "../../../assets/Second/preferencesLogo.svg";
+import people from "../../../assets/Second/peopleLogo.svg";
+import map from "../../../assets/map2.svg";
 
 import { useLocation, useNavigate } from "react-router-dom";
 import { useState } from "react";
+
+// the brands menu array
+const brandsMenuArray = [
+  {
+    menuLogo: persona,
+    menuName: "PERSONA",
+  },
+  {
+    menuLogo: design,
+    menuName: "DESIGN",
+  },
+  {
+    menuLogo: tools,
+    menuName: "TOOLS",
+  },
+  {
+    menuLogo: assets,
+    menuName: "ASSESTS",
+  },
+  {
+    menuLogo: offers,
+    menuName: "OFFERS",
+  },
+  {
+    menuLogo: audiences,
+    menuName: "AUDIENCES",
+  },
+  {
+    menuLogo: preferences,
+    menuName: "PREFERENCES",
+  },
+  {
+    menuLogo: people,
+    menuName: "PEOPLE",
+  },
+];
 
 // project brand array begins, now we are using the same one just like the projectMain one we will make it
 // another component leater
@@ -27,7 +72,7 @@ const BrandOption = () => {
   const [selectedBrand, setSelectedBrand] = useState(0);
   const navigate = useNavigate();
   const location = useLocation();
-  const { brandImage, brandName } = location.state || {};
+  const { brandImage, brandName, level } = location.state || {};
 
   //   function to handle navigation to routes
   const handleNavigation = (destination) => {
@@ -108,7 +153,6 @@ const BrandOption = () => {
         {/* the brand details div begins  */}
         <div className={style.brandDetailDiv}>
           {/* left div */}
-
           <div className={style.leftDetailDiv}>
             {/* first div brand name */}
             <div className={style.brandNameDiv}>
@@ -144,17 +188,50 @@ const BrandOption = () => {
             </div>
             {/* fifth div ends */}
           </div>
+          {/* left div ends */}
 
-          {/* <div className={style.rightDetailDiv}></div> */}
+          {/* right detail div begins */}
+          <div className={style.rightDetailDiv}>
+            <p>
+              LvL<span>{level}</span>
+            </p>
+            <p>
+              Your brand profile <br /> is almost complete!
+            </p>
+          </div>
 
-          {/* right div */}
+          {/* right detail div ends */}
         </div>
-
         {/* the brand details div ends */}
 
-        {/* following two line of code is for the testing to see if we can retrieve the value */}
-        {/* <img src={brandImage} alt="the brand Image" />
-        <p>{brandName}</p> */}
+        {/* brands menu div begins */}
+        <div className={style.brandsMenuContainer}>
+          {brandsMenuArray.map((item, index) => (
+            <div key={index} className={style.brandMenuDiv}>
+              <img src={item.menuLogo} alt="the menu logo" />
+
+              <div className={style.menuNameAndStatusDiv}>
+                <p>{item.menuName}</p>
+                <div className={style.statusContainer}>
+                  <div className={style.status}></div>
+                </div>
+              </div>
+            </div>
+          ))}
+
+          {/* map text div begins */}
+          <div className={style.mapTextDiv}>
+            <img src={map} alt="the map logo" />
+            <p>
+              Explore Your <br /> MyMarketingMap
+            </p>
+          </div>
+
+          {/* map text div ends
+           */}
+        </div>
+
+        {/* brands menu div ends */}
       </div>
 
       <img
