@@ -4,113 +4,6 @@
   // margin-top: 2.5vh;
   margin-top: 5.7407407407vh;
 
-  // .brandsTogglerContainer {
-  //   display: flex;
-  //   justify-content: end;
-  //   align-items: start;
-  //   height: 5.55555555555vh;
-  //   padding-right: 3.352083333333vw;
-  //   position: relative;
-
-  //   .brandsToggler {
-  //     // width: 14.460520833333vw;
-  //     display: flex;
-  //     justify-content: start;
-  //     align-items: center;
-  //     // gap: 1.30885416666vw;
-  //     padding-left: 0.65364583333vw;
-  //     padding-right: 0.76614583333vw;
-
-  //     .star {
-  //       width: 0.8833333333vw;
-  //       height: auto;
-  //     }
-
-  //     p {
-  //       color: var(--text-text-invert, #fffdfc);
-  //       font-family: Rajdhani;
-  //       font-size: 1.846041666666vw;
-  //       font-style: normal;
-  //       font-weight: 500;
-  //       line-height: normal;
-  //       margin-bottom: 0;
-  //       margin-left: 1.308854166vw;
-  //     }
-
-  //     .upArrow {
-  //       // margin-left: auto;
-  //       margin-left: 4.1322916666vw;
-  //       width: 1.1953125vw;
-  //       height: auto;
-  //       rotate: 180deg;
-  //       transition: rotate 0.7s ease;
-  //       cursor: pointer;
-  //     }
-
-  //     .downArrow {
-  //       // margin-left: auto;
-  //       margin-left: 4.1322916666vw;
-  //       width: 1.1953125vw;
-  //       height: auto;
-  //       rotate: 0deg;
-  //       transition: rotate 0.7s ease;
-  //       cursor: pointer;
-  //     }
-  //   }
-
-  //   .brandsToggleDiv {
-  //     border-radius: 1.25vw;
-  //     position: absolute;
-  //     z-index: 2;
-  //     top: 100%;
-  //     width: 13.802083333333vw;
-  //     height: 20.4629629629vh;
-  //     background: #000;
-
-  //     .starBrandDiv {
-  //       display: flex;
-  //       justify-content: start;
-  //       align-items: center;
-  //       height: 5.37037037037vh;
-  //       color: white;
-  //       border-radius: 1.25vw;
-  //       padding-left: 0.9375vw;
-
-  //       img {
-  //         width: 1.19630208333vw;
-  //         height: auto;
-  //       }
-
-  //       P {
-  //         color: var(--text-text-invert, #fffdfc);
-  //         font-family: Rajdhani;
-  //         font-size: 1.0416666666vw;
-  //         font-style: normal;
-  //         font-weight: 500;
-  //         line-height: normal;
-  //         margin-left: 0.8348958333vw;
-  //         margin-bottom: 0;
-  //       }
-  //     }
-
-  //     .starBrandDivSelected {
-  //       background: rgba(236, 34, 39, 0.3);
-  //     }
-
-  //     button {
-  //       width: 100%;
-  //       background: none;
-  //       border: none;
-  //       color: var(--text-text-complementary, #b2b2b2);
-  //       font-family: Rajdhani;
-  //       font-size: 1.0416666666vw;
-  //       font-style: normal;
-  //       font-weight: 500;
-  //       line-height: normal;
-  //       margin-top: 0.9vh;
-  //     }
-  //   }
-  // }
 
   .projectCoveringForClose {
     position: relative;
@@ -191,6 +84,8 @@
 
           }
 
+
+          // brand toggler container style begins
           .brandsTogglerContainer {
             display: flex;
             justify-content: end;
@@ -299,6 +194,7 @@
               }
             }
           }
+          // brand toggler div style ends
 
          
         }

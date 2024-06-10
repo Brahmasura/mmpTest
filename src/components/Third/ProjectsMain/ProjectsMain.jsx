@@ -888,48 +888,56 @@ const ProjectsMain = () => {
                   </div>
                 </div>
 
+                {/* brand toggle begins */}
                 <div
-          onClick={handleProjectBrandToggle}
-          className={style.brandsTogglerContainer}
-        >
-          <div className={style.brandsToggler}>
-            <img
-              className={style.star}
-              src={star}
-              alt="the active brand start"
-            />
-            <p>{ProjectBrandsArray[selectedBrand].brand}</p>
-            <img
-              className={projectBrandToggle ? style.upArrow : style.downArrow}
-              src={downArrow}
-              alt="the down arrow"
-            />
-          </div>
-
-      
-          {projectBrandToggle && (
-            <div className={style.brandsToggleDiv}>
-              {ProjectBrandsArray.map((brand, index) => (
-                <div
-                  onClick={() => handleBrandselect(index)}
-                  key={index}
-                  className={` ${style.starBrandDiv} ${
-                    selectedBrand === index ? style.starBrandDivSelected : " "
-                  }`}
+                  onClick={handleProjectBrandToggle}
+                  className={style.brandsTogglerContainer}
                 >
-                  <img
-                    src={selectedBrand === index ? star : unselectedStar}
-                    alt="the star"
-                  />
-                  <p>{brand.brand}</p>
+                  <div className={style.brandsToggler}>
+                    <img
+                      className={style.star}
+                      src={star}
+                      alt="the active brand start"
+                    />
+                    <p>{ProjectBrandsArray[selectedBrand].brand}</p>
+                    <img
+                      className={
+                        projectBrandToggle ? style.upArrow : style.downArrow
+                      }
+                      src={downArrow}
+                      alt="the down arrow"
+                    />
+                  </div>
+
+                  {projectBrandToggle && (
+                    <div className={style.brandsToggleDiv}>
+                      {ProjectBrandsArray.map((brand, index) => (
+                        <div
+                          onClick={() => handleBrandselect(index)}
+                          key={index}
+                          className={` ${style.starBrandDiv} ${
+                            selectedBrand === index
+                              ? style.starBrandDivSelected
+                              : " "
+                          }`}
+                        >
+                          <img
+                            src={
+                              selectedBrand === index ? star : unselectedStar
+                            }
+                            alt="the star"
+                          />
+                          <p>{brand.brand}</p>
+                        </div>
+                      ))}
+
+                      <button>+ Create a Brand</button>
+                    </div>
+                  )}
                 </div>
-              ))}
+                {/* brand toggler ends */}
 
-              <button>+ Create a Brand</button>
-            </div>
-          )}
-
-        </div>
+                
               </div>
               {/* active projects title ends */}
 
