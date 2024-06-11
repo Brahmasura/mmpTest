@@ -1,9 +1,16 @@
 import style from "./brand.module.scss";
 import star from "../../assets/star.svg";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-const Brands = ({onClick, brandImage, brandName, level }) => {
+const Brands = ({ brandImage, brandName, level }) => {
   const [brandHovered, setBrandHovered] = useState(false);
+  const navigate = useNavigate();
+
+  // function for navigation
+  const handleNavigation = (destination, brand) => {
+    navigate(destination, { state: brand });
+  };
 
   // function to handleBrandHover
   const handleBrandHover = () => {
@@ -15,7 +22,6 @@ const Brands = ({onClick, brandImage, brandName, level }) => {
       <div
         onMouseEnter={handleBrandHover}
         onMouseLeave={handleBrandHover}
-        onClick={onClick}
         className={style.mainDiv}
       >
         <img className={style.star} src={star} alt="the star" />
@@ -26,10 +32,17 @@ const Brands = ({onClick, brandImage, brandName, level }) => {
 
         {brandHovered ? (
           <>
-            <div className={style.brandHoveredDiv}>
-             
-                <p>VIEW</p>
-         
+            <div
+              onClick={() =>
+                handleNavigation(`/brands/brandOption/${brandName}`, {
+                  brandName,
+                  brandImage,
+                  level,
+                })
+              }
+              className={style.brandHoveredDiv}
+            >
+              <p>VIEW</p>
             </div>
           </>
         ) : (

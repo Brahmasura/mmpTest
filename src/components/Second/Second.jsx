@@ -50,6 +50,7 @@ const Second = () => {
   const handleNavigation = (destination, brand) => {
     navigate(destination, { state: brand });
   };
+
   return (
     <>
       <div className={style.mainDiv}>
@@ -59,9 +60,9 @@ const Second = () => {
         <div className={style.brandsContainer}>
           {brandsArray.map((item, index) => (
             <Brands
-              onClick={() =>
-                handleNavigation(`/brands/brandOption/${item.brandName}`, item)
-              }
+              // onClick={() =>
+              //   handleNavigation(`/brands/brandOption/${item.brandName}`, item)
+              // }
               key={index}
               brandImage={item.brandImage}
               level={item.level}
