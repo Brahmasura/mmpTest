@@ -4,6 +4,7 @@ import closeIcon from "../../../assets/closeIcon.svg";
 import style from "./newBrand.module.scss";
 import NewBrandStepOne from "./NewBrandStepOne/NewBrandStepOne";
 import NewBrandStepTwo from "./NewBrandStepTwo/NewBrandStepTwo";
+import NewBrandStepThree from "./NewBrandStepThree/NewBrandStepThree";
 
 const NewBrand = () => {
   const navigate = useNavigate();
@@ -17,7 +18,8 @@ const NewBrand = () => {
         <div className={style.contentWrapper}>
           <Routes>
             <Route path="/" element={<NewBrandStepOne />} />
-            <Route path="addBrandName" element={<NewBrandStepTwo/>}/>
+            <Route path="/addBrandName" element={<NewBrandStepTwo/>}/>
+            <Route path="/addBrandLogo" element={<NewBrandStepThree/>}/>
           </Routes>
 
           <img
