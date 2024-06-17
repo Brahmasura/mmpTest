@@ -5,6 +5,7 @@ import style from "./newBrand.module.scss";
 import NewBrandStepOne from "./NewBrandStepOne/NewBrandStepOne";
 import NewBrandStepTwo from "./NewBrandStepTwo/NewBrandStepTwo";
 import NewBrandStepThree from "./NewBrandStepThree/NewBrandStepThree";
+import NewBrandStepFour from "./NewBrandStepFour/NewBrandStepFour";
 
 const NewBrand = () => {
   const navigate = useNavigate();
@@ -20,6 +21,7 @@ const NewBrand = () => {
             <Route path="/" element={<NewBrandStepOne />} />
             <Route path="/addBrandName" element={<NewBrandStepTwo/>}/>
             <Route path="/addBrandLogo" element={<NewBrandStepThree/>}/>
+            <Route path="/newBrandFinal" element={<NewBrandStepFour/>}/>
           </Routes>
 
           <img

@@ -4,17 +4,299 @@
   display: grid;
   grid-template-columns: 56.770833333vw auto;
 
-  .leftDiv {
-    color: red;
-    border: 2px solid red;
-    margin-bottom: 0;
-
+  .leftDivDefault {
     padding-left: 10.9375vw;
     padding-top: 13.14814814vh;
+    padding-right: 13.48%;
     grid-column: 1 / span 2;
+
+    .leftFirstDiv {
+      margin-bottom: 25.60925925vh;
+      p:nth-child(1) {
+        color: var(--text-text-invert, #fffdfc);
+        font-family: Rajdhani;
+        font-size: 1.9166666666vw;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 0;
+      }
+
+      p:nth-child(2) {
+        color: var(--text-text-invert, #fffdfc);
+        font-family: Rajdhani;
+        font-size: 1.19791666666vw;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 0;
+      }
+    }
+
+    .leftFirstDivToggled{
+      margin-bottom:14.220370370vh;
+    }
+    // left first div style ends
+
+    .leftSecondDiv {
+      margin-bottom: 2.03703703vh;
+      p:nth-child(1) {
+        color: var(--text-text-invert, #fffdfc);
+        font-family: Rajdhani;
+        font-size: 1.25vw;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 0;
+      }
+
+      p:nth-child(2) {
+        color: var(--text-text-invert, #fffdfc);
+        font-family: Rajdhani;
+        font-size: 0.9375vw;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+    }
+    // left  second div style ends
+
+    .leftThirdDiv {
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+      margin-top:4.53703703703vh;
+
+      .yesNoDiv {
+        display: flex;
+        align-items: center;
+        gap: 0.677083333vw;
+        p {
+          color: var(--text-text-invert, #fffdfc);
+          font-family: Rajdhani;
+          font-size: 0.8333333333vw;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          margin-bottom: 0;
+        }
+        .yesDiv {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 4.0104166vw;
+          height: 3.14814814vh;
+          border-bottom: 0.09259259vh solid #fffdfc;
+          cursor: pointer;
+        }
+
+        .noDiv {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 4.0104166vw;
+          height: 3.14814814vh;
+          border-bottom: 0.09259259vh solid #fffdfc;
+          cursor: pointer;
+        }
+
+        .yesNoDivClicked {
+          border: 0.09259259vh solid #fffdfc;
+        }
+      }
+      // yesNODiv style ends
+
+      .logoUploadDiv {
+        width: 16.7708333vw;
+        height: 7.77777777vh;
+        border-radius: 0.5208333333vw;
+        border: 0.09259259vh solid #b2b2b2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.925925925vh;
+        cursor: pointer;
+
+        img {
+          width: 2.38796875vw;
+          height: auto;
+        }
+
+        p {
+          color: var(--text-text-complementary, #b2b2b2);
+          text-align: center;
+          font-family: Rajdhani;
+          font-size: 0.625vw;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    // left fourth div begins
+    // third div style begins
+    .leftFourthDiv {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      margin-top: 3.0555555555vh;
+
+      .thirdLeftPara {
+        color: var(--text-text-invert, #fffdfc);
+        font-family: Rajdhani;
+        font-size: 1.19791666666vw;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 0;
+        cursor: pointer;
+      }
+
+      .thirdRightDiv {
+        .continueButtonDiv {
+          width: 7.604166666vw;
+          height: 4.351851851vh;
+          background: #fffdfc;
+          border-radius: 2.604166666vw;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          p {
+            color: var(--text-text-brand, #f40009);
+            font-family: Rajdhani;
+            font-size: 1.19791666666vw;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 0;
+          }
+
+          img {
+            width: 1.14234375vw;
+            height: 1.160462962vh;
+          }
+        }
+      }
+    }
+
+    .leftFourthDivToggled{
+      margin-top:7.774074074vh;
+    }
+
+    // third div style ends
+
+    // left fourth div style ends
+  }
+
+  .leftDivClicked {
+    grid-column: 1 / span 1;
   }
 
   .rightDiv {
-    display: none;
+    background: var(--surface-surface-complementary, rgba(178, 178, 178, 0.2));
+    padding-top: 2.96296296vh;
+    padding-left: 4.1140625vw;
+    padding-right: 10.57291666666vw;
+
+    .infoPara {
+      color: var(--text-text-invert, #fffdfc);
+      font-family: Rajdhani;
+      font-size: 1.25vw;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin-bottom: 4.81481481vh;
+    }
+
+    .whatisLogoDiv {
+      margin-bottom: 2vh;
+
+      p:nth-child(1) {
+        color: var(--text-text-invert, #fffdfc);
+        font-family: Rajdhani;
+        font-size: 1.25vw;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 0.834vh;
+      }
+
+      p:nth-child(2) {
+        color: var(--text-text-invert, #fffdfc);
+        font-family: Rajdhani;
+        font-size: 0.9375vw;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-align: justify;
+      }
+    }
+
+    // red div begins
+    .redDiv {
+      background: #f40009;
+      width: 13.80208333vw;
+      height: 3.611111111vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // margin-bottom: 0.925925925vh;
+      margin-bottom: 1.225926vh;
+
+      p {
+        color: var(--text-text-invert, #fffdfc);
+        font-family: Rajdhani;
+        font-size: 1.25vw;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 0;
+      }
+    }
+    // red div ends
+
+    // ordered list begins
+    ol {
+      margin-bottom: 4.25925925vh;
+      li {
+        color: var(--text-text-invert, #fffdfc);
+        font-family: Rajdhani;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 146.1%;
+        margin-bottom: 0.6vh;
+
+        span {
+          font-weight: 500;
+        }
+
+        &::marker {
+          font-weight: 500;
+        }
+      }
+    }
+    // ordered list ends
+
+    // play div style begins
+    .playDiv {
+      width: 28.54166666vw;
+      height: 26.85185185185vh;
+      background: #d9d9d9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 5.1839583vw;
+        height: auto;
+      }
+    }
+    // play div style ends
   }
 }
