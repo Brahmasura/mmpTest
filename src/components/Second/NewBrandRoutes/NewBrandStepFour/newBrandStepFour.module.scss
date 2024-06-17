@@ -1,8 +1,109 @@
-.mainDiv{
-    width:100%;
-    height:100%;
-    color:red;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+.mainDiv {
+  width: 100%;
+  height: 100%;
+  padding-inline: 10.9375vw;
+  padding-top: 13.14814814vh;
+
+  .thumbsUpIcon{
+    position:absolute;
+    z-index:-1;
+    top:0;
+    right:0;
+  }
+
+  //   first div style begins
+  .firstDiv {
+    margin-bottom:17.368518vh;
+    p:nth-child(1) {
+      color: var(--text-text-invert, #fffdfc);
+      font-family: Rajdhani;
+      font-size: 1.9166666666vw;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin-bottom: 0;
+    }
+
+    p:nth-child(2) {
+      color: var(--text-text-invert, #fffdfc);
+      font-family: Rajdhani;
+      font-size: 1.19791666666vw;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      margin-bottom: 0;
+    }
+  }
+  //   first div style ends
+
+  // second div style begins
+  .secondDiv {
+    margin-bottom: 4.99444444vh;
+    p:nth-child(1) {
+      color: var(--text-text-invert, #fffdfc);
+      font-family: Rajdhani;
+      font-size: 4.07260416666vw;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+    p:nth-child(2) {
+      color: var(--text-text-invert, #fffdfc);
+      font-family: Rajdhani;
+      font-size: 3.054427083333vw;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+
+  // second div style ends
+
+  // third div style begins
+  .thirdDiv {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 3.0555555555vh;
+
+    .thirdLeftPara {
+      color: var(--text-text-invert, #fffdfc);
+      font-family: Rajdhani;
+      font-size: 1.19791666666vw;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin-bottom: 0;
+      cursor: pointer;
+    }
+
+    .thirdRightDiv {
+      .continueButtonDiv {
+        width: 14.58333333vw;
+        height: 4.351851851vh;
+        background: #fffdfc;
+        border-radius: 2.604166666vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p {
+          color: var(--text-text-brand, #f40009);
+          font-family: Rajdhani;
+          font-size: 1.19791666666vw;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          margin-bottom: 0;
+        }
+
+        img {
+          width: 1.14234375vw;
+          height: 1.160462962vh;
+        }
+      }
+    }
+  }
+  // third div style ends
 }
