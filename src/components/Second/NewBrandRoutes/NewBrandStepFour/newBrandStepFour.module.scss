@@ -4,16 +4,16 @@
   padding-inline: 10.9375vw;
   padding-top: 13.14814814vh;
 
-  .thumbsUpIcon{
-    position:absolute;
-    z-index:-1;
-    top:0;
-    right:0;
+  .thumbsUpIcon {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
   }
 
   //   first div style begins
   .firstDiv {
-    margin-bottom:17.368518vh;
+    margin-bottom: 17.368518vh;
     p:nth-child(1) {
       color: var(--text-text-invert, #fffdfc);
       font-family: Rajdhani;
@@ -79,6 +79,7 @@
     }
 
     .thirdRightDiv {
+      cursor: pointer;
       .continueButtonDiv {
         width: 14.58333333vw;
         height: 4.351851851vh;
