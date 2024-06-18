@@ -4,6 +4,8 @@
   display: grid;
   grid-template-columns: 56.770833333vw auto;
 
+
+  // left div default style begins
   .leftDivDefault {
     padding-left: 10.9375vw;
     padding-top: 13.14814814vh;
@@ -198,6 +200,7 @@
     grid-column: 1 / span 1;
   }
 
+  // right div style begins
   .rightDiv {
     background: var(--surface-surface-complementary, rgba(178, 178, 178, 0.2));
     padding-top: 2.96296296vh;

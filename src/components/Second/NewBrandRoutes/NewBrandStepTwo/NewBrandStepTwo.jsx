@@ -100,12 +100,18 @@ const NewBrandStepTwo = () => {
 
         {/* third div begins */}
         <div className={style.thirdDiv}>
-          <p onClick={() => handleNavigation("/brands/newBrand")} className={style.thirdLeftPara}>
+          <p
+            onClick={() => handleNavigation("/brands/newBrand")}
+            className={style.thirdLeftPara}
+          >
             Go back
           </p>
 
           <div className={style.thirdRightDiv}>
-            <div onClick={() => handleNavigation("/brands/newBrand/addBrandLogo")} className={style.continueButtonDiv}>
+            <div
+              onClick={() => handleNavigation("/brands/newBrand/addBrandLogo")}
+              className={style.continueButtonDiv}
+            >
               <p>Continue</p>
               <img src={redArrow} alt="the red arrow" />
             </div>
