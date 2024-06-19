@@ -207,7 +207,7 @@ const BrandOption = () => {
         {/* brands menu div begins */}
         <div className={style.brandsMenuContainer}>
           {brandsMenuArray.map((item, index) => (
-            <div key={index} onClick={() => handleNavigation(`/brands/manageBrand`)} className={style.brandMenuDiv}>
+            <div key={index} onClick={() => handleNavigation("manageBrand")} className={style.brandMenuDiv}>
             {/* this needs to be rectifies */}
               <img src={item.menuLogo} alt="the menu logo" />
 
