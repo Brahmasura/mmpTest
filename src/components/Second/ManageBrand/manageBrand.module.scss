@@ -1,0 +1,28 @@
+.wrapper {
+  margin-top: 5.7407407407vh;
+  position: relative;
+
+  .mainContainer {
+    border-radius: 2.6041666666vw;
+    border: 3px solid #fffdfc;
+    background: rgba(0, 0, 0, 0.7);
+    height: 78.703703703vh;
+    // padding-top: 2vh;
+    // padding-left: 7.03125vw;
+    // padding-right: 11.614583333vw;
+
+    // display: flex;
+    // flex-direction: column;
+  }
+  //   main container style ends
+
+  .closeIcon {
+    cursor: pointer;
+    position: absolute;
+    width: 2.8125vw;
+    height: auto;
+    top: -0.855556vh;
+    right: -0.720833vw;
+    z-index: 10;
+  }
+}

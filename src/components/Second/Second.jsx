@@ -70,7 +70,7 @@ const Second = () => {
             />
           ))}
 
-          <div className={style.newBrandParaDiv}>
+          <div onClick={() => handleNavigation("brands/newBrand")} className={style.newBrandParaDiv}>
             <p>NEW BRAND</p>
           </div>
         </div>
