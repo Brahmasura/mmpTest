@@ -75,8 +75,8 @@ const BrandOption = () => {
   const { brandImage, brandName, level } = location.state || {};
 
   //   function to handle navigation to routes
-  const handleNavigation = (destination) => {
-    navigate(destination);
+  const handleNavigation = (destination, data) => {
+    navigate(destination, {state: {index : data}});
   };
 
   // function to select the brand select from the toggler
@@ -207,7 +207,7 @@ const BrandOption = () => {
         {/* brands menu div begins */}
         <div className={style.brandsMenuContainer}>
           {brandsMenuArray.map((item, index) => (
-            <div key={index} onClick={() => handleNavigation("manageBrand")} className={style.brandMenuDiv}>
+            <div key={index} onClick={() => handleNavigation("manageBrand", {index})} className={style.brandMenuDiv}>
             {/* this needs to be rectifies */}
               <img src={item.menuLogo} alt="the menu logo" />
 

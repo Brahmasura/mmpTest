@@ -13,6 +13,24 @@
 
     // display: flex;
     // flex-direction: column;
+
+    color: red;
+
+    .topDiv {
+      width: 100%;
+      
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      .unclicked {
+        color: white;
+      }
+
+      .clicked{
+        color:red;
+      }
+    }
   }
   //   main container style ends
 
