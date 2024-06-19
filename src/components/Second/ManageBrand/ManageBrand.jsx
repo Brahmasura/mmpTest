@@ -2,6 +2,7 @@ import style from "./manageBrand.module.scss";
 import close from "../../../assets/closeIcon.svg";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
+import BackAndBrandSelector from "../Components/BackAndBrandSelector/BackAndBrandSelector";
 
 const dummyArray = [
   {text:"first"},
@@ -42,6 +43,7 @@ const ManageBrand = () => {
   return (
     <div className={style.wrapper}>
       <div className={style.mainContainer}>
+      <BackAndBrandSelector/>
         <div className={style.topDiv}>
         {dummyArray.map((item,index) => (
           <p  key={index} onClick={() => handleActive(index)} className={activeOption === index ? style.clicked : style.unclicked }>{item.text}</p>
