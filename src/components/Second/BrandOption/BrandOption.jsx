@@ -19,34 +19,42 @@ const brandsMenuArray = [
   {
     menuLogo: persona,
     menuName: "PERSONA",
+    route:"persona"
   },
   {
     menuLogo: design,
     menuName: "DESIGN",
+    route:"design"
   },
   {
     menuLogo: tools,
     menuName: "TOOLS",
+    route:"tools"
   },
   {
     menuLogo: assets,
     menuName: "ASSESTS",
+    route:"assets"
   },
   {
     menuLogo: offers,
     menuName: "OFFERS",
+    route:"offers"
   },
   {
     menuLogo: audiences,
     menuName: "AUDIENCES",
+    route:"audiences"
   },
   {
     menuLogo: preferences,
     menuName: "PREFERENCES",
+    route:"preferences"
   },
   {
     menuLogo: people,
     menuName: "PEOPLE",
+    route:"people"
   },
 ];
 
@@ -126,7 +134,7 @@ const BrandOption = () => {
         {/* brands menu div begins */}
         <div className={style.brandsMenuContainer}>
           {brandsMenuArray.map((item, index) => (
-            <div key={index} onClick={() => handleNavigation("manageBrand", {index})} className={style.brandMenuDiv}>
+            <div key={index} onClick={() => handleNavigation(`manageBrand/${item.route}`, {index})} className={style.brandMenuDiv}>
             {/* this needs to be rectifies */}
               <img src={item.menuLogo} alt="the menu logo" />
 

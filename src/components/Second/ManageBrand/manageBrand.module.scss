@@ -7,30 +7,89 @@
     border: 3px solid #fffdfc;
     background: rgba(0, 0, 0, 0.7);
     height: 78.703703703vh;
-    // padding-top: 2vh;
-    // padding-left: 7.03125vw;
-    // padding-right: 11.614583333vw;
+    padding-top: 2vh;
+    padding-left: 5.57291666vw;
+    padding-right: 11.614583333vw;
 
-    // display: flex;
-    // flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
 
-    color: red;
-
-    .topDiv {
-      width: 100%;
-
+    // menuContainer style begins
+    .menuContainer {
       display: flex;
-      justify-content: space-around;
-      align-items: center;
+      gap: 0.5208333333vw;
 
-      .unclicked {
-        color: white;
+      // menu div style begins
+      .menuDiv {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1.78958333vw;
+        height: 8.33333333vh;
+        padding-inline: 1.458333333vw;
+        border-radius: 1.0416666666vw;
+        border: 0.09259259vh solid transparent;
+        cursor: pointer;
+
+        // the testing style
+        &:hover {
+          border-radius: 1.0416666666vw;
+          border: 0.09259259vh solid #fffdfc;
+          background: rgba(163, 169, 173, 0.5);
+        }
+
+        img {
+          width: 1.8229166666vw;
+          height: auto;
+        }
+
+        .menuNameAndStatusDiv {
+          p:nth-child(1) {
+            color: var(--surface-surface-color, #fffdfc);
+            font-family: Rajdhani;
+            font-size: 1.5171875vw;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 0;
+          }
+
+          .statusDiv {
+            width: 13.57671875vw;
+            height: 0.674351851vh;
+            border-radius: 2.107239583vw;
+            background: #fff;
+
+            .status {
+              background: #f40009;
+              width: 50%;
+              height: 100%;
+            }
+          }
+
+          p:nth-child(3) {
+            color: var(--text-text-white, #fffdfc);
+            font-family: Rajdhani;
+            font-size: 0.72916666666vw;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 0;
+          }
+        }
+        // menu and status div ends
       }
 
-      .clicked {
-        color: red;
+      .menuDivClicked {
+        border-radius: 1.0416666666vw;
+        border: 0.09259259vh solid #fffdfc;
+        background: rgba(163, 169, 173, 0.5);
       }
+      // menu div style ends
     }
+
+    // menuContainer style ends
   }
   //   main container style ends
 
