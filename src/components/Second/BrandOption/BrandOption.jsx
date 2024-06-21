@@ -13,52 +13,49 @@ import map from "../../../assets/map2.svg";
 import { useLocation, useNavigate } from "react-router-dom";
 import BackAndBrandSelector from "../Components/BackAndBrandSelector/BackAndBrandSelector";
 
-
 // the brands menu array
 const brandsMenuArray = [
   {
     menuLogo: persona,
     menuName: "PERSONA",
-    route:"persona"
+    route: "persona",
   },
   {
     menuLogo: design,
     menuName: "DESIGN",
-    route:"design"
+    route: "design",
   },
   {
     menuLogo: tools,
     menuName: "TOOLS",
-    route:"tools"
+    route: "tools",
   },
   {
     menuLogo: assets,
     menuName: "ASSESTS",
-    route:"assets"
+    route: "assets",
   },
   {
     menuLogo: offers,
     menuName: "OFFERS",
-    route:"offers"
+    route: "offers",
   },
   {
     menuLogo: audiences,
     menuName: "AUDIENCES",
-    route:"audiences"
+    route: "audiences",
   },
   {
     menuLogo: preferences,
     menuName: "PREFERENCES",
-    route:"preferences"
+    route: "preferences",
   },
   {
     menuLogo: people,
     menuName: "PEOPLE",
-    route:"people"
+    route: "people",
   },
 ];
-
-
 
 const BrandOption = () => {
   const navigate = useNavigate();
@@ -67,15 +64,13 @@ const BrandOption = () => {
 
   //   function to handle navigation to routes
   const handleNavigation = (destination, data) => {
-    navigate(destination, {state: {index : data}});
+    navigate(destination, { state: { index: data } });
   };
-
-
 
   return (
     <div className={style.brandOptionWrapper}>
       <div className={style.brandOptionContainer}>
-       <BackAndBrandSelector/>
+        <BackAndBrandSelector />
 
         {/* the brand details div begins  */}
         <div className={style.brandDetailDiv}>
@@ -134,8 +129,12 @@ const BrandOption = () => {
         {/* brands menu div begins */}
         <div className={style.brandsMenuContainer}>
           {brandsMenuArray.map((item, index) => (
-            <div key={index} onClick={() => handleNavigation(`manageBrand/${item.route}`, {index})} className={style.brandMenuDiv}>
-            {/* this needs to be rectifies */}
+            <div
+              key={index}
+              onClick={() => handleNavigation("manageBrand", { index })}
+              className={style.brandMenuDiv}
+            >
+              {/* this needs to be rectifies */}
               <img src={item.menuLogo} alt="the menu logo" />
 
               <div className={style.menuNameAndStatusDiv}>

@@ -10,12 +10,16 @@ import audiences from "../../../assets/Second/audiencesLogo.svg";
 import preferences from "../../../assets/Second/preferencesLogo.svg";
 import people from "../../../assets/Second/peopleLogo.svg";
 
-import { Route, Routes, useLocation, useNavigate, useResolvedPath } from "react-router-dom";
+import {
+  Route,
+  Routes,
+  useLocation,
+  useNavigate,
+  useParams,
+} from "react-router-dom";
 import { useEffect, useState } from "react";
 import BackAndBrandSelector from "../Components/BackAndBrandSelector/BackAndBrandSelector";
 import Persona from "./MenuRoutes/Persona/Persona";
-
-
 
 // the brands menu array
 const brandsMenuArray = [
@@ -66,9 +70,9 @@ const ManageBrand = () => {
   // the above state is only for testing
   const navigate = useNavigate();
   const location = useLocation();
-
-
   const { index } = location.state || {};
+
+  console.log("the index no:", index);
 
   const [activeOption, setActiveOption] = useState(index.index);
 
@@ -76,11 +80,6 @@ const ManageBrand = () => {
   const handleActive = (term) => {
     setActiveOption(term);
   };
-
-  // this useEffect is to check that what is the value of the index that we have recieved
-  // useEffect(() => {
-  //   console.log("index no:", index.index);
-  // }, [index]);
 
   // function to handle Navigation
   const handleNavigation = (destination) => {
@@ -123,15 +122,46 @@ const ManageBrand = () => {
         </div>
         {/* menu div ends */}
 
-        {
-          activeOption === 0 && (<><Persona/></>)
-        }
-        {/* <div>
-          <Routes>
-            <Route path="persona" element={<Persona />} />
-          </Routes>
-        </div> */}
-       
+        {activeOption === 0 && (
+          <>
+            <Persona />
+          </>
+        )}
+        {activeOption === 1 && (
+          <>
+            <Persona />
+          </>
+        )}
+        {activeOption === 2 && (
+          <>
+            <Persona />
+          </>
+        )}
+        {activeOption === 3 && (
+          <>
+            <Persona />
+          </>
+        )}
+        {activeOption === 4 && (
+          <>
+            <Persona />
+          </>
+        )}
+        {activeOption === 5 && (
+          <>
+            <Persona />
+          </>
+        )}
+        {activeOption === 6 && (
+          <>
+            <Persona />
+          </>
+        )}
+        {activeOption === 7 && (
+          <>
+            <Persona />
+          </>
+        )}
       </div>
       {/* main container ends */}
 
