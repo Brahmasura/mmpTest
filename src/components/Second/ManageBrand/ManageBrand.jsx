@@ -10,16 +10,17 @@ import audiences from "../../../assets/Second/audiencesLogo.svg";
 import preferences from "../../../assets/Second/preferencesLogo.svg";
 import people from "../../../assets/Second/peopleLogo.svg";
 
-import {
-  Route,
-  Routes,
-  useLocation,
-  useNavigate,
-  useParams,
-} from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
+import { useState } from "react";
 import BackAndBrandSelector from "../Components/BackAndBrandSelector/BackAndBrandSelector";
 import Persona from "./MenuRoutes/Persona/Persona";
+import Design from "./MenuRoutes/Design/Design";
+import Tool from "./MenuRoutes/ToolPage/Tool";
+import Assets from "./MenuRoutes/AssetsCompo/Assets";
+import Offers from "./MenuRoutes/Offers/Offers";
+import Audiences from "./MenuRoutes/Audiences/Audiences";
+import Preferences from "./Preferences/Preferences";
+import People from "./MenuRoutes/People/People";
 
 // the brands menu array
 const brandsMenuArray = [
@@ -72,7 +73,7 @@ const ManageBrand = () => {
   const location = useLocation();
   const { index } = location.state || {};
 
-  console.log("the index no:", index);
+  // console.log("the index no:", index);
 
   const [activeOption, setActiveOption] = useState(index.index);
 
@@ -122,44 +123,59 @@ const ManageBrand = () => {
         </div>
         {/* menu div ends */}
 
+        {/* persona */}
         {activeOption === 0 && (
           <>
             <Persona />
           </>
         )}
+
+        {/* design */}
         {activeOption === 1 && (
           <>
-            <Persona />
+            <Design />
           </>
         )}
+
+        {/* tools */}
         {activeOption === 2 && (
           <>
-            <Persona />
+            <Tool/>
           </>
         )}
+
+        {/* assets */}
         {activeOption === 3 && (
           <>
-            <Persona />
+            <Assets/>
           </>
         )}
+
+        {/* offers */}
         {activeOption === 4 && (
           <>
-            <Persona />
+            <Offers/>
           </>
         )}
+
+        {/* audiences */}
         {activeOption === 5 && (
           <>
-            <Persona />
+          <Audiences/>
           </>
         )}
+
+        {/* preferences */}
         {activeOption === 6 && (
           <>
-            <Persona />
+            <Preferences/>
           </>
         )}
+
+        {/* people */}
         {activeOption === 7 && (
           <>
-            <Persona />
+           <People/>
           </>
         )}
       </div>
