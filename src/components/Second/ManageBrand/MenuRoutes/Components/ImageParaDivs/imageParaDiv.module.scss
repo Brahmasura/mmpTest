@@ -1,0 +1,48 @@
+.mainDiv {
+  width: 10.563697916vw;
+  height: 22.82601851vh;
+  display: flex;
+  flex-direction: column;
+  background: #333;
+  cursor: pointer;
+
+  &:hover {
+    .imageDiv {
+      background: #fffdfc;
+      img {
+        filter: invert(1);
+      }
+    }
+  }
+
+  .imageDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex: 1;
+    img {
+      width: 58%;
+      height: auto;
+      opacity: 0.2;
+    }
+  }
+
+  .textDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4.046111111vh;
+    background: #b2b2b2;
+    p {
+      margin-bottom: 0;
+      color: #fffdfc;
+      text-align: center;
+      font-family: Rajdhani;
+      font-size: 0.78125vw;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+  }
+}
