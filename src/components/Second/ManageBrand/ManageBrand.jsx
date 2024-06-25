@@ -19,7 +19,7 @@ import Tool from "./MenuRoutes/ToolPage/Tool";
 import Assets from "./MenuRoutes/AssetsCompo/Assets";
 import Offers from "./MenuRoutes/Offers/Offers";
 import Audiences from "./MenuRoutes/Audiences/Audiences";
-import Preferences from "./Preferences/Preferences";
+import Preferences from "./MenuRoutes/Preferences/Preferences";
 import People from "./MenuRoutes/People/People";
 
 // the brands menu array
@@ -168,7 +168,7 @@ const ManageBrand = () => {
         {/* preferences */}
         {activeOption === 6 && (
           <>
-            <Preferences/>
+           <Preferences/>
           </>
         )}
 

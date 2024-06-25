@@ -1,0 +1,28 @@
+.mainDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.629629629vh;
+  margin-bottom: 0.1851851851vh;
+  border-radius: 1.0416666666vw;
+  padding-inline: 1.5625vw;
+  cursor: pointer;
+
+  p {
+    margin-bottom: 0;
+    color: #fffdfc;
+    font-family: Rajdhani;
+    font-size: 1.25vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  p:nth-child(2) {
+    opacity: 0.5;
+  }
+}
+
+.mainDivClicked {
+  background: #ec2227;
+}

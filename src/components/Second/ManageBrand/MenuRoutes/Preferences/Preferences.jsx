@@ -1,26 +1,40 @@
 import { useState } from "react";
 import MenuLeftDiv from "../Components/MenuLeftDiv/MenuLeftDiv";
-import style from "./persona.module.scss";
+import style from "./preferences.module.scss";
 
-// personaArray for the left div begins
-const personaArray = [
+// the Array begins
+const preferenceArray = [
   {
-    title: "Essential Details",
+    title: "Design Preferences",
+    percentage: "90%",
+  },
+  {
+    title: "Writing Preferences",
     percentage: "15%",
   },
   {
-    title: "Strategy",
-    percentage: "15%",
+    title: "Web Preferences",
+    percentage: "10%",
   },
   {
-    title: "Brand History",
-    percentage: "15%",
+    title: "Automation Preferences",
+    percentage: "30%",
+  },
+  {
+    title: "Video Preferences",
+    percentage: "50%",
+  },
+  {
+    title: "MySalesPass Preferences",
+    percentage: "70%",
+  },
+  {
+    title: "Power Words",
+    percentage: "20%",
   },
 ];
 
-// the personaArray ends
-
-const Persona = () => {
+const Preferences = () => {
   const [activeDiv, setActiveDiv] = useState(0);
 
   // function to handleActiveDiv
@@ -30,7 +44,7 @@ const Persona = () => {
   return (
     <div className={style.mainDiv}>
       <div className={style.leftDiv}>
-        {personaArray.map((item, index) => (
+        {preferenceArray.map((item, index) => (
           <MenuLeftDiv
             onClick={() => handleActiveClick(index)}
             activeDiv={activeDiv}
@@ -50,4 +64,4 @@ const Persona = () => {
   );
 };
 
-export default Persona;
+export default Preferences;
