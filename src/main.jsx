@@ -10,7 +10,7 @@ import { EventProvider } from "./Context/EventContext.jsx";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <EventProvider>
-      <BrowserRouter basename="/myMarketingPassTest">
+      <BrowserRouter basename="/mmpTest">
         <App />
       </BrowserRouter>
     </EventProvider>
