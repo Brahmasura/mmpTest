@@ -1,6 +1,7 @@
 import { useState } from "react";
 import MenuLeftDiv from "../Components/MenuLeftDiv/MenuLeftDiv";
 import style from "./persona.module.scss";
+import EssentialDetails from "./PersonaRightContent/EssentialDetails/EssentialDetails";
 
 // personaArray for the left div begins
 const personaArray = [
@@ -17,8 +18,9 @@ const personaArray = [
     percentage: "15%",
   },
 ];
-
 // the personaArray ends
+
+
 
 const Persona = () => {
   const [activeDiv, setActiveDiv] = useState(0);
@@ -42,7 +44,7 @@ const Persona = () => {
         ))}
       </div>
       <div className={style.rightDiv}>
-        {activeDiv === 0 && <>first Content</>}
+        {activeDiv === 0 && <EssentialDetails/>}
         {activeDiv === 1 && <>second Content</>}
         {activeDiv === 2 && <>third Content</>}
       </div>

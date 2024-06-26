@@ -1,0 +1,36 @@
+.mainDiv {
+  margin-bottom: 2.2222222222vh;
+  .titlePara {
+    color: var(--surface-surface-invert, #fffdfc);
+    font-family: Rajdhani;
+    font-size: 1.0416666666vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 0;
+  }
+
+  .descriptionDiv {
+    margin-top: 2vh;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2.2222222222vh 1.5625vw;
+    border-radius: 1.0416666666vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p {
+      color: var(--text-text-invert, #fffdfc);
+      font-family: Rajdhani;
+      font-size: 0.9375vw;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      margin-bottom: 0;
+    }
+
+    img {
+      width: 1.0416666666vw;
+      height: auto;
+    }
+  }
+}
